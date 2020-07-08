@@ -1,1 +1,0 @@
-# polskiy-vsluh.githab.io
