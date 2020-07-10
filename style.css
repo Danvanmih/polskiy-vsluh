@@ -1,0 +1,22 @@
+ body{
+	background-image: url(https://img2.akspic.ru/image/107261-uzor-pesok-liniya-monohromnyj-plyazh-3840x2160.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-attachment: fixed
+}
+img{
+	transform: scale(1.0);
+	transition: 1s all;
+}
+img:hover{
+	transform: scale(1.4);
+			
+} 
+#back{
+	transform: scale(1.0);
+	transition: 1s all;
+}
+#back:hover{
+	transform: scale(1.4);
+			
+} 
