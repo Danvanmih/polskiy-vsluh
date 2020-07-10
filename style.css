@@ -24,5 +24,6 @@ img:hover{
 	text-decoration:none;
 }
 table{
-	border-style:solid;
+	border-collapse:collapse;   
+	empty-cells:hide;
 }
