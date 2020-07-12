@@ -23,7 +23,7 @@ img:hover{
 .table1{
 	border-collapse:collapse;   
 	empty-cells:hide;
-	border-radius:10px 10px 0px 0px;
+	border-radius:10px 0px 10px 0px;
 }
 .table2{
 	border-collapse:collapse;   
