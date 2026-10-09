@@ -94,11 +94,45 @@ def full_api():
     if not result:
         raise RuntimeError("YouTube API returned no public videos")
     return result
+
+def fetch_channel_playlists():
+    playlists = []
+    members = {}
+    token = ""
+    while True:
+        params = {"part": "snippet", "channelId": CHANNEL_ID, "maxResults": 50}
+        if token:
+            params["pageToken"] = token
+        page = api("playlists", **params)
+        playlists.extend({"id": item["id"], "title": item["snippet"]["title"], "source": "youtube-api"} for item in page.get("items", []))
+        token = page.get("nextPageToken", "")
+        if not token:
+            break
+    for playlist in playlists:
+        token = ""
+        while True:
+            params = {"part": "contentDetails", "playlistId": playlist["id"], "maxResults": 50}
+            if token:
+                params["pageToken"] = token
+            page = api("playlistItems", **params)
+            for item in page.get("items", []):
+                video_id = item.get("contentDetails", {}).get("videoId")
+                if video_id:
+                    members.setdefault(video_id, []).append(playlist["id"])
+            token = page.get("nextPageToken", "")
+            if not token:
+                break
+    return playlists, members
+
 def main():
     old = existing()
+    previous = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else {}
+    playlists = previous.get("playlists", [])
+    members = {}
     mode = "rss"
     if KEY:
         fresh = full_api()
+        playlists, members = fetch_channel_playlists()
         mode = "youtube-data-api"
         # API is authoritative for currently public uploads; remove deleted/unlisted entries.
         combined = {v["id"]: v for v in fresh}
@@ -107,8 +141,10 @@ def main():
         # RSS only exposes recent uploads; keep historical records from previous runs.
         combined = dict(old)
         combined.update({v["id"]: v for v in fresh})
+    for vid, video in combined.items():
+        video["playlistIds"] = members.get(vid, []) if KEY else old.get(vid, {}).get("playlistIds", video.get("playlistIds", []))
     videos = sorted(combined.values(), key=lambda v: v.get("publishedAt", ""), reverse=True)
-    payload = {"channelId": CHANNEL_ID, "channelUrl": CHANNEL_URL, "updatedAt": dt.datetime.now(dt.timezone.utc).isoformat(), "source": mode, "videos": videos}
+    payload = {"channelId": CHANNEL_ID, "channelUrl": CHANNEL_URL, "updatedAt": dt.datetime.now(dt.timezone.utc).isoformat(), "source": mode, "playlists": playlists, "videos": videos}
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Synced {len(fresh)} fresh entries; catalog contains {len(videos)} public videos (source: {mode})")
