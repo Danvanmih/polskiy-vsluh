@@ -1,8 +1,34 @@
 {
   "channelId": "UCVyi18vZGibg4Uu4zlBHTIA",
   "channelUrl": "https://www.youtube.com/@polskij-wsluh",
-  "updatedAt": "2026-10-09T18:23:35.530218+00:00",
+  "updatedAt": "2026-10-09T18:36:38.658462+00:00",
   "source": "rss",
+  "playlists": [
+    {
+      "id": "PLNW7xY7pxJrV0MjX5IL5JqMrstfl8Nklo",
+      "title": "Уровень A1",
+      "category": "A1",
+      "source": "legacy"
+    },
+    {
+      "id": "PLNW7xY7pxJrXHOMw2wqvV77Gor38165sU",
+      "title": "Уровень A2",
+      "category": "A2",
+      "source": "legacy"
+    },
+    {
+      "id": "PLNW7xY7pxJrVA50_fcIHgxJjif2PvshD5",
+      "title": "Польский по песням",
+      "category": "songs",
+      "source": "legacy"
+    },
+    {
+      "id": "PLNW7xY7pxJrXB8GQ7yfyBVaBuR9RtqeFd",
+      "title": "Польские диалоги",
+      "category": "dialogues",
+      "source": "legacy"
+    }
+  ],
   "videos": [
     {
       "id": "ZAmY6Jk0Etg",
@@ -10,7 +36,8 @@
       "description": "Тексты этого видео и всех остальных видео с канала \"Польский вслух\" выложены на Boosty: https://boosty.to/polskijwsluh\n\nПОЛЬСКИЙ ДО АВТОМАТИЗМА. МАТРИЧНЫЙ МЕТОД: https://www.youtube.com/@POLSKMATMET/featured\n\nКто учит польский, тот молодец.",
       "publishedAt": "2026-10-05T07:30:27+00:00",
       "thumbnail": "https://i.ytimg.com/vi/ZAmY6Jk0Etg/hqdefault.jpg",
-      "category": "other"
+      "category": "other",
+      "playlistIds": []
     },
     {
       "id": "K9zSSLPSiWo",
@@ -18,7 +45,8 @@
       "description": "Практика многократного повторения вслух. \nТренируем навык говорения. \nГлубокое погружение и доскональная отработка материала. \nОттачивание живой разговорной речи с носителями языка на живых разговорных примерах.\nПройдя эти уроки вы начнете не просто вспоминать слова, а говорить на польском интуитивно. \nПовторение позволяет сформировать автоматизм в использовании языка. \nКогда вы многократно повторяете определенные выражения или структуры, они становятся частью вашего языкового репертуара, и вы можете использовать их более легко и естественно. \n\nПаузы между фразами даны специально для того, чтобы успеть повторить польскую фразу вслух.\n\n Полезно слушать фоном, в наушниках, на прогулке, в машине и т.д. \n\nТеорию, грамматические задания к тексту урока и упражнения, а также профессиональную озвучку текстов носителями языка найдете на бесплатном образовательном портале: http://www.polskijazyk.pl. \n\nВсе тексты этого видео (и многих других с этого канала и не только) на Boosty: \nhttps://boosty.to/polskijwsluh",
       "publishedAt": "2026-10-01T07:30:37+00:00",
       "thumbnail": "https://i.ytimg.com/vi/K9zSSLPSiWo/hqdefault.jpg",
-      "category": "other"
+      "category": "other",
+      "playlistIds": []
     },
     {
       "id": "dqTTYzCUkjE",
@@ -26,7 +54,8 @@
       "description": "Практикуем перевод с русского на польский. Визуализированные и озвученные носителями языка польские тексты, диалоги с переводом по фразам.\n\nПаузы между фразами даны специально для того, чтобы успеть повторить польскую фразу вслух.\n\nТеорию, грамматические пояснения и задания к тексту урока, а также упражнения для закрепления материала найдёте на БЕСПЛАТНОМ образовательном портале: http://www.polskijazyk.pl.\n\nВсе тексты этого видео (и всех остальных) на Boosty: https://boosty.to/polskijwsluh",
       "publishedAt": "2026-09-27T07:30:20+00:00",
       "thumbnail": "https://i.ytimg.com/vi/dqTTYzCUkjE/hqdefault.jpg",
-      "category": "other"
+      "category": "other",
+      "playlistIds": []
     },
     {
       "id": "HnmxiG8GDpc",
@@ -34,7 +63,8 @@
       "description": "Практикуем перевод с польского на русский. Визуализированные и озвученные носителями языка польские тексты, диалоги с переводом по фразам.\n\nПаузы между фразами даны специально для того, чтобы успеть повторить польскую фразу вслух.\n\nТеорию, грамматические пояснения и задания к тексту урока, а также упражнения для закрепления материала найдёте на БЕСПЛАТНОМ образовательном портале: http://www.polskijazyk.pl.\n\nВсе тексты этого видео (и всех остальных) на Boosty: https://boosty.to/polskijwsluh",
       "publishedAt": "2026-09-24T07:30:34+00:00",
       "thumbnail": "https://i.ytimg.com/vi/HnmxiG8GDpc/hqdefault.jpg",
-      "category": "other"
+      "category": "other",
+      "playlistIds": []
     },
     {
       "id": "B-XpSVHUjwE",
@@ -42,7 +72,8 @@
       "description": "Практика многократного повторения вслух. \nТренируем навык говорения. \nГлубокое погружение и доскональная отработка материала. \nОттачивание живой разговорной речи с носителями языка на живых разговорных примерах.\nПройдя эти уроки вы начнете не просто вспоминать слова, а говорить на польском интуитивно. \nПовторение позволяет сформировать автоматизм в использовании языка. \nКогда вы многократно повторяете определенные выражения или структуры, они становятся частью вашего языкового репертуара, и вы можете использовать их более легко и естественно. \n\nПаузы между фразами даны специально для того, чтобы успеть повторить польскую фразу вслух.\n\n Полезно слушать фоном, в наушниках, на прогулке, в машине и т.д. \n\nТеорию, грамматические задания к тексту урока и упражнения, а также профессиональную озвучку текстов носителями языка найдете на бесплатном образовательном портале: http://www.polskijazyk.pl. \n\nВсе тексты этого видео (и многих других с этого канала и не только) на Boosty: \nhttps://boosty.to/polskijwsluh",
       "publishedAt": "2026-09-19T07:30:28+00:00",
       "thumbnail": "https://i.ytimg.com/vi/B-XpSVHUjwE/hqdefault.jpg",
-      "category": "other"
+      "category": "other",
+      "playlistIds": []
     },
     {
       "id": "vf57a4T8lLs",
@@ -50,7 +81,8 @@
       "description": "Практикуем перевод с русского на польский. Визуализированные и озвученные носителями языка польские тексты, диалоги с переводом по фразам.\n\nПаузы между фразами даны специально для того, чтобы успеть повторить польскую фразу вслух.\n\nТеорию, грамматические пояснения и задания к тексту урока, а также упражнения для закрепления материала найдёте на БЕСПЛАТНОМ образовательном портале: http://www.polskijazyk.pl.\n\nВсе тексты этого видео (и всех остальных) на Boosty: https://boosty.to/polskijwsluh",
       "publishedAt": "2026-09-15T07:30:39+00:00",
       "thumbnail": "https://i.ytimg.com/vi/vf57a4T8lLs/hqdefault.jpg",
-      "category": "other"
+      "category": "other",
+      "playlistIds": []
     },
     {
       "id": "mtDaoTKUE9M",
@@ -58,7 +90,8 @@
       "description": "Практикуем перевод с польского на русский. Визуализированные и озвученные носителями языка польские тексты, диалоги с переводом по фразам.\n\nПаузы между фразами даны специально для того, чтобы успеть повторить польскую фразу вслух.\n\nТеорию, грамматические пояснения и задания к тексту урока, а также упражнения для закрепления материала найдёте на БЕСПЛАТНОМ образовательном портале: http://www.polskijazyk.pl.\n\nВсе тексты этого видео (и всех остальных) на Boosty: https://boosty.to/polskijwsluh",
       "publishedAt": "2026-09-11T17:25:48+00:00",
       "thumbnail": "https://i.ytimg.com/vi/mtDaoTKUE9M/hqdefault.jpg",
-      "category": "other"
+      "category": "other",
+      "playlistIds": []
     },
     {
       "id": "v9yG6H_ppEU",
@@ -66,7 +99,8 @@
       "description": "Практика многократного повторения вслух. \nТренируем навык говорения. \nГлубокое погружение и доскональная отработка материала. \nОттачивание живой разговорной речи с носителями языка на живых разговорных примерах.\nПройдя эти уроки вы начнете не просто вспоминать слова, а говорить на польском интуитивно. \nПовторение позволяет сформировать автоматизм в использовании языка. \nКогда вы многократно повторяете определенные выражения или структуры, они становятся частью вашего языкового репертуара, и вы можете использовать их более легко и естественно. \n\nПаузы между фразами даны специально для того, чтобы успеть повторить польскую фразу вслух.\n\n Полезно слушать фоном, в наушниках, на прогулке, в машине и т.д. \n\nТеорию, грамматические задания к тексту урока и упражнения, а также профессиональную озвучку текстов носителями языка найдете на бесплатном образовательном портале: http://www.polskijazyk.pl. \n\nВсе тексты этого видео (и многих других с этого канала и не только) на Boosty: \nhttps://boosty.to/polskijwsluh",
       "publishedAt": "2026-09-06T07:30:29+00:00",
       "thumbnail": "https://i.ytimg.com/vi/v9yG6H_ppEU/hqdefault.jpg",
-      "category": "other"
+      "category": "other",
+      "playlistIds": []
     },
     {
       "id": "aCUlYCga1LA",
@@ -74,7 +108,8 @@
       "description": "Практикуем перевод с русского на польский. Визуализированные и озвученные носителями языка польские тексты, диалоги с переводом по фразам.\n\nПаузы между фразами даны специально для того, чтобы успеть повторить польскую фразу вслух.\n\nТеорию, грамматические пояснения и задания к тексту урока, а также упражнения для закрепления материала найдёте на БЕСПЛАТНОМ образовательном портале: http://www.polskijazyk.pl.\n\nВсе тексты этого видео (и всех остальных) на Boosty: https://boosty.to/polskijwsluh",
       "publishedAt": "2026-09-03T06:30:04+00:00",
       "thumbnail": "https://i.ytimg.com/vi/aCUlYCga1LA/hqdefault.jpg",
-      "category": "other"
+      "category": "other",
+      "playlistIds": []
     },
     {
       "id": "cmcowQhXyB4",
@@ -82,7 +117,8 @@
       "description": "Практикуем перевод с польского на русский. Визуализированные и озвученные носителями языка польские тексты, диалоги с переводом по фразам.\n\nПаузы между фразами даны специально для того, чтобы успеть повторить польскую фразу вслух.\n\nТеорию, грамматические пояснения и задания к тексту урока, а также упражнения для закрепления материала найдёте на БЕСПЛАТНОМ образовательном портале: http://www.polskijazyk.pl.\n\nВсе тексты этого видео (и всех остальных) на Boosty: https://boosty.to/polskijwsluh",
       "publishedAt": "2026-08-30T07:30:37+00:00",
       "thumbnail": "https://i.ytimg.com/vi/cmcowQhXyB4/hqdefault.jpg",
-      "category": "other"
+      "category": "other",
+      "playlistIds": []
     },
     {
       "id": "HasWG4BKUo8",
@@ -90,7 +126,8 @@
       "description": "Тексты этого видео и всех остальных видео с канала \"Польский вслух\" выложены на Boosty: https://boosty.to/polskijwsluh\n\nПОЛЬСКИЙ ДО АВТОМАТИЗМА. МАТРИЧНЫЙ МЕТОД: https://www.youtube.com/@POLSKMATMET/featured\n\nКто учит польский, тот молодец.",
       "publishedAt": "2026-08-08T15:00:01+00:00",
       "thumbnail": "https://i.ytimg.com/vi/HasWG4BKUo8/hqdefault.jpg",
-      "category": "other"
+      "category": "other",
+      "playlistIds": []
     },
     {
       "id": "iJBqWJijWyE",
@@ -98,7 +135,8 @@
       "description": "Тексты этого видео и всех остальных видео с канала \"Польский вслух\" выложены на Boosty: https://boosty.to/polskijwsluh\n\nПОЛЬСКИЙ ДО АВТОМАТИЗМА. МАТРИЧНЫЙ МЕТОД: https://www.youtube.com/@POLSKMATMET/featured\n\nКто учит польский, тот молодец.",
       "publishedAt": "2026-07-19T07:30:30+00:00",
       "thumbnail": "https://i.ytimg.com/vi/iJBqWJijWyE/hqdefault.jpg",
-      "category": "other"
+      "category": "other",
+      "playlistIds": []
     },
     {
       "id": "Ral8rIIrFqs",
@@ -106,7 +144,8 @@
       "description": "Тексты этого видео и всех остальных видео с канала \"Польский вслух\" выложены на Boosty: https://boosty.to/polskijwsluh\n\nПОЛЬСКИЙ ДО АВТОМАТИЗМА. МАТРИЧНЫЙ МЕТОД: https://www.youtube.com/@POLSKMATMET/featured\n\nКто учит польский, тот молодец.",
       "publishedAt": "2026-07-03T07:00:15+00:00",
       "thumbnail": "https://i.ytimg.com/vi/Ral8rIIrFqs/hqdefault.jpg",
-      "category": "other"
+      "category": "other",
+      "playlistIds": []
     },
     {
       "id": "tERNe_96l8Y",
@@ -114,7 +153,8 @@
       "description": "Тексты этого видео и всех остальных видео с канала \"Польский вслух\" выложены на Boosty: https://boosty.to/polskijwsluh\n\nПОЛЬСКИЙ ДО АВТОМАТИЗМА. МАТРИЧНЫЙ МЕТОД: https://www.youtube.com/@POLSKMATMET/featured\n\nКто учит польский, тот молодец.",
       "publishedAt": "2026-06-09T07:00:02+00:00",
       "thumbnail": "https://i.ytimg.com/vi/tERNe_96l8Y/hqdefault.jpg",
-      "category": "other"
+      "category": "other",
+      "playlistIds": []
     },
     {
       "id": "8NSV3v44ETw",
@@ -122,7 +162,8 @@
       "description": "Тексты этого видео и всех остальных видео с канала \"Польский вслух\" выложены на Boosty: https://boosty.to/polskijwsluh\n\nПОЛЬСКИЙ ДО АВТОМАТИЗМА. МАТРИЧНЫЙ МЕТОД: https://www.youtube.com/@POLSKMATMET/featured\n\nКто учит польский, тот молодец.",
       "publishedAt": "2026-05-13T07:00:33+00:00",
       "thumbnail": "https://i.ytimg.com/vi/8NSV3v44ETw/hqdefault.jpg",
-      "category": "other"
+      "category": "other",
+      "playlistIds": []
     },
     {
       "id": "F0a3fls2nM0",
@@ -130,7 +171,10 @@
       "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
       "publishedAt": "",
       "thumbnail": "https://i.ytimg.com/vi/F0a3fls2nM0/hqdefault.jpg",
-      "category": "A1"
+      "category": "A1",
+      "playlistIds": [
+        "PLNW7xY7pxJrV0MjX5IL5JqMrstfl8Nklo"
+      ]
     },
     {
       "id": "-AlenmKOcRA",
@@ -138,7 +182,10 @@
       "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
       "publishedAt": "",
       "thumbnail": "https://i.ytimg.com/vi/-AlenmKOcRA/hqdefault.jpg",
-      "category": "A1"
+      "category": "A1",
+      "playlistIds": [
+        "PLNW7xY7pxJrV0MjX5IL5JqMrstfl8Nklo"
+      ]
     },
     {
       "id": "Z7E76F6JAJg",
@@ -146,7 +193,10 @@
       "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
       "publishedAt": "",
       "thumbnail": "https://i.ytimg.com/vi/Z7E76F6JAJg/hqdefault.jpg",
-      "category": "A1"
+      "category": "A1",
+      "playlistIds": [
+        "PLNW7xY7pxJrV0MjX5IL5JqMrstfl8Nklo"
+      ]
     },
     {
       "id": "4iB5IF_eDYQ",
@@ -154,7 +204,10 @@
       "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
       "publishedAt": "",
       "thumbnail": "https://i.ytimg.com/vi/4iB5IF_eDYQ/hqdefault.jpg",
-      "category": "A1"
+      "category": "A1",
+      "playlistIds": [
+        "PLNW7xY7pxJrV0MjX5IL5JqMrstfl8Nklo"
+      ]
     },
     {
       "id": "lUm-O8CwXTQ",
@@ -162,7 +215,10 @@
       "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
       "publishedAt": "",
       "thumbnail": "https://i.ytimg.com/vi/lUm-O8CwXTQ/hqdefault.jpg",
-      "category": "A1"
+      "category": "A1",
+      "playlistIds": [
+        "PLNW7xY7pxJrV0MjX5IL5JqMrstfl8Nklo"
+      ]
     },
     {
       "id": "216mhpTce2o",
@@ -170,7 +226,10 @@
       "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
       "publishedAt": "",
       "thumbnail": "https://i.ytimg.com/vi/216mhpTce2o/hqdefault.jpg",
-      "category": "A1"
+      "category": "A1",
+      "playlistIds": [
+        "PLNW7xY7pxJrV0MjX5IL5JqMrstfl8Nklo"
+      ]
     },
     {
       "id": "YuEKJGE0piM",
@@ -178,7 +237,10 @@
       "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
       "publishedAt": "",
       "thumbnail": "https://i.ytimg.com/vi/YuEKJGE0piM/hqdefault.jpg",
-      "category": "A1"
+      "category": "A1",
+      "playlistIds": [
+        "PLNW7xY7pxJrV0MjX5IL5JqMrstfl8Nklo"
+      ]
     },
     {
       "id": "TA7gBpk8F0M",
@@ -186,7 +248,10 @@
       "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
       "publishedAt": "",
       "thumbnail": "https://i.ytimg.com/vi/TA7gBpk8F0M/hqdefault.jpg",
-      "category": "A1"
+      "category": "A1",
+      "playlistIds": [
+        "PLNW7xY7pxJrV0MjX5IL5JqMrstfl8Nklo"
+      ]
     },
     {
       "id": "Fqfom2yMabg",
@@ -194,7 +259,10 @@
       "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
       "publishedAt": "",
       "thumbnail": "https://i.ytimg.com/vi/Fqfom2yMabg/hqdefault.jpg",
-      "category": "A1"
+      "category": "A1",
+      "playlistIds": [
+        "PLNW7xY7pxJrV0MjX5IL5JqMrstfl8Nklo"
+      ]
     },
     {
       "id": "ppQpakB9ZeY",
@@ -202,7 +270,10 @@
       "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
       "publishedAt": "",
       "thumbnail": "https://i.ytimg.com/vi/ppQpakB9ZeY/hqdefault.jpg",
-      "category": "A1"
+      "category": "A1",
+      "playlistIds": [
+        "PLNW7xY7pxJrV0MjX5IL5JqMrstfl8Nklo"
+      ]
     },
     {
       "id": "bYpBXPC4Yn0",
@@ -210,7 +281,10 @@
       "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
       "publishedAt": "",
       "thumbnail": "https://i.ytimg.com/vi/bYpBXPC4Yn0/hqdefault.jpg",
-      "category": "A1"
+      "category": "A1",
+      "playlistIds": [
+        "PLNW7xY7pxJrV0MjX5IL5JqMrstfl8Nklo"
+      ]
     },
     {
       "id": "jZAMp8g2Cnw",
@@ -218,7 +292,10 @@
       "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
       "publishedAt": "",
       "thumbnail": "https://i.ytimg.com/vi/jZAMp8g2Cnw/hqdefault.jpg",
-      "category": "A1"
+      "category": "A1",
+      "playlistIds": [
+        "PLNW7xY7pxJrV0MjX5IL5JqMrstfl8Nklo"
+      ]
     },
     {
       "id": "IXHuBy34i_s",
@@ -226,7 +303,10 @@
       "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
       "publishedAt": "",
       "thumbnail": "https://i.ytimg.com/vi/IXHuBy34i_s/hqdefault.jpg",
-      "category": "A2"
+      "category": "A2",
+      "playlistIds": [
+        "PLNW7xY7pxJrXHOMw2wqvV77Gor38165sU"
+      ]
     },
     {
       "id": "58nIJCBxQj0",
@@ -234,7 +314,10 @@
       "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
       "publishedAt": "",
       "thumbnail": "https://i.ytimg.com/vi/58nIJCBxQj0/hqdefault.jpg",
-      "category": "A2"
+      "category": "A2",
+      "playlistIds": [
+        "PLNW7xY7pxJrXHOMw2wqvV77Gor38165sU"
+      ]
     },
     {
       "id": "sM4vDqr_bXE",
@@ -242,7 +325,10 @@
       "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
       "publishedAt": "",
       "thumbnail": "https://i.ytimg.com/vi/sM4vDqr_bXE/hqdefault.jpg",
-      "category": "A2"
+      "category": "A2",
+      "playlistIds": [
+        "PLNW7xY7pxJrXHOMw2wqvV77Gor38165sU"
+      ]
     },
     {
       "id": "jNRtwVq5P3o",
@@ -250,7 +336,10 @@
       "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
       "publishedAt": "",
       "thumbnail": "https://i.ytimg.com/vi/jNRtwVq5P3o/hqdefault.jpg",
-      "category": "A2"
+      "category": "A2",
+      "playlistIds": [
+        "PLNW7xY7pxJrXHOMw2wqvV77Gor38165sU"
+      ]
     },
     {
       "id": "oy0gyMloCbs",
@@ -258,7 +347,10 @@
       "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
       "publishedAt": "",
       "thumbnail": "https://i.ytimg.com/vi/oy0gyMloCbs/hqdefault.jpg",
-      "category": "songs"
+      "category": "songs",
+      "playlistIds": [
+        "PLNW7xY7pxJrVA50_fcIHgxJjif2PvshD5"
+      ]
     },
     {
       "id": "8J5gNpNMpDE",
@@ -266,7 +358,10 @@
       "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
       "publishedAt": "",
       "thumbnail": "https://i.ytimg.com/vi/8J5gNpNMpDE/hqdefault.jpg",
-      "category": "songs"
+      "category": "songs",
+      "playlistIds": [
+        "PLNW7xY7pxJrVA50_fcIHgxJjif2PvshD5"
+      ]
     },
     {
       "id": "cQvUNbCl-3w",
@@ -274,7 +369,10 @@
       "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
       "publishedAt": "",
       "thumbnail": "https://i.ytimg.com/vi/cQvUNbCl-3w/hqdefault.jpg",
-      "category": "dialogues"
+      "category": "dialogues",
+      "playlistIds": [
+        "PLNW7xY7pxJrXB8GQ7yfyBVaBuR9RtqeFd"
+      ]
     },
     {
       "id": "ohl1-dLs3pE",
@@ -282,7 +380,10 @@
       "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
       "publishedAt": "",
       "thumbnail": "https://i.ytimg.com/vi/ohl1-dLs3pE/hqdefault.jpg",
-      "category": "dialogues"
+      "category": "dialogues",
+      "playlistIds": [
+        "PLNW7xY7pxJrXB8GQ7yfyBVaBuR9RtqeFd"
+      ]
     },
     {
       "id": "wtrzfLCibm4",
@@ -290,7 +391,10 @@
       "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
       "publishedAt": "",
       "thumbnail": "https://i.ytimg.com/vi/wtrzfLCibm4/hqdefault.jpg",
-      "category": "dialogues"
+      "category": "dialogues",
+      "playlistIds": [
+        "PLNW7xY7pxJrXB8GQ7yfyBVaBuR9RtqeFd"
+      ]
     },
     {
       "id": "-kgRI0-Bmjc",
@@ -298,7 +402,10 @@
       "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
       "publishedAt": "",
       "thumbnail": "https://i.ytimg.com/vi/-kgRI0-Bmjc/hqdefault.jpg",
-      "category": "dialogues"
+      "category": "dialogues",
+      "playlistIds": [
+        "PLNW7xY7pxJrXB8GQ7yfyBVaBuR9RtqeFd"
+      ]
     },
     {
       "id": "8yH4BEtlyFE",
@@ -306,7 +413,10 @@
       "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
       "publishedAt": "",
       "thumbnail": "https://i.ytimg.com/vi/8yH4BEtlyFE/hqdefault.jpg",
-      "category": "dialogues"
+      "category": "dialogues",
+      "playlistIds": [
+        "PLNW7xY7pxJrXB8GQ7yfyBVaBuR9RtqeFd"
+      ]
     },
     {
       "id": "vXwsrgOvrSg",
@@ -314,7 +424,10 @@
       "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
       "publishedAt": "",
       "thumbnail": "https://i.ytimg.com/vi/vXwsrgOvrSg/hqdefault.jpg",
-      "category": "dialogues"
+      "category": "dialogues",
+      "playlistIds": [
+        "PLNW7xY7pxJrXB8GQ7yfyBVaBuR9RtqeFd"
+      ]
     },
     {
       "id": "5OQPaxjbkIA",
@@ -322,7 +435,10 @@
       "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
       "publishedAt": "",
       "thumbnail": "https://i.ytimg.com/vi/5OQPaxjbkIA/hqdefault.jpg",
-      "category": "dialogues"
+      "category": "dialogues",
+      "playlistIds": [
+        "PLNW7xY7pxJrXB8GQ7yfyBVaBuR9RtqeFd"
+      ]
     },
     {
       "id": "aTM9JTZHl94",
@@ -330,7 +446,10 @@
       "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
       "publishedAt": "",
       "thumbnail": "https://i.ytimg.com/vi/aTM9JTZHl94/hqdefault.jpg",
-      "category": "dialogues"
+      "category": "dialogues",
+      "playlistIds": [
+        "PLNW7xY7pxJrXB8GQ7yfyBVaBuR9RtqeFd"
+      ]
     },
     {
       "id": "7ZwvRcPm9Wo",
@@ -338,7 +457,10 @@
       "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
       "publishedAt": "",
       "thumbnail": "https://i.ytimg.com/vi/7ZwvRcPm9Wo/hqdefault.jpg",
-      "category": "dialogues"
+      "category": "dialogues",
+      "playlistIds": [
+        "PLNW7xY7pxJrXB8GQ7yfyBVaBuR9RtqeFd"
+      ]
     },
     {
       "id": "7Zswt39Y-xg",
@@ -346,7 +468,10 @@
       "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
       "publishedAt": "",
       "thumbnail": "https://i.ytimg.com/vi/7Zswt39Y-xg/hqdefault.jpg",
-      "category": "dialogues"
+      "category": "dialogues",
+      "playlistIds": [
+        "PLNW7xY7pxJrXB8GQ7yfyBVaBuR9RtqeFd"
+      ]
     },
     {
       "id": "mzw_4Bi_b6M",
@@ -354,7 +479,10 @@
       "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
       "publishedAt": "",
       "thumbnail": "https://i.ytimg.com/vi/mzw_4Bi_b6M/hqdefault.jpg",
-      "category": "dialogues"
+      "category": "dialogues",
+      "playlistIds": [
+        "PLNW7xY7pxJrXB8GQ7yfyBVaBuR9RtqeFd"
+      ]
     },
     {
       "id": "Ub0pmSm7C5Y",
@@ -362,7 +490,10 @@
       "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
       "publishedAt": "",
       "thumbnail": "https://i.ytimg.com/vi/Ub0pmSm7C5Y/hqdefault.jpg",
-      "category": "dialogues"
+      "category": "dialogues",
+      "playlistIds": [
+        "PLNW7xY7pxJrXB8GQ7yfyBVaBuR9RtqeFd"
+      ]
     }
   ]
 }

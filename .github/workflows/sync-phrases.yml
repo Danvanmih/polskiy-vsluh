@@ -1,0 +1,36 @@
+name: Sync video phrases
+on:
+  schedule:
+    - cron: '41 */6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - scripts/sync_phrases.py
+      - .github/workflows/sync-phrases.yml
+permissions:
+  contents: write
+concurrency:
+  group: video-phrases
+  cancel-in-progress: false
+jobs:
+  subtitles:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'youtube-transcript-api>=1.2,<2' 'yt-dlp>=2025.1'
+      - name: Extract publicly available Polish captions
+        run: python scripts/sync_phrases.py
+      - name: Save extracted data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/phrases.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update available caption phrases"
+            git push
+          fi
