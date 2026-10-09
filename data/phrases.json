@@ -1,5 +1,107 @@
 {
-  "updatedAt": "2026-10-09T18:42:42.580445+00:00",
+  "updatedAt": "2026-10-09T18:50:52.939804+00:00",
   "source": "public-youtube-caption-tracks",
-  "byVideo": {}
+  "byVideo": {},
+  "diagnostics": {
+    "ZAmY6Jk0Etg": {
+      "status": "error",
+      "detail": "DownloadError"
+    },
+    "K9zSSLPSiWo": {
+      "status": "error",
+      "detail": "DownloadError"
+    },
+    "dqTTYzCUkjE": {
+      "status": "error",
+      "detail": "DownloadError"
+    },
+    "HnmxiG8GDpc": {
+      "status": "error",
+      "detail": "DownloadError"
+    },
+    "B-XpSVHUjwE": {
+      "status": "error",
+      "detail": "DownloadError"
+    },
+    "vf57a4T8lLs": {
+      "status": "error",
+      "detail": "DownloadError"
+    },
+    "mtDaoTKUE9M": {
+      "status": "error",
+      "detail": "DownloadError"
+    },
+    "v9yG6H_ppEU": {
+      "status": "error",
+      "detail": "DownloadError"
+    },
+    "aCUlYCga1LA": {
+      "status": "error",
+      "detail": "DownloadError"
+    },
+    "cmcowQhXyB4": {
+      "status": "error",
+      "detail": "DownloadError"
+    },
+    "HasWG4BKUo8": {
+      "status": "error",
+      "detail": "DownloadError"
+    },
+    "iJBqWJijWyE": {
+      "status": "error",
+      "detail": "DownloadError"
+    },
+    "Ral8rIIrFqs": {
+      "status": "error",
+      "detail": "DownloadError"
+    },
+    "tERNe_96l8Y": {
+      "status": "error",
+      "detail": "DownloadError"
+    },
+    "8NSV3v44ETw": {
+      "status": "error",
+      "detail": "DownloadError"
+    },
+    "F0a3fls2nM0": {
+      "status": "error",
+      "detail": "DownloadError"
+    },
+    "-AlenmKOcRA": {
+      "status": "error",
+      "detail": "DownloadError"
+    },
+    "Z7E76F6JAJg": {
+      "status": "error",
+      "detail": "DownloadError"
+    },
+    "4iB5IF_eDYQ": {
+      "status": "error",
+      "detail": "DownloadError"
+    },
+    "lUm-O8CwXTQ": {
+      "status": "error",
+      "detail": "DownloadError"
+    },
+    "216mhpTce2o": {
+      "status": "error",
+      "detail": "DownloadError"
+    },
+    "YuEKJGE0piM": {
+      "status": "error",
+      "detail": "DownloadError"
+    },
+    "TA7gBpk8F0M": {
+      "status": "error",
+      "detail": "DownloadError"
+    },
+    "Fqfom2yMabg": {
+      "status": "error",
+      "detail": "DownloadError"
+    },
+    "ppQpakB9ZeY": {
+      "status": "error",
+      "detail": "DownloadError"
+    }
+  }
 }
