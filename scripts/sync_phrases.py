@@ -79,6 +79,7 @@ def main():
     result = prior.get("byVideo", {})
     videos = catalog.get("videos", [])[:LIMIT]
     errors = 0
+    diagnostics = {}
     for video in videos:
         vid = video.get("id", "")
         if not re.fullmatch(r"[A-Za-z0-9_-]{11}", vid):
@@ -87,18 +88,23 @@ def main():
             phrases, kind = phrases_for(vid)
             if phrases:
                 result[vid] = {"source": "youtube-captions", "captionType": kind, "phrases": phrases}
+                diagnostics[vid] = {"status": "ok", "count": len(phrases), "kind": kind}
                 print(f"{vid}: {len(phrases)} phrases, {kind}")
             else:
-                print(f"{vid}: no usable Polish captions")
+                diagnostics[vid] = {"status": "missing", "detail": kind}
+                print(f"{vid}: no usable Polish captions ({kind})")
         except Exception as exc:
             errors += 1
+            diagnostics[vid] = {"status": "error", "detail": type(exc).__name__}
             print(f"{vid}: unavailable ({type(exc).__name__})", file=sys.stderr)
         time.sleep(0.5)
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     payload = {"updatedAt": dt.datetime.now(dt.timezone.utc).isoformat(),
-               "source": "public-youtube-caption-tracks", "byVideo": result}
+               "source": "public-youtube-caption-tracks", "byVideo": result, "diagnostics": diagnostics}
     OUTPUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
     print(f"Saved phrases for {len(result)} videos; failures: {errors}")
+    if not result:
+        print("WARNING: No Polish captions obtained. Review diagnostics in data/phrases.json.", file=sys.stderr)
 
 if __name__ == "__main__":
     main()
