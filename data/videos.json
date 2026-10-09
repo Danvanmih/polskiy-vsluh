@@ -1,8 +1,34 @@
 {
   "channelId": "UCVyi18vZGibg4Uu4zlBHTIA",
   "channelUrl": "https://www.youtube.com/@polskij-wsluh",
-  "updatedAt": "2026-10-09T18:23:35.530218+00:00",
+  "updatedAt": "2026-10-09T18:36:38.658462+00:00",
   "source": "rss",
+  "playlists": [
+    {
+      "id": "PLNW7xY7pxJrV0MjX5IL5JqMrstfl8Nklo",
+      "title": "Уровень A1",
+      "category": "A1",
+      "source": "legacy"
+    },
+    {
+      "id": "PLNW7xY7pxJrXHOMw2wqvV77Gor38165sU",
+      "title": "Уровень A2",
+      "category": "A2",
+      "source": "legacy"
+    },
+    {
+      "id": "PLNW7xY7pxJrVA50_fcIHgxJjif2PvshD5",
+      "title": "Польский по песням",
+      "category": "songs",
+      "source": "legacy"
+    },
+    {
+      "id": "PLNW7xY7pxJrXB8GQ7yfyBVaBuR9RtqeFd",
+      "title": "Польские диалоги",
+      "category": "dialogues",
+      "source": "legacy"
+    }
+  ],
   "videos": [
     {
       "id": "ZAmY6Jk0Etg",
@@ -468,32 +494,6 @@
       "playlistIds": [
         "PLNW7xY7pxJrXB8GQ7yfyBVaBuR9RtqeFd"
       ]
-    }
-  ],
-  "playlists": [
-    {
-      "id": "PLNW7xY7pxJrV0MjX5IL5JqMrstfl8Nklo",
-      "title": "Уровень A1",
-      "category": "A1",
-      "source": "legacy"
-    },
-    {
-      "id": "PLNW7xY7pxJrXHOMw2wqvV77Gor38165sU",
-      "title": "Уровень A2",
-      "category": "A2",
-      "source": "legacy"
-    },
-    {
-      "id": "PLNW7xY7pxJrVA50_fcIHgxJjif2PvshD5",
-      "title": "Польский по песням",
-      "category": "songs",
-      "source": "legacy"
-    },
-    {
-      "id": "PLNW7xY7pxJrXB8GQ7yfyBVaBuR9RtqeFd",
-      "title": "Польские диалоги",
-      "category": "dialogues",
-      "source": "legacy"
     }
   ]
 }
