@@ -1,0 +1,36 @@
+/* Accessible, consistent palettes across video, practice, audio and dialogs. */
+:root {color-scheme:light;--ui-bg:#f6f7f3;--ui-panel:#fff;--ui-panel-soft:#eef4ed;--ui-ink:#223b2b;--ui-secondary:#506757;--ui-muted:#647968;--ui-line:#cfddd0;--ui-accent:#276d49;--ui-accent-text:#fff;--ui-hover:#dcecdf;--ui-focus:#1b7f53;--ui-shadow:#1f3d2412;--bg:var(--ui-bg);--surface:var(--ui-panel);--ink:var(--ui-ink);--muted:var(--ui-muted);--green:var(--ui-accent);--forest:var(--ui-accent);--lab:var(--ui-bg);--global-card:var(--ui-panel);--global-text:var(--ui-ink);--global-soft:var(--ui-panel-soft);--global-primary:var(--ui-accent)}
+:root[data-accent=blue]{--ui-accent:#235f9f;--ui-hover:#dfecf9;--ui-focus:#277cc0}
+:root[data-accent=violet]{--ui-accent:#6d4fa6;--ui-hover:#eee6fa;--ui-focus:#805cc7}
+:root[data-theme=dark]{color-scheme:dark;--ui-bg:#141e1a;--ui-panel:#223029;--ui-panel-soft:#2d4034;--ui-ink:#f3f8f3;--ui-secondary:#d5e4d6;--ui-muted:#bdcfbf;--ui-line:#526b57;--ui-accent:#8bd5a1;--ui-accent-text:#14271b;--ui-hover:#334e3d;--ui-focus:#b5f4c3;--ui-shadow:#050d0780}
+:root[data-theme=dark][data-accent=blue]{--ui-accent:#94c7ff;--ui-hover:#294760;--ui-focus:#c1defb}
+:root[data-theme=dark][data-accent=violet]{--ui-accent:#ceb3ff;--ui-hover:#493d63;--ui-focus:#e4d3ff}
+@media(prefers-color-scheme:dark){:root[data-theme=system]{color-scheme:dark;--ui-bg:#141e1a;--ui-panel:#223029;--ui-panel-soft:#2d4034;--ui-ink:#f3f8f3;--ui-secondary:#d5e4d6;--ui-muted:#bdcfbf;--ui-line:#526b57;--ui-accent:#8bd5a1;--ui-accent-text:#14271b;--ui-hover:#334e3d;--ui-focus:#b5f4c3;--ui-shadow:#050d0780}:root[data-theme=system][data-accent=blue]{--ui-accent:#94c7ff;--ui-hover:#294760;--ui-focus:#c1defb}:root[data-theme=system][data-accent=violet]{--ui-accent:#ceb3ff;--ui-hover:#493d63;--ui-focus:#e4d3ff}}
+html body,html .lab-layout,html .shared-layout,html .lab-main,html .shared-content {background:var(--ui-bg)!important;color:var(--ui-ink)!important}
+html .sidebar,html .shared-sidebar,html .lab-side,html .lab-panel,html .aud-item,html .stat,html .lab-top,html .aud-header,html .aud-player,html .topbar,html .video-card,html .global-modal,html .lab-dialog-box{background:var(--ui-panel)!important;color:var(--ui-ink)!important;border-color:var(--ui-line)!important}
+html .hero,html .lab-intro,html .aud-hero,html .practice-controls,html .exercise,html .global-preview-card,html .lab-note,html .mini-pl,html .lab-source,html .practice-settings,html .tile-target,html .aud-cover,html .aud-icon,html .settings-preview .preview-demo {background:var(--ui-panel-soft)!important;color:var(--ui-ink)!important;border-color:var(--ui-line)!important}
+html .sidebar .nav-item,html .shared-sidebar .nav-item,html .sidebar .nav-item span,html .brand,html .lab-nav,html .aud-tracktext strong,html .aud-now strong,html .lab-intro h1,html .hero h1,html .aud-hero h1,html .card-title,html .exercise h3,html .lab-panel h2,html .global-modal-head h2,html .stat strong,html .preview-demo,html .speech-example{color:var(--ui-ink)!important}
+html .nav-item.active,html .nav-item:hover,html .lab-nav.selected,html .lab-nav:hover,html .sidebar-tools .login-trigger,html .compact-subnav .nav-item:hover{background:var(--ui-hover)!important;color:var(--ui-ink)!important}
+html .lab-muted,html .lab-heading span,html .lab-pill,html .lab-field span,html .side-caption,html .video-date,html .card-meta,html .aud-hero p,html .aud-tracktext small,html .lab-intro p,html .stat span,html .global-hint,html .practice-controls-head span,html .preview-pill,html .aud-now small{color:var(--ui-muted)!important;opacity:1}
+html .global-modal button:not(.word-tile),html .global-field select,html .setting-switch,html .practice-controls .input-modes,html .practice-panel .exercise .option,html .practice-panel .exercise .word-tile,html .word-tile,html .phrase,html .aud-toolbar input,html .aud-toolbar select,html .lab-field input,html .lab-field textarea,html .lab-field select,html .task-form input,html .exercise input,html input:not([type=range]):not([type=checkbox]),html select,html textarea{background:var(--ui-panel)!important;color:var(--ui-ink)!important;border-color:var(--ui-line)!important}
+html .practice-controls .input-modes .mode-button{color:var(--ui-secondary)!important}
+html .practice-controls .input-modes .mode-button.selected,html .lab-primary,html .practice-panel .lab-primary,html .global-preview-card button,html .aud-controls .aud-play{background:var(--ui-accent)!important;color:var(--ui-accent-text)!important;border-color:var(--ui-accent)!important}
+html .lab-secondary,html .sound-button,html .gear-button,html .aud-item.active,html .aud-item:hover{background:var(--ui-hover)!important;color:var(--ui-ink)!important;border-color:var(--ui-line)!important}
+html .word-tile.chosen{background:var(--ui-hover)!important}
+html .global-preview-card button{opacity:1!important}
+html .global-field select,html .setting-switch input{accent-color:var(--ui-accent)}
+html :is(button,a,input,select,textarea):focus-visible{outline:3px solid var(--ui-focus)!important;outline-offset:3px}
+html .global-modal-head button,html .settings-close{min-width:40px;min-height:40px;border-radius:11px;transition:transform .17s,background .17s}
+html .global-modal-head button:hover,html .settings-close:hover{transform:rotate(90deg);background:var(--ui-hover)!important}
+html .nav-expand .menu-chevron{display:inline-block;transition:transform .18s}
+html .global-overlay{background:#0d1614b8!important}
+html .nav-item,html .lab-quiet,html .aud-controls button{transition:color .16s,background .16s,transform .16s}
+html .nav-item:hover{transform:translateX(2px)}
+@media(prefers-reduced-motion:reduce){html *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Win over legacy dark-mode !important declarations. */
+:root[data-theme=dark] :is(.sidebar,.shared-sidebar,.lab-panel,.aud-item,.lab-top,.aud-header,.aud-player,.lab-side,.topbar,.video-card,.stat){background:var(--ui-panel)!important;color:var(--ui-ink)!important;border-color:var(--ui-line)!important}
+:root[data-theme=dark] :is(.lab-intro,.aud-hero,.practice-controls,.exercise,.hero){background:var(--ui-panel-soft)!important;color:var(--ui-ink)!important}
+:root[data-theme=dark] :is(.sidebar,.shared-sidebar) .nav-item{color:var(--ui-ink)!important}
+:root[data-theme=dark] :is(input,select,textarea){background:var(--ui-panel)!important;color:var(--ui-ink)!important;border-color:var(--ui-line)!important}
+@media(prefers-color-scheme:dark){:root[data-theme=system] :is(.sidebar,.shared-sidebar,.lab-panel,.aud-item,.lab-top,.aud-header,.aud-player,.lab-side,.topbar,.video-card,.stat){background:var(--ui-panel)!important;color:var(--ui-ink)!important;border-color:var(--ui-line)!important}:root[data-theme=system] :is(.lab-intro,.aud-hero,.practice-controls,.exercise,.hero){background:var(--ui-panel-soft)!important;color:var(--ui-ink)!important}}
