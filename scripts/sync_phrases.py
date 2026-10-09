@@ -32,10 +32,41 @@ def is_polish(text):
         return False
     return True
 
+def alternative_captions(video_id):
+    """Read publicly advertised Polish subtitle tracks via player metadata."""
+    import yt_dlp
+    import urllib.request
+    opts = {"quiet": True, "no_warnings": True, "skip_download": True, "socket_timeout": 15}
+    with yt_dlp.YoutubeDL(opts) as ydl:
+        info = ydl.extract_info("https://www.youtube.com/watch?v=" + video_id, download=False)
+    for tracks, kind in ((info.get("subtitles") or {}, "manual"), (info.get("automatic_captions") or {}, "auto")):
+        for lang, formats in tracks.items():
+            if not lang.lower().startswith("pl"):
+                continue
+            for entry in formats:
+                if entry.get("ext") != "json3":
+                    continue
+                url = entry.get("url", "")
+                if not url.startswith("https://"):
+                    continue
+                req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+                try:
+                    with urllib.request.urlopen(req, timeout=20) as response:
+                        raw = json.loads(response.read(1500000))
+                    lines = ["".join(part.get("utf8", "") for part in e.get("segs", [])) for e in raw.get("events", [])]
+                    if lines:
+                        return lines, kind + "-yt-dlp"
+                except Exception:
+                    continue
+    return [], "unavailable"
+
 def caption_texts(video_id):
     from youtube_transcript_api import YouTubeTranscriptApi
     api = YouTubeTranscriptApi()
-    available = api.list(video_id)
+    try:
+        available = api.list(video_id)
+    except Exception:
+        return alternative_captions(video_id)
     for langs in (["pl"], ["pl-PL"]):
         try:
             track = available.find_manually_created_transcript(langs)
@@ -48,7 +79,7 @@ def caption_texts(video_id):
             return [item.text for item in track.fetch()], "auto"
         except Exception:
             pass
-    return [], "unavailable"
+    return alternative_captions(video_id)
 
 def phrases_for(video_id):
     raw, kind = caption_texts(video_id)
@@ -79,6 +110,7 @@ def main():
     result = prior.get("byVideo", {})
     videos = catalog.get("videos", [])[:LIMIT]
     errors = 0
+    diagnostics = {}
     for video in videos:
         vid = video.get("id", "")
         if not re.fullmatch(r"[A-Za-z0-9_-]{11}", vid):
@@ -87,18 +119,23 @@ def main():
             phrases, kind = phrases_for(vid)
             if phrases:
                 result[vid] = {"source": "youtube-captions", "captionType": kind, "phrases": phrases}
+                diagnostics[vid] = {"status": "ok", "count": len(phrases), "kind": kind}
                 print(f"{vid}: {len(phrases)} phrases, {kind}")
             else:
-                print(f"{vid}: no usable Polish captions")
+                diagnostics[vid] = {"status": "missing", "detail": kind}
+                print(f"{vid}: no usable Polish captions ({kind})")
         except Exception as exc:
             errors += 1
+            diagnostics[vid] = {"status": "error", "detail": type(exc).__name__}
             print(f"{vid}: unavailable ({type(exc).__name__})", file=sys.stderr)
         time.sleep(0.5)
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     payload = {"updatedAt": dt.datetime.now(dt.timezone.utc).isoformat(),
-               "source": "public-youtube-caption-tracks", "byVideo": result}
+               "source": "public-youtube-caption-tracks", "byVideo": result, "diagnostics": diagnostics}
     OUTPUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
     print(f"Saved phrases for {len(result)} videos; failures: {errors}")
+    if not result:
+        print("WARNING: No Polish captions obtained. Review diagnostics in data/phrases.json.", file=sys.stderr)
 
 if __name__ == "__main__":
     main()
