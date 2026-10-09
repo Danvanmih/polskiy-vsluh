@@ -19,11 +19,13 @@ OUTPUT = ROOT / "data" / "phrases.json"
 LIMIT = int(os.environ.get("PHRASE_VIDEO_LIMIT", "25"))
 MAX_PHRASES = 40
 
+
 def clean(text):
     text = re.sub(r"<[^>]+>", " ", text)
     text = re.sub(r"\[[^\]]{0,70}\]|\([^)]{0,70}\)", " ", text)
     text = re.sub(r"\s+", " ", text).strip(" -–—,.")
     return text
+
 
 def is_polish(text):
     # Do not misclassify Cyrillic or primarily non-Polish caption tracks.
@@ -32,13 +34,18 @@ def is_polish(text):
         return False
     return True
 
+
 def alternative_captions(video_id):
     """Read publicly advertised Polish subtitle tracks via player metadata."""
     import yt_dlp
     import urllib.request
+
     opts = {"quiet": True, "no_warnings": True, "skip_download": True, "socket_timeout": 15}
     with yt_dlp.YoutubeDL(opts) as ydl:
-        info = ydl.extract_info("https://www.youtube.com/watch?v=" + video_id, download=False)
+        try:
+            info = ydl.extract_info("https://www.youtube.com/watch?v=" + video_id, download=False)
+        except Exception:
+            return [], "unavailable"
     for tracks, kind in ((info.get("subtitles") or {}, "manual"), (info.get("automatic_captions") or {}, "auto")):
         for lang, formats in tracks.items():
             if not lang.lower().startswith("pl"):
@@ -60,8 +67,10 @@ def alternative_captions(video_id):
                     continue
     return [], "unavailable"
 
+
 def caption_texts(video_id):
     from youtube_transcript_api import YouTubeTranscriptApi
+
     api = YouTubeTranscriptApi()
     try:
         available = api.list(video_id)
@@ -80,6 +89,7 @@ def caption_texts(video_id):
         except Exception:
             pass
     return alternative_captions(video_id)
+
 
 def phrases_for(video_id):
     raw, kind = caption_texts(video_id)
@@ -101,16 +111,19 @@ def phrases_for(video_id):
             break
     return chosen, kind
 
+
 def main():
     catalog = json.loads(VIDEOS.read_text(encoding="utf-8"))
     try:
         prior = json.loads(OUTPUT.read_text(encoding="utf-8"))
     except (ValueError, OSError):
         prior = {}
+
     result = prior.get("byVideo", {})
     videos = catalog.get("videos", [])[:LIMIT]
     errors = 0
     diagnostics = {}
+
     for video in videos:
         vid = video.get("id", "")
         if not re.fullmatch(r"[A-Za-z0-9_-]{11}", vid):
@@ -129,13 +142,24 @@ def main():
             diagnostics[vid] = {"status": "error", "detail": type(exc).__name__}
             print(f"{vid}: unavailable ({type(exc).__name__})", file=sys.stderr)
         time.sleep(0.5)
+
+    # Keep the last good dataset when YouTube blocks all requests for a run.
+    if not result and prior:
+        print("No usable captions retrieved; keeping the previous dataset unchanged.")
+        return
+
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    payload = {"updatedAt": dt.datetime.now(dt.timezone.utc).isoformat(),
-               "source": "public-youtube-caption-tracks", "byVideo": result, "diagnostics": diagnostics}
-    OUTPUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
+    payload = {
+        "updatedAt": dt.datetime.now(dt.timezone.utc).isoformat(),
+        "source": "public-youtube-caption-tracks",
+        "byVideo": result,
+        "diagnostics": diagnostics,
+    }
+    OUTPUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Saved phrases for {len(result)} videos; failures: {errors}")
     if not result:
         print("WARNING: No Polish captions obtained. Review diagnostics in data/phrases.json.", file=sys.stderr)
+
 
 if __name__ == "__main__":
     main()
