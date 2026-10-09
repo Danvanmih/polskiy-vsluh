@@ -1,0 +1,13 @@
+/* Unified independent scrolling for home and learning layouts.
+   Audio layout retains its own working dock positioning. */
+html:has(.shell),html:has(.lab-layout){height:100%;overflow:hidden}
+body:has(.shell),body:has(.lab-layout){height:100vh;height:100dvh;min-height:0;overflow:hidden!important;padding-bottom:0!important}
+body:has(.shell) .shell,body:has(.lab-layout) .lab-layout{display:flex!important;align-items:stretch;height:100vh;height:100dvh;min-height:0!important;max-height:100dvh;overflow:hidden!important}
+body:has(.shell) #sidebar,body:has(.lab-layout) #sidebar{position:relative!important;top:auto!important;bottom:auto!important;height:100%!important;max-height:100%!important;min-height:0!important;align-self:stretch!important;flex-shrink:0!important;overflow-x:hidden!important;overflow-y:auto!important;overscroll-behavior-y:contain;scrollbar-width:thin;scrollbar-color:var(--ui-line,#b2c5b7) transparent}
+body:has(.shell) .content,body:has(.lab-layout) .lab-main{flex:1 1 auto;min-width:0;min-height:0;max-height:100%;height:100%;overflow-x:hidden!important;overflow-y:auto!important;overscroll-behavior-y:contain;scrollbar-width:thin;scrollbar-color:var(--ui-line,#b2c5b7) transparent}
+body:has(.shell) :is(#sidebar,.content)::-webkit-scrollbar,body:has(.lab-layout) :is(#sidebar,.lab-main)::-webkit-scrollbar{width:8px;height:8px}
+body:has(.shell) :is(#sidebar,.content)::-webkit-scrollbar-track,body:has(.lab-layout) :is(#sidebar,.lab-main)::-webkit-scrollbar-track{background:transparent}
+body:has(.shell) :is(#sidebar,.content)::-webkit-scrollbar-thumb,body:has(.lab-layout) :is(#sidebar,.lab-main)::-webkit-scrollbar-thumb{background:var(--ui-line,#b2c5b7);border-radius:99px;border:2px solid transparent;background-clip:padding-box}
+body:has(.shell) :is(#sidebar,.content)::-webkit-scrollbar-thumb:hover,body:has(.lab-layout) :is(#sidebar,.lab-main)::-webkit-scrollbar-thumb:hover{background:var(--ui-muted,#728b77);border:2px solid transparent;background-clip:padding-box}
+body.pv-sidebar-hidden:has(.shell) .content,body.pv-sidebar-hidden:has(.lab-layout) .lab-main{width:100%!important;max-width:100%!important}
+@media(max-width:920px){body:has(.shell) #sidebar,body:has(.lab-layout) #sidebar{position:fixed!important;top:0!important;bottom:0!important;left:0!important;height:100dvh!important;max-height:100dvh!important;align-self:auto!important;z-index:95;overflow-y:auto!important}body:has(.shell) .content,body:has(.lab-layout) .lab-main{width:100%!important;max-width:100%!important}}
