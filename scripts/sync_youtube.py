@@ -96,6 +96,8 @@ def full_api():
     return result
 def main():
     old = existing()
+    previous = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else {}
+    playlists = previous.get("playlists", [])
     mode = "rss"
     if KEY:
         fresh = full_api()
@@ -107,8 +109,10 @@ def main():
         # RSS only exposes recent uploads; keep historical records from previous runs.
         combined = dict(old)
         combined.update({v["id"]: v for v in fresh})
+    for vid, video in combined.items():
+        video["playlistIds"] = old.get(vid, {}).get("playlistIds", video.get("playlistIds", []))
     videos = sorted(combined.values(), key=lambda v: v.get("publishedAt", ""), reverse=True)
-    payload = {"channelId": CHANNEL_ID, "channelUrl": CHANNEL_URL, "updatedAt": dt.datetime.now(dt.timezone.utc).isoformat(), "source": mode, "videos": videos}
+    payload = {"channelId": CHANNEL_ID, "channelUrl": CHANNEL_URL, "updatedAt": dt.datetime.now(dt.timezone.utc).isoformat(), "source": mode, "playlists": playlists, "videos": videos}
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Synced {len(fresh)} fresh entries; catalog contains {len(videos)} public videos (source: {mode})")
