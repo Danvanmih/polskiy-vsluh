@@ -27,3 +27,10 @@ html .global-overlay{background:#0d1614b8!important}
 html .nav-item,html .lab-quiet,html .aud-controls button{transition:color .16s,background .16s,transform .16s}
 html .nav-item:hover{transform:translateX(2px)}
 @media(prefers-reduced-motion:reduce){html *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Win over legacy dark-mode !important declarations. */
+:root[data-theme=dark] :is(.sidebar,.shared-sidebar,.lab-panel,.aud-item,.lab-top,.aud-header,.aud-player,.lab-side,.topbar,.video-card,.stat){background:var(--ui-panel)!important;color:var(--ui-ink)!important;border-color:var(--ui-line)!important}
+:root[data-theme=dark] :is(.lab-intro,.aud-hero,.practice-controls,.exercise,.hero){background:var(--ui-panel-soft)!important;color:var(--ui-ink)!important}
+:root[data-theme=dark] :is(.sidebar,.shared-sidebar) .nav-item{color:var(--ui-ink)!important}
+:root[data-theme=dark] :is(input,select,textarea){background:var(--ui-panel)!important;color:var(--ui-ink)!important;border-color:var(--ui-line)!important}
+@media(prefers-color-scheme:dark){:root[data-theme=system] :is(.sidebar,.shared-sidebar,.lab-panel,.aud-item,.lab-top,.aud-header,.aud-player,.lab-side,.topbar,.video-card,.stat){background:var(--ui-panel)!important;color:var(--ui-ink)!important;border-color:var(--ui-line)!important}:root[data-theme=system] :is(.lab-intro,.aud-hero,.practice-controls,.exercise,.hero){background:var(--ui-panel-soft)!important;color:var(--ui-ink)!important}}
