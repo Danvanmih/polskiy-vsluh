@@ -32,10 +32,41 @@ def is_polish(text):
         return False
     return True
 
+def alternative_captions(video_id):
+    """Read publicly advertised Polish subtitle tracks via player metadata."""
+    import yt_dlp
+    import urllib.request
+    opts = {"quiet": True, "no_warnings": True, "skip_download": True, "socket_timeout": 15}
+    with yt_dlp.YoutubeDL(opts) as ydl:
+        info = ydl.extract_info("https://www.youtube.com/watch?v=" + video_id, download=False)
+    for tracks, kind in ((info.get("subtitles") or {}, "manual"), (info.get("automatic_captions") or {}, "auto")):
+        for lang, formats in tracks.items():
+            if not lang.lower().startswith("pl"):
+                continue
+            for entry in formats:
+                if entry.get("ext") != "json3":
+                    continue
+                url = entry.get("url", "")
+                if not url.startswith("https://"):
+                    continue
+                req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+                try:
+                    with urllib.request.urlopen(req, timeout=20) as response:
+                        raw = json.loads(response.read(1500000))
+                    lines = ["".join(part.get("utf8", "") for part in e.get("segs", [])) for e in raw.get("events", [])]
+                    if lines:
+                        return lines, kind + "-yt-dlp"
+                except Exception:
+                    continue
+    return [], "unavailable"
+
 def caption_texts(video_id):
     from youtube_transcript_api import YouTubeTranscriptApi
     api = YouTubeTranscriptApi()
-    available = api.list(video_id)
+    try:
+        available = api.list(video_id)
+    except Exception:
+        return alternative_captions(video_id)
     for langs in (["pl"], ["pl-PL"]):
         try:
             track = available.find_manually_created_transcript(langs)
@@ -48,7 +79,7 @@ def caption_texts(video_id):
             return [item.text for item in track.fetch()], "auto"
         except Exception:
             pass
-    return [], "unavailable"
+    return alternative_captions(video_id)
 
 def phrases_for(video_id):
     raw, kind = caption_texts(video_id)
