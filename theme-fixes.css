@@ -34,3 +34,34 @@ html .nav-item:hover{transform:translateX(2px)}
 :root[data-theme=dark] :is(.sidebar,.shared-sidebar) .nav-item{color:var(--ui-ink)!important}
 :root[data-theme=dark] :is(input,select,textarea){background:var(--ui-panel)!important;color:var(--ui-ink)!important;border-color:var(--ui-line)!important}
 @media(prefers-color-scheme:dark){:root[data-theme=system] :is(.sidebar,.shared-sidebar,.lab-panel,.aud-item,.lab-top,.aud-header,.aud-player,.lab-side,.topbar,.video-card,.stat){background:var(--ui-panel)!important;color:var(--ui-ink)!important;border-color:var(--ui-line)!important}:root[data-theme=system] :is(.lab-intro,.aud-hero,.practice-controls,.exercise,.hero){background:var(--ui-panel-soft)!important;color:var(--ui-ink)!important}}
+
+/* Force readable button labels across selected, hovered and focused states. */
+html .practice-controls .input-modes .mode-button,
+html .practice-controls .input-modes .mode-button:hover:not(.selected),
+html .practice-controls .input-modes .mode-button:focus-visible:not(.selected) {
+  background:var(--ui-panel)!important;
+  color:var(--ui-ink)!important;
+  border:1px solid var(--ui-line)!important;
+  opacity:1!important;
+  -webkit-text-fill-color:var(--ui-ink)!important;
+}
+html .practice-controls .input-modes .mode-button.selected,
+html .practice-controls .input-modes .mode-button.selected:hover,
+html .practice-controls .input-modes .mode-button.selected:focus-visible {
+  background:var(--ui-accent)!important;
+  border-color:var(--ui-accent)!important;
+  color:var(--ui-accent-text)!important;
+  -webkit-text-fill-color:var(--ui-accent-text)!important;
+  font-weight:800!important;
+  opacity:1!important;
+}
+html .practice-controls .input-modes .mode-button.selected *,
+html .practice-controls .input-modes .mode-button.selected:hover * {
+  color:inherit!important;
+  -webkit-text-fill-color:inherit!important;
+}
+html .practice-controls .input-modes .mode-button:disabled {
+  opacity:.6!important;
+  cursor:not-allowed;
+}
+html .compact-sections > a.nav-item {font-weight:750}
