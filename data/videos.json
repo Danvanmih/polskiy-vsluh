@@ -1,5 +1,246 @@
 {
   "updatedAt": null,
-  "source": "pending-first-sync",
-  "videos": []
+  "source": "legacy-site-seed; pending YouTube sync",
+  "videos": [
+    {
+      "id": "F0a3fls2nM0",
+      "title": "A1 · Урок 1",
+      "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
+      "publishedAt": "",
+      "thumbnail": "https://i.ytimg.com/vi/F0a3fls2nM0/hqdefault.jpg",
+      "category": "A1"
+    },
+    {
+      "id": "-AlenmKOcRA",
+      "title": "A1 · Урок 2",
+      "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
+      "publishedAt": "",
+      "thumbnail": "https://i.ytimg.com/vi/-AlenmKOcRA/hqdefault.jpg",
+      "category": "A1"
+    },
+    {
+      "id": "Z7E76F6JAJg",
+      "title": "A1 · Урок 3",
+      "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
+      "publishedAt": "",
+      "thumbnail": "https://i.ytimg.com/vi/Z7E76F6JAJg/hqdefault.jpg",
+      "category": "A1"
+    },
+    {
+      "id": "4iB5IF_eDYQ",
+      "title": "A1 · Урок 4",
+      "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
+      "publishedAt": "",
+      "thumbnail": "https://i.ytimg.com/vi/4iB5IF_eDYQ/hqdefault.jpg",
+      "category": "A1"
+    },
+    {
+      "id": "lUm-O8CwXTQ",
+      "title": "A1 · Урок 5",
+      "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
+      "publishedAt": "",
+      "thumbnail": "https://i.ytimg.com/vi/lUm-O8CwXTQ/hqdefault.jpg",
+      "category": "A1"
+    },
+    {
+      "id": "216mhpTce2o",
+      "title": "A1 · Урок 6",
+      "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
+      "publishedAt": "",
+      "thumbnail": "https://i.ytimg.com/vi/216mhpTce2o/hqdefault.jpg",
+      "category": "A1"
+    },
+    {
+      "id": "YuEKJGE0piM",
+      "title": "A1 · Урок 7",
+      "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
+      "publishedAt": "",
+      "thumbnail": "https://i.ytimg.com/vi/YuEKJGE0piM/hqdefault.jpg",
+      "category": "A1"
+    },
+    {
+      "id": "TA7gBpk8F0M",
+      "title": "A1 · Урок 8",
+      "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
+      "publishedAt": "",
+      "thumbnail": "https://i.ytimg.com/vi/TA7gBpk8F0M/hqdefault.jpg",
+      "category": "A1"
+    },
+    {
+      "id": "Fqfom2yMabg",
+      "title": "A1 · Урок 9",
+      "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
+      "publishedAt": "",
+      "thumbnail": "https://i.ytimg.com/vi/Fqfom2yMabg/hqdefault.jpg",
+      "category": "A1"
+    },
+    {
+      "id": "ppQpakB9ZeY",
+      "title": "A1 · Урок 10",
+      "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
+      "publishedAt": "",
+      "thumbnail": "https://i.ytimg.com/vi/ppQpakB9ZeY/hqdefault.jpg",
+      "category": "A1"
+    },
+    {
+      "id": "bYpBXPC4Yn0",
+      "title": "A1 · Урок 11",
+      "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
+      "publishedAt": "",
+      "thumbnail": "https://i.ytimg.com/vi/bYpBXPC4Yn0/hqdefault.jpg",
+      "category": "A1"
+    },
+    {
+      "id": "jZAMp8g2Cnw",
+      "title": "A1 · Урок 12",
+      "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
+      "publishedAt": "",
+      "thumbnail": "https://i.ytimg.com/vi/jZAMp8g2Cnw/hqdefault.jpg",
+      "category": "A1"
+    },
+    {
+      "id": "IXHuBy34i_s",
+      "title": "A2 · Урок 1",
+      "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
+      "publishedAt": "",
+      "thumbnail": "https://i.ytimg.com/vi/IXHuBy34i_s/hqdefault.jpg",
+      "category": "A2"
+    },
+    {
+      "id": "58nIJCBxQj0",
+      "title": "A2 · Урок 2",
+      "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
+      "publishedAt": "",
+      "thumbnail": "https://i.ytimg.com/vi/58nIJCBxQj0/hqdefault.jpg",
+      "category": "A2"
+    },
+    {
+      "id": "sM4vDqr_bXE",
+      "title": "A2 · Урок 3",
+      "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
+      "publishedAt": "",
+      "thumbnail": "https://i.ytimg.com/vi/sM4vDqr_bXE/hqdefault.jpg",
+      "category": "A2"
+    },
+    {
+      "id": "jNRtwVq5P3o",
+      "title": "A2 · Урок 4",
+      "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
+      "publishedAt": "",
+      "thumbnail": "https://i.ytimg.com/vi/jNRtwVq5P3o/hqdefault.jpg",
+      "category": "A2"
+    },
+    {
+      "id": "oy0gyMloCbs",
+      "title": "Польский по песням · Выпуск 1",
+      "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
+      "publishedAt": "",
+      "thumbnail": "https://i.ytimg.com/vi/oy0gyMloCbs/hqdefault.jpg",
+      "category": "songs"
+    },
+    {
+      "id": "8J5gNpNMpDE",
+      "title": "Польский по песням · Выпуск 2",
+      "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
+      "publishedAt": "",
+      "thumbnail": "https://i.ytimg.com/vi/8J5gNpNMpDE/hqdefault.jpg",
+      "category": "songs"
+    },
+    {
+      "id": "cQvUNbCl-3w",
+      "title": "Польские диалоги · Урок 1",
+      "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
+      "publishedAt": "",
+      "thumbnail": "https://i.ytimg.com/vi/cQvUNbCl-3w/hqdefault.jpg",
+      "category": "dialogues"
+    },
+    {
+      "id": "ohl1-dLs3pE",
+      "title": "Польские диалоги · Урок 2",
+      "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
+      "publishedAt": "",
+      "thumbnail": "https://i.ytimg.com/vi/ohl1-dLs3pE/hqdefault.jpg",
+      "category": "dialogues"
+    },
+    {
+      "id": "wtrzfLCibm4",
+      "title": "Польские диалоги · Урок 3",
+      "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
+      "publishedAt": "",
+      "thumbnail": "https://i.ytimg.com/vi/wtrzfLCibm4/hqdefault.jpg",
+      "category": "dialogues"
+    },
+    {
+      "id": "-kgRI0-Bmjc",
+      "title": "Польские диалоги · Урок 4",
+      "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
+      "publishedAt": "",
+      "thumbnail": "https://i.ytimg.com/vi/-kgRI0-Bmjc/hqdefault.jpg",
+      "category": "dialogues"
+    },
+    {
+      "id": "8yH4BEtlyFE",
+      "title": "Польские диалоги · Урок 5",
+      "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
+      "publishedAt": "",
+      "thumbnail": "https://i.ytimg.com/vi/8yH4BEtlyFE/hqdefault.jpg",
+      "category": "dialogues"
+    },
+    {
+      "id": "vXwsrgOvrSg",
+      "title": "Польские диалоги · Урок 6",
+      "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
+      "publishedAt": "",
+      "thumbnail": "https://i.ytimg.com/vi/vXwsrgOvrSg/hqdefault.jpg",
+      "category": "dialogues"
+    },
+    {
+      "id": "5OQPaxjbkIA",
+      "title": "Польские диалоги · Урок 7",
+      "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
+      "publishedAt": "",
+      "thumbnail": "https://i.ytimg.com/vi/5OQPaxjbkIA/hqdefault.jpg",
+      "category": "dialogues"
+    },
+    {
+      "id": "aTM9JTZHl94",
+      "title": "Польские диалоги · Урок 8",
+      "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
+      "publishedAt": "",
+      "thumbnail": "https://i.ytimg.com/vi/aTM9JTZHl94/hqdefault.jpg",
+      "category": "dialogues"
+    },
+    {
+      "id": "7ZwvRcPm9Wo",
+      "title": "Польские диалоги · Урок 9",
+      "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
+      "publishedAt": "",
+      "thumbnail": "https://i.ytimg.com/vi/7ZwvRcPm9Wo/hqdefault.jpg",
+      "category": "dialogues"
+    },
+    {
+      "id": "7Zswt39Y-xg",
+      "title": "Польские диалоги · Урок 10",
+      "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
+      "publishedAt": "",
+      "thumbnail": "https://i.ytimg.com/vi/7Zswt39Y-xg/hqdefault.jpg",
+      "category": "dialogues"
+    },
+    {
+      "id": "mzw_4Bi_b6M",
+      "title": "Польские диалоги · Урок 11",
+      "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
+      "publishedAt": "",
+      "thumbnail": "https://i.ytimg.com/vi/mzw_4Bi_b6M/hqdefault.jpg",
+      "category": "dialogues"
+    },
+    {
+      "id": "Ub0pmSm7C5Y",
+      "title": "Польские диалоги · Урок 12",
+      "description": "Материал из оригинального каталога Polskiy Vsluh. Название и дата будут уточнены при синхронизации с YouTube.",
+      "publishedAt": "",
+      "thumbnail": "https://i.ytimg.com/vi/Ub0pmSm7C5Y/hqdefault.jpg",
+      "category": "dialogues"
+    }
+  ]
 }
