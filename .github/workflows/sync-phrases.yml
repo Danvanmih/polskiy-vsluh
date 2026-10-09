@@ -22,7 +22,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install 'youtube-transcript-api>=1.2,<2'
+      - run: pip install 'youtube-transcript-api>=1.2,<2' 'yt-dlp>=2025.1'
       - name: Extract publicly available Polish captions
         run: python scripts/sync_phrases.py
       - name: Save extracted data
