@@ -1,0 +1,18 @@
+/* Uniform scrollbars: sidebar, document panes and overlays. Hidden when idle on supporting engines. */
+:root{--pv-scroll-thumb:color-mix(in srgb,var(--ui-muted,#72877a) 57%,transparent)}
+html,body,.sidebar,.shared-sidebar,.content,.lab-main,.shared-content,.aud-container,.global-modal,.pv-leader-dialog,.lab-dialog-box,.compact-subnav{scrollbar-width:none!important;-ms-overflow-style:none}
+html::-webkit-scrollbar,body::-webkit-scrollbar,.sidebar::-webkit-scrollbar,.shared-sidebar::-webkit-scrollbar,.content::-webkit-scrollbar,.lab-main::-webkit-scrollbar,.shared-content::-webkit-scrollbar,.aud-container::-webkit-scrollbar,.global-modal::-webkit-scrollbar,.pv-leader-dialog::-webkit-scrollbar,.lab-dialog-box::-webkit-scrollbar,.compact-subnav::-webkit-scrollbar{width:0!important;height:0!important}
+html.pv-scrolling,body.pv-scrolling,html.pv-scrolling :is(.sidebar,.shared-sidebar,.content,.lab-main,.shared-content,.aud-container,.global-modal,.pv-leader-dialog,.lab-dialog-box,.compact-subnav){scrollbar-width:thin!important;scrollbar-color:var(--pv-scroll-thumb) transparent!important}
+html.pv-scrolling::-webkit-scrollbar,html.pv-scrolling :is(.sidebar,.shared-sidebar,.content,.lab-main,.shared-content,.aud-container,.global-modal,.pv-leader-dialog,.lab-dialog-box,.compact-subnav)::-webkit-scrollbar{width:7px!important;height:7px!important}
+html.pv-scrolling :is(.sidebar,.shared-sidebar,.content,.lab-main,.shared-content,.aud-container,.global-modal,.pv-leader-dialog,.lab-dialog-box,.compact-subnav)::-webkit-scrollbar-track{background:transparent!important}
+html.pv-scrolling :is(.sidebar,.shared-sidebar,.content,.lab-main,.shared-content,.aud-container,.global-modal,.pv-leader-dialog,.lab-dialog-box,.compact-subnav)::-webkit-scrollbar-thumb{background:var(--pv-scroll-thumb)!important;border-radius:99px!important;border:2px solid transparent!important;background-clip:padding-box!important}
+@media(hover:hover){:is(.sidebar,.shared-sidebar,.content,.lab-main,.shared-content,.aud-container,.global-modal,.pv-leader-dialog,.lab-dialog-box):hover{scrollbar-width:thin!important;scrollbar-color:var(--pv-scroll-thumb) transparent!important}}
+@media(hover:none) and (pointer:coarse){.global-modal,.pv-leader-dialog,.aud-container,.content,.lab-main,.shared-sidebar{-webkit-overflow-scrolling:touch;overscroll-behavior-y:auto!important} .global-modal{overscroll-behavior-y:contain!important}}
+.pv-overscroll-indicator{display:none;position:sticky;bottom:0;text-align:center;background:var(--ui-panel-soft,#eaf1ea);border:1px solid var(--ui-line,#c5d7ca);border-radius:11px;padding:12px;color:var(--ui-ink,#263b30);font-size:12px;z-index:3}
+.pv-overscroll-indicator.active{display:block}
+.pv-game-confirm{position:fixed;inset:0;z-index:250;background:#101b16ae;display:grid;place-items:center;padding:20px}
+.pv-game-confirm[hidden]{display:none}
+.pv-game-confirm-card{max-width:360px;width:100%;padding:24px;border-radius:19px;border:1px solid var(--ui-line,#cbd7ce);background:var(--ui-panel,#fff);color:var(--ui-ink,#203c2b);box-shadow:0 18px 50px #0003}
+.pv-game-confirm-actions{display:flex;gap:10px;margin-top:20px}
+.pv-game-confirm-actions button{flex:1;padding:12px;border:1px solid var(--ui-line,#cbd7ce);border-radius:10px;background:var(--ui-panel-soft,#eaf1ea);color:var(--ui-ink,#203c2b)}
+@media(prefers-reduced-motion:reduce){.pv-overscroll-indicator{animation:none!important}}
