@@ -1,0 +1,19 @@
+/* Consistent low-distraction motion language across main sections. */
+:root{--pv-motion-fast:150ms;--pv-motion-standard:220ms;--pv-motion-ease:cubic-bezier(.2,.75,.25,1)}
+:where(.nav-item,.nav-expand,.lab-primary,.lab-secondary,.option,.word-tile,.mode-button,.palette-choice,.pv-theme-option,.aud-item,.aud-controls button,.aud-options button,.video-card,.carousel-arrow,.gear-button,.global-modal button,.pv-close,.pv-save,.pv-secondary,.pv-delete-profile,.setting-switch,.pv-toggle-card,.aud-header a,.lab-panel button,.global-field select,.pv-sidebar-close,.pv-sidebar-reopen){
+ transition:transform var(--pv-motion-fast) var(--pv-motion-ease),background-color var(--pv-motion-standard) ease,color var(--pv-motion-standard) ease,border-color var(--pv-motion-standard) ease,box-shadow var(--pv-motion-standard) ease,opacity var(--pv-motion-standard) ease!important;
+}
+:where(.lab-primary,.lab-secondary,.option,.word-tile,.mode-button,.aud-controls button,.palette-choice,.pv-theme-option,.pv-save,.pv-secondary,.global-modal button,.gear-button,.pv-close,.pv-delete-profile,.pv-sidebar-reopen):not(:disabled):hover{transform:translateY(-2px)}
+:where(.lab-primary,.lab-secondary,.option,.word-tile,.mode-button,.aud-controls button,.palette-choice,.pv-theme-option,.pv-save,.pv-secondary,.global-modal button,.gear-button,.pv-close,.pv-delete-profile,.pv-sidebar-reopen):not(:disabled):active{transform:translateY(1px) scale(.98)}
+:where(.video-card,.aud-item,.saved-plan):hover{transform:translateY(-2px);box-shadow:0 9px 25px var(--ui-shadow,#00000013)}
+:where(.global-modal,.pv-leader-dialog){animation:pv-dialog-in 240ms var(--pv-motion-ease) both}
+:where(.global-overlay,.pv-leader-overlay):not([hidden]){animation:pv-backdrop-in 180ms ease both}
+:where(.compact-subnav):not([hidden]){animation:pv-submenu-in 180ms var(--pv-motion-ease) both}
+:where(.feedback,.pv-toast){animation:pv-feedback-in 190ms var(--pv-motion-ease) both}
+:where(.setting-switch input,.pv-toggle-card input){transition:background-color var(--pv-motion-standard) ease,transform var(--pv-motion-standard) ease!important}
+@keyframes pv-dialog-in{from{opacity:0;transform:translateY(12px) scale(.986)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes pv-backdrop-in{from{opacity:0}to{opacity:1}}
+@keyframes pv-submenu-in{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
+@keyframes pv-feedback-in{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+:root[data-motion=off] *, :root[data-motion=off] *::before,:root[data-motion=off] *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important;transform:none!important}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important;transform:none!important}}
