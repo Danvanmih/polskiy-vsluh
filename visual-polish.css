@@ -1,0 +1,21 @@
+
+/* Gentle visual refinements, accessible at desktop and phone sizes. */
+.lab-panel,.aud-item,.video-card,.stat{transition:box-shadow .2s ease,border-color .2s ease,transform .2s ease}
+.lab-panel:hover,.aud-item:hover,.video-card:hover{box-shadow:0 8px 28px var(--ui-shadow,#1f3d2412)}
+.lab-panel,.aud-item,.stat{border-radius:18px}
+.lab-intro,.aud-hero{border:1px solid var(--ui-line,#cfddd0)}
+.lab-panel .lab-heading h2{letter-spacing:-.35px}
+.lab-panel .lab-field input:focus,.lab-panel .lab-field select:focus{border-color:var(--ui-accent,#276d49);box-shadow:0 0 0 3px var(--ui-hover,#dcecdf)}
+.plan-submit-row{display:flex;align-items:center;gap:17px;flex-wrap:wrap;margin-top:25px;margin-bottom:6px;padding-top:17px;border-top:1px solid var(--ui-line,#cfddd0)}
+.plan-submit-row #save-goals{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:46px;padding:12px 24px;border-radius:12px;font-weight:800;box-shadow:0 5px 14px var(--ui-shadow,#1f3d2412);transition:transform .15s ease,box-shadow .15s ease}
+.plan-submit-row #save-goals:hover{transform:translateY(-2px);box-shadow:0 9px 20px var(--ui-shadow,#1f3d2412)}
+.plan-submit-row #save-goals:active{transform:translateY(0)}
+.plan-save-hint{font-size:11px;color:var(--ui-muted,#647968);line-height:1.5}
+.goal-progress{margin-top:22px!important}
+.global-scale-field{position:relative;margin:21px 0 6px!important}
+.global-scale-field output{position:absolute;right:0;top:0;color:var(--ui-accent,#276d49);font-size:12px;font-weight:900}
+.global-scale-field input[type=range]{width:100%;cursor:pointer;accent-color:var(--ui-accent,#276d49);min-height:28px}
+.global-modal button,.global-modal input,.global-modal select{min-height:36px}
+.nav-item:focus-visible,.mode-button:focus-visible,.word-tile:focus-visible{outline:3px solid var(--ui-focus,#1b7f53)!important;outline-offset:3px}
+@media(max-width:680px){.plan-submit-row{align-items:stretch;flex-direction:column;gap:10px}.plan-submit-row #save-goals{width:100%;min-height:50px}.plan-save-hint{text-align:center}}
+@media(prefers-reduced-motion:reduce){.lab-panel,.aud-item,.video-card,.stat,.plan-submit-row #save-goals{transition:none!important;transform:none!important}}
