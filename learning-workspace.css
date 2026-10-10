@@ -29,3 +29,9 @@ body.pv-test-focused #practice>.practice-panel{margin-top:0}
 .pv-answer-compare .pv-answer-correct{color:#22623f;font-weight:750}
 @media(max-width:600px){.pv-text-document,.pv-text-toolbar{padding:17px}.pv-text-switch{width:100%}.pv-text-switch button{flex:1}}
 .pv-field-invalid{outline:2px solid #c75d50!important;border-color:#c75d50!important}
+
+/* Keep the question area clear. Restart stays available from ⚙ Settings. */
+#practice .mastery-explain,#practice .lab-panel:has(>.mastery-explain){display:none!important}
+#practice #reset-round{display:none!important}
+#practice .lab-actions:has(#start-round:disabled){display:none!important}
+#pv-settings-restart{margin-top:14px;width:100%;text-align:center}
