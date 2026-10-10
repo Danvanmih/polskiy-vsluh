@@ -1,0 +1,9 @@
+/* Shared clickable breadcrumb language across home and academy. */
+.breadcrumb,.academy-top-breadcrumb{display:flex;align-items:center;gap:10px;font-size:12px;line-height:1.5}
+.breadcrumb a,.breadcrumb button,.academy-top-breadcrumb a{font:inherit;text-decoration:none;border:0;background:none;padding:5px 0;cursor:pointer;transition:color .18s ease}
+.breadcrumb a,.academy-top-breadcrumb a:not([aria-current=page]){color:var(--ui-secondary,#778a7b)}
+.breadcrumb .breadcrumb-current,.academy-top-breadcrumb a[aria-current=page]{color:var(--ui-accent,#245e42);font-weight:800}
+.breadcrumb a:hover,.breadcrumb button:hover,.academy-top-breadcrumb a:hover{color:var(--ui-accent,#245e42);text-decoration:underline;text-underline-offset:4px}
+.breadcrumb :is(a,button):focus-visible,.academy-top-breadcrumb a:focus-visible{outline:2px solid var(--ui-accent,#245e42);outline-offset:3px;border-radius:3px}
+.breadcrumb span,.academy-top-breadcrumb span{color:var(--ui-muted,#9daea1)}
+@media(prefers-reduced-motion:reduce){.breadcrumb a,.breadcrumb button,.academy-top-breadcrumb a{transition:none}}
