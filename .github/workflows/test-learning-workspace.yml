@@ -1,0 +1,27 @@
+name: Learning workspace browser checks
+on:
+  pull_request:
+    paths:
+      - 'learn.html'
+      - 'learn.js'
+      - 'reader.js'
+      - 'presentation-import.js'
+      - 'learning-workspace.js'
+      - 'learning-workspace.css'
+      - 'presentation-import.css'
+      - 'tests/learning-workspace.e2e.cjs'
+      - '.github/workflows/test-learning-workspace.yml'
+  workflow_dispatch:
+jobs:
+  chrome-e2e:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-save --no-package-lock playwright@1.56.1
+      - run: npx playwright install --with-deps chromium
+      - run: node --check learning-workspace.js && node --check presentation-import.js && node --check learn.js && node --check reader.js
+      - run: node tests/learning-workspace.e2e.cjs
