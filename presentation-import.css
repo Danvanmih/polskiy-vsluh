@@ -19,3 +19,12 @@
 .pv-decision-overlay{z-index:100002;background:rgba(26,43,32,.36)}.pv-decision-card{width:min(100%,510px);text-align:left}.pv-decision-card h2{font-size:21px}.pv-decision-card p{white-space:pre-line;overflow-wrap:anywhere}.pv-decision-card .pv-import-buttons{justify-content:flex-start;margin-top:22px}.pv-decision-card button{min-height:42px}.pv-decision-card button:last-child{background:var(--ui-panel-soft,#edf3ee);color:var(--ui-ink,#25442e)}
 
 #pv-add-file{background:var(--ui-accent,#216b4b);color:#fff}#pv-add-file:disabled{opacity:.45;cursor:not-allowed}.pv-decision-overlay{backdrop-filter:blur(7px)}
+
+/* Preserve usable navigation while imported lesson content is blurred. */
+@media(min-width:801px){body:has(#pv-import-overlay) #pv-import-overlay{left:264px}body:has(#pv-import-overlay) .lab-layout>.shared-sidebar{position:relative;z-index:100001;filter:none;pointer-events:auto}}
+@media(max-width:800px){body:has(#pv-import-overlay) #pv-import-overlay{top:58px}body:has(#pv-import-overlay) .shared-menu-toggle{position:relative;z-index:100001}}
+#practice>.lab-panel:first-child{padding:24px 28px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+#practice>.lab-panel:first-child .pv-trainer-header{display:none}
+#practice>.lab-panel:first-child #pv-practice-import,#practice>.lab-panel:first-child #pv-library-launch{margin:0!important;border-radius:12px;padding:14px 19px;font-weight:750}
+#practice>.lab-panel:first-child .pv-legacy-selector{display:none!important}
+#practice>.lab-panel:first-child #video-details[hidden]{display:none!important}
