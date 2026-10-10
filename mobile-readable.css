@@ -110,3 +110,5 @@ html .hero .eyebrow{color:#37694b!important}
 :root[data-theme=dark] .shell .filter-chips .chip:not(.selected){background:#2b3d32!important;color:#e9f5eb!important;border-color:#607969!important}
 :root[data-theme=dark] .shell .filter-chips .chip.selected{background:var(--ui-accent,#a4e7b8)!important;color:var(--ui-accent-text,#142e1e)!important;border-color:var(--ui-accent,#a4e7b8)!important}
 @media(prefers-color-scheme:dark){:root[data-theme=system] .shell .filter-chips .chip:not(.selected){background:#2b3d32!important;color:#e9f5eb!important;border-color:#607969!important}:root[data-theme=system] .shell .filter-chips .chip.selected{background:var(--ui-accent,#a4e7b8)!important;color:var(--ui-accent-text,#142e1e)!important}}
+
+.rank-profile-link{display:inline-flex;align-items:center;justify-content:center;min-height:44px;margin-top:14px;border-radius:11px;border:1px solid var(--ui-line,#bbd0bf);background:var(--ui-panel-soft,#ebf3eb);color:var(--ui-ink,#23422d);padding:10px 15px;font-size:12px;font-weight:800;text-decoration:none}.rank-profile-link:hover{border-color:var(--ui-accent,#347453)}
