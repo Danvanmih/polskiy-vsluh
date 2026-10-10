@@ -1,0 +1,77 @@
+/* Adaptive site identity: expanded navigation shows logo; collapsed shows full site name. */
+.pv-header-brand{display:inline-flex;flex:0 0 auto;gap:10px;align-items:center;min-width:0;max-width:260px;overflow:hidden;font-weight:900;text-decoration:none!important;line-height:1.1;color:var(--ui-ink,#23432c)!important;transition:max-width .24s ease,color .2s ease}
+.pv-header-logo{display:inline-grid;place-items:center;flex:0 0 auto;overflow:hidden;width:36px;max-width:36px;height:36px;border-radius:11px;background:var(--ui-accent,#23603d);color:var(--ui-accent-text,#fff);font-size:19px;letter-spacing:-2px;white-space:nowrap;transition:max-width .27s ease,opacity .22s ease,transform .27s ease,padding .27s ease}
+.pv-header-name{overflow:hidden;white-space:nowrap;max-width:0;opacity:0;transform:translateX(-9px);font-size:clamp(13px,1.3vw,18px);letter-spacing:-.03em;transition:max-width .32s ease,opacity .25s ease,transform .27s ease}
+@media(min-width:921px){
+ body.pv-sidebar-hidden .pv-header-name{max-width:225px;opacity:1;transform:none}
+ body.pv-sidebar-hidden .pv-header-logo{max-width:0;width:0;opacity:0;transform:scale(.75)}
+ body:not(.pv-sidebar-hidden) .pv-header-name{max-width:0;opacity:0}
+}
+@media(max-width:920px){
+ body:not(:has(#sidebar:is(.open,.shared-open))) .pv-header-name{max-width:225px;opacity:1;transform:none}
+ body:not(:has(#sidebar:is(.open,.shared-open))) .pv-header-logo{max-width:0;width:0;opacity:0;transform:scale(.75)}
+ body:has(#sidebar:is(.open,.shared-open)) .pv-header-name{max-width:0;opacity:0}
+}
+.topbar .breadcrumb,.academy-top .academy-top-breadcrumb{display:none!important}
+.topbar,.academy-top,.lab-top,.aud-header{gap:14px}
+body.pv-sidebar-hidden .topbar,body.pv-sidebar-hidden .academy-top{justify-content:space-between}
+.pv-header-brand:focus-visible{outline:3px solid var(--ui-focus,#54ac73);outline-offset:4px;border-radius:9px}
+@media(prefers-reduced-motion:reduce){.pv-header-logo,.pv-header-name,.pv-header-brand{transition:none}}
+
+/* One theme-aware palette for every interactive state. Do not combine old static
+   green/blue backgrounds with a different theme's text colors. */
+:root{--pv-control-bg:var(--ui-panel);--pv-control-soft:var(--ui-panel-soft);--pv-control-ink:var(--ui-ink);--pv-control-border:var(--ui-line);--pv-active-bg:var(--ui-accent);--pv-active-ink:var(--ui-accent-text)}
+html body :is(input[type="search"],.lab-field input,.lab-field select,.academy-search,input.search-input,.filters input,.filters select,#search,#reader-search,#reader-font,#video-search,#pv-library-search,#pv-library-playlist,#pv-library-category){
+  color-scheme:inherit;background:var(--pv-control-bg)!important;color:var(--pv-control-ink)!important;border:1px solid var(--pv-control-border)!important;
+  caret-color:var(--ui-accent)!important;box-shadow:none;
+}
+html body input::placeholder,html body textarea::placeholder{
+ color:var(--ui-secondary)!important;opacity:1!important;-webkit-text-fill-color:var(--ui-secondary);
+}
+html body :is(input[type="search"],.lab-field input,.lab-field select,.academy-search,#search,#video-search):focus{
+  border-color:var(--ui-focus)!important;box-shadow:0 0 0 3px color-mix(in srgb,var(--ui-focus) 24%,transparent)!important;
+}
+html body :is(input,select,textarea) {accent-color:var(--ui-accent)}
+html body .practice-panel .exercise .word-tile,
+html body .practice-panel .exercise .option,
+html body .tile-bank .word-tile{
+  background:var(--pv-control-bg)!important;color:var(--pv-control-ink)!important;
+  border-color:var(--pv-control-border)!important;border-bottom-color:var(--pv-control-border)!important;
+}
+html body .practice-panel .exercise .word-tile.chosen,
+html body .tile-target .word-tile.chosen,
+html body .tile-target button.chosen {
+  background:var(--pv-active-bg)!important;
+  color:var(--pv-active-ink)!important;
+  border-color:var(--pv-active-bg)!important;
+  border-bottom-color:var(--pv-active-bg)!important;
+  opacity:1!important;
+  -webkit-text-fill-color:var(--pv-active-ink)!important;
+}
+html body .practice-panel .exercise .word-tile.chosen :is(span,small,em),
+html body .tile-target .word-tile.chosen :is(span,small,em){color:inherit!important}
+html body .practice-controls .input-modes{background:var(--pv-control-bg)!important;color:var(--pv-control-ink)!important;border-color:var(--pv-control-border)!important}
+html body .practice-controls .input-modes .mode-button{background:transparent!important;color:var(--pv-control-ink)!important;border-color:transparent!important;opacity:1}
+html body .practice-controls .input-modes .mode-button.selected{
+ background:var(--pv-active-bg)!important;color:var(--pv-active-ink)!important;border-color:var(--pv-active-bg)!important;-webkit-text-fill-color:var(--pv-active-ink)!important
+}
+html body .practice-panel .exercise .option:hover:not(:disabled),
+html body .practice-panel .exercise .word-tile:hover:not(:disabled){
+ background:var(--ui-hover)!important;color:var(--ui-ink)!important;border-color:var(--ui-accent)!important
+}
+html body .practice-panel .exercise .option:disabled,
+html body .practice-panel .exercise .word-tile:disabled{opacity:1!important;color:var(--pv-control-ink)!important}
+html body .practice-panel .exercise .word-tile.chosen:disabled{color:var(--pv-active-ink)!important}
+html body .practice-panel .exercise .tile-target,
+html body .practice-panel .exercise .tile-bank{color:var(--ui-ink)!important}
+html body .practice-panel .exercise .drop-hint{color:var(--ui-secondary)!important;opacity:1}
+html body .academy-lesson-actions .academy-next,
+html body .academy-lesson-actions .academy-next:visited{background:var(--pv-active-bg)!important;color:var(--pv-active-ink)!important}
+html body .academy-lesson-actions #academy-texts[hidden]{display:none!important}
+html body .academy-lesson-actions #academy-texts{margin-left:auto}
+html body .academy-lesson-actions #academy-practice{margin-left:0}
+html body .pv-text-switch button.selected{background:var(--pv-active-bg)!important;color:var(--pv-active-ink)!important}
+html body .pv-text-switch button:not(.selected){color:var(--ui-ink)!important;background:transparent!important}
+html body :is(.lab-primary,.primary-button,.academy-next):disabled{opacity:.52;cursor:not-allowed}
+html body .filters :is(input,select),html body .search-field{background:var(--ui-panel)!important;color:var(--ui-ink)!important}
+@media(max-width:650px){.pv-header-brand{max-width:180px}.pv-header-name{font-size:13px}}
