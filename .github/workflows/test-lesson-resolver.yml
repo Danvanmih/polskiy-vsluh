@@ -1,0 +1,30 @@
+name: Validate lesson presentation matching
+on:
+  pull_request:
+    paths:
+      - 'lesson-resolver.js'
+      - 'presentation-import.js'
+      - 'learn.js'
+      - 'learn.html'
+      - 'data/videos.json'
+      - 'tests/lesson-resolver.test.cjs'
+      - '.github/workflows/test-lesson-resolver.yml'
+  push:
+    branches: [master]
+    paths:
+      - 'lesson-resolver.js'
+      - 'presentation-import.js'
+      - 'learn.js'
+      - 'data/videos.json'
+      - 'tests/lesson-resolver.test.cjs'
+      - '.github/workflows/test-lesson-resolver.yml'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check lesson-resolver.js && node --check presentation-import.js && node --check learn.js
+      - run: node --test tests/lesson-resolver.test.cjs
