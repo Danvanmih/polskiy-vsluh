@@ -7,7 +7,7 @@ const usable=id=>(phrases[id]?.phrases||[]).filter(x=>x&&typeof x.pl==='string'&
 const done=id=>!!read(KEY).mastery?.[id]?.complete;
 function pool(ids){return ids.flatMap(id=>usable(id).map(x=>({...x,videoId:id})))}
 const levelIn=title=>{const m=String(title||'').match(/(?:^|[^a-zа-я0-9])(a0|a1|a2|b1|b2|c1|c2|c3|а0|а1|а2|в1|в2|с1|с2|с3)(?=[^a-zа-я0-9]|$)/i);return m?m[1].toUpperCase().replace('А','A').replace('В','B').replace('С','C'):null};
-function categoryFromTitle(title){const t=String(title||'').toLowerCase();return levelIn(title)||(/песн|музык|śpiew|piosenk|фильм|стих|кино/.test(t)?'art':/литератур|książk|книг|рассказ|читать/.test(t)?'literature':/практик|тренаж|упражнен|тест|зубр|повторен/.test(t)?'practice':'other')}
+function categoryFromTitle(title){const t=String(title||'').toLowerCase();return levelIn(title)||(/диалог|dialog|rozmow|разговор/.test(t)?'dialogues':/песн|музык|śpiew|piosenk|фильм|стих|кино/.test(t)?'art':/литератур|książk|книг|рассказ|читать/.test(t)?'literature':/практик|тренаж|упражнен|тест|зубр|повторен/.test(t)?'practice':'other')}
 function playlistCategory(p){return p.category||categoryFromTitle(p.title)}
 function videoCategory(v){const explicit=levelIn(v.title);if(explicit)return explicit;for(const id of v.playlistIds||[]){const p=playlists.find(p=>p.id===id);if(p){const c=playlistCategory(p);if(c!=='other')return c}}return categoryFromTitle(v.title)}
 function scopedVideos(p){return videos.filter(v=>(v.playlistIds||[]).includes(p.id)&&videoCategory(v)===playlistCategory(p))}
