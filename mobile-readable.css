@@ -1,0 +1,99 @@
+/* Mobile-specific layout and legibility fixes. Accessibility enhancements remain opt-in. */
+/* Pastel tiles are deliberately LIGHT surfaces, even while the rest of the page is dark. */
+html :is(.path-grid .path-card,.path-grid .path-card:hover){color:#203b2c!important;-webkit-text-fill-color:#203b2c}
+html .path-grid .path-a1{background:#dceadd!important}
+html .path-grid .path-a2{background:#e5e2f4!important}
+html .path-grid .path-music{background:#f5e3d7!important}
+html .path-grid .path-talk{background:#e0ecf2!important}
+html .path-grid .path-card :is(.path-symbol,.path-bottom,.path-bottom strong,.path-bottom span){color:inherit!important;-webkit-text-fill-color:inherit!important;text-shadow:none!important;opacity:1!important}
+html .path-grid .path-symbol{opacity:.75!important}
+html .path-grid .path-letter{color:inherit!important;opacity:.12!important}
+html .hero h1 em{color:#2f7751!important;-webkit-text-fill-color:#2f7751}
+html .hero p{color:#4d6656!important;opacity:1!important}
+html .hero .eyebrow{color:#37694b!important}
+:root[data-theme=dark] .hero h1 em{color:#b6f0ca!important;-webkit-text-fill-color:#b6f0ca!important}
+:root[data-theme=dark] .hero p{color:#ddece0!important}
+:root[data-theme=dark] .hero .eyebrow{color:#b9dfc6!important}
+:root[data-theme=dark] .hero .ghost-button{color:#d3eddb!important}
+:root[data-theme=dark] .hero .hero-graphic{opacity:.26}
+/* Native text glyphs of hearts differ by font; SVG icon gets the same 20x20 box in all browsers. */
+.video-card .save{width:42px!important;height:42px!important;min-width:42px;display:inline-grid!important;place-items:center!important;padding:0!important;line-height:1!important;border-radius:11px!important;flex:0 0 42px;vertical-align:middle}
+.video-card .save svg{width:21px;height:21px;display:block;overflow:visible;stroke:currentColor;stroke-width:1.9;fill:none;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+.video-card .save.saved svg{fill:currentColor;stroke:currentColor}
+.video-card .save:focus-visible{outline-offset:2px}
+:root[data-theme=dark] .video-card .save:not(.saved){color:#c6d8cd!important}
+:root[data-theme=dark] .video-card .card-meta .category-label{background:#304a39!important;color:#deefe2!important}
+:root[data-theme=dark] .video-card .card-content .watch{color:#b5e9c5!important}
+/* Academy decorative Ł belongs on wide desktop only; never tint content in dark mode. */
+:root[data-theme=dark] body:has(.academy-shell) .academy-hero{background:var(--ui-panel-soft)!important;border-color:var(--ui-line)!important}
+:root[data-theme=dark] body:has(.academy-shell) .academy-hero :is(h1,p,.academy-eyebrow){color:var(--ui-ink)!important}
+:root[data-theme=dark] body:has(.academy-shell) .academy-hero em{color:#b6f0ca!important}
+@media(max-width:920px){
+  html .hero-graphic,html .hero-orbit,html .hero-letter,html .floating-pill,html .hero-flower{display:none!important}
+  body:has(.academy-shell) .academy-hero::before,body:has(.academy-shell) .academy-hero::after{display:none!important;content:none!important}
+  body:has(.academy-shell) .academy-hero>*{z-index:1}
+  .shell .top-actions{display:none!important}
+  .shell .topbar{height:56px!important;min-height:56px!important;padding:7px 14px!important;gap:12px!important}
+  .shell .topbar .breadcrumb{min-width:0;max-width:calc(100% - 60px);font-size:11px}
+  .shell .topbar .breadcrumb a,.shell .topbar .breadcrumb button{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+}
+@media(max-width:650px){
+  :root{--pv-mobile-gutter:14px}
+  :where(.content,.lab-main,.shared-content,.academy-main){min-width:0!important}
+  .shell .content>main{padding:14px var(--pv-mobile-gutter) 32px!important}
+  .shell .hero{display:block!important;min-height:0!important;height:auto!important;border:1px solid var(--ui-line,#cfddd0);background:var(--ui-panel-soft,#eaf2e8)!important;border-radius:18px!important;box-shadow:none!important}
+  .shell .hero-copy{padding:23px 20px 21px!important;max-width:none!important}
+  .shell .hero h1{font-size:clamp(28px,8vw,36px)!important;line-height:1.12!important;letter-spacing:-1px!important;margin:13px 0!important}
+  .shell .hero h1 br{display:none!important}
+  .shell .hero p{font-size:13px!important;line-height:1.55!important;margin:0!important;max-width:39ch!important}
+  .shell .hero .eyebrow{font-size:10px!important;letter-spacing:1.4px!important;line-height:1.4!important}
+  .shell .hero .hero-buttons{margin-top:18px!important;gap:11px!important;flex-wrap:wrap!important}
+  .shell .hero .primary-button{display:inline-flex!important;align-items:center!important;justify-content:space-between;gap:9px!important;padding:12px 15px!important;border-radius:11px!important;font-size:13px!important;min-height:45px!important;max-width:100%!important}
+  .shell .hero .ghost-button{font-size:12px!important;line-height:1.5!important;padding:9px 4px}
+  .shell .quick-path{margin-top:26px!important}
+  .shell .section-head{margin-bottom:14px!important;align-items:flex-start!important;gap:10px!important}
+  .shell .section-kicker{letter-spacing:1.5px!important;font-size:10px!important}
+  .shell .section-head h2{font-size:clamp(23px,7vw,29px)!important;line-height:1.2!important;margin:7px 0 0!important;letter-spacing:-.5px!important}
+  .shell .path-grid{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:10px!important}
+  .shell .path-grid .path-card{height:auto!important;min-height:92px!important;max-height:none!important;position:relative;display:grid!important;grid-template-columns:40px minmax(0,1fr) 20px;grid-template-rows:auto;gap:11px!important;align-items:center;justify-items:start;padding:15px 16px!important;border-radius:14px!important;box-shadow:none!important;text-decoration:none!important;overflow:hidden}
+  .shell .path-grid .path-card:active{transform:scale(.99)}
+  .shell .path-grid .path-symbol{grid-column:1;grid-row:1;max-width:40px;overflow:hidden;letter-spacing:0!important;line-height:1.35!important;overflow-wrap:anywhere;font-size:9px!important;font-weight:900!important;color:inherit!important}
+  .shell .path-grid .path-letter{display:none!important}
+  .shell .path-grid .path-bottom{grid-column:2;grid-row:1;display:flex;flex-direction:column;gap:4px!important;min-width:0!important;width:100%!important}
+  .shell .path-grid .path-bottom strong{font-size:15px!important;line-height:1.3!important;font-weight:800!important;overflow-wrap:anywhere}
+  .shell .path-grid .path-bottom span{font-size:11px!important;line-height:1.35!important;overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow-wrap:anywhere;opacity:.88!important}
+  .shell .path-grid .path-card:after{content:'›';grid-row:1;grid-column:3;font-size:27px;line-height:1;opacity:.65;align-self:center;justify-self:end;font-weight:400;color:inherit}
+  .shell .library{margin-top:30px!important}
+  .shell .filters{gap:11px!important;margin-top:15px!important}
+  .shell .filter-chips{display:flex!important;flex-wrap:nowrap;gap:7px!important;overflow-x:auto!important;min-width:0;max-width:100%;padding:2px 0 7px}
+  .shell .chip{min-height:42px;flex:0 0 auto;padding:9px 14px!important;font-size:12px!important;border-radius:10px!important}
+  .shell .search-sort{flex-direction:column!important;align-items:stretch!important;gap:9px!important}
+  .shell .search,.shell #sort{width:100%!important;min-height:42px!important}
+  .shell .cards{grid-template-columns:1fr!important}
+  .shell .video-card .card-title{font-size:14px!important;min-height:auto!important;line-height:1.4!important}
+  .shell .video-card .card-content{padding:14px!important}
+  .shell .video-card .card-meta{align-items:center;gap:9px}
+  .shell .video-card .card-actions{min-height:51px}
+  :root[data-theme=dark] .shell .hero{background:#263b2f!important}
+  :root[data-theme=dark] .shell .hero h1{color:#f0f8f1!important}
+  :root[data-theme=dark] .shell .hero h1 em{color:#b6f0ca!important}
+  :root[data-theme=dark] .shell .hero p{color:#d5e4db!important}
+  :root[data-theme=dark] .shell .hero .primary-button{background:#d0f3da!important;color:#153a26!important}
+  :root[data-theme=dark] .shell .hero .primary-button *{color:#153a26!important}
+  :root[data-theme=dark] .shell .hero .ghost-button{color:#d4f2de!important}
+  .academy-hero h1{font-size:clamp(25px,7.2vw,33px)!important;line-height:1.17!important}
+  .academy-top .academy-top-breadcrumb{min-width:0}
+  .academy-lesson-actions,.academy-lesson-tabs{flex-wrap:wrap!important}
+  .academy-lesson-actions>*{min-width:0}
+  .academy-video h3{overflow-wrap:anywhere}
+  .lab-main .lab-intro h1{font-size:clamp(25px,7vw,33px)!important}
+  .global-modal,.pv-leader-dialog{max-width:calc(100vw - 18px)!important;overflow-wrap:anywhere}
+  .aud-player .aud-cover{flex-shrink:0}
+}
+@media(max-width:355px){.shell .hero .hero-buttons{flex-direction:column;align-items:stretch}.shell .hero .primary-button{width:100%!important}.shell .hero .ghost-button{align-self:center}}
+/* Optional accessibility modes, configured explicitly under Site Settings. */
+:root[data-a11y-contrast=on]{--ui-secondary:#344d3c;--ui-muted:#3c5142;--ui-line:#8aa18d;--ui-focus:#007437}
+:root[data-theme=dark][data-a11y-contrast=on]{--ui-secondary:#f1fff4;--ui-muted:#e4f6e7;--ui-line:#b7d6c0;--ui-focus:#e5ffb4}
+:root[data-a11y-contrast=on] :is(.video-card,.lab-panel,.aud-item,.academy-card,.global-modal,.pv-leader-dialog){border:2px solid var(--ui-line)!important}
+:root[data-a11y-contrast=on] :is(.card-title,.academy-card strong,.nav-item,.global-field){font-weight:850!important}
+:root[data-a11y-text=on] :is(.card-title,.path-bottom strong,.video-date,.path-bottom span,.academy-card p,.academy-video h3,.lab-muted,.global-hint,.global-field,.practice-panel .exercise){font-size:calc(1em + 2px)!important;line-height:1.65!important}
