@@ -1,0 +1,29 @@
+name: Validate shared site navigation
+on:
+  pull_request:
+    paths:
+      - 'academy.html'
+      - 'academy.js'
+      - 'learn.html'
+      - 'index.html'
+      - 'audio.html'
+      - 'leaderboard.html'
+      - 'global-ui.js'
+      - 'shared-nav.js'
+      - 'site-nav-consistency.css'
+      - 'tests/site-navigation.e2e.cjs'
+      - '.github/workflows/test-site-navigation.yml'
+  workflow_dispatch:
+jobs:
+  browser-navigation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-save --no-package-lock playwright@1.56.1
+      - run: npx playwright install --with-deps chromium
+      - run: node --check academy.js && node --check shared-nav.js && node --check global-ui.js
+      - run: node tests/site-navigation.e2e.cjs
