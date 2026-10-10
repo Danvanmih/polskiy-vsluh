@@ -28,7 +28,6 @@ if(!home){
   };
   const update=()=>{current.textContent=currentSection()};
   update();window.addEventListener('hashchange',update);
-  a.after(); // noop: kept entirely inside one nav after render
   const trail=document.createElement('nav');
   trail.className='pv-header-trail';trail.setAttribute('aria-label','Путь к текущему разделу');
   trail.append(a,separator,current);
@@ -38,4 +37,21 @@ if(!home){
   const trigger=header.querySelector('.mobile-menu,.academy-menu,.shared-menu-toggle');
   if(trigger)trigger.after(a);else header.prepend(a);
 }
+
+function updateContrast(){
+  const sample=document.createElement('span');
+  sample.style.cssText='position:absolute;visibility:hidden;pointer-events:none;background:var(--ui-accent,#286447)';
+  document.body.append(sample);
+  const value=getComputedStyle(sample).backgroundColor;
+  sample.remove();
+  const m=value.match(/[\d.]+/g);
+  if(!m||m.length<3)return;
+  const c=m.slice(0,3).map(v=>{
+    const n=Number(v)/255;return n<=.04045?n/12.92:((n+.055)/1.055)**2.4;
+  });
+  const lum=.2126*c[0]+.7152*c[1]+.0722*c[2];
+  document.documentElement.style.setProperty('--pv-active-ink',lum>.18?'#16271e':'#ffffff');
+}
+updateContrast();
+new MutationObserver(updateContrast).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme','data-accent']});
 })();
