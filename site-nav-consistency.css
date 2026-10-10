@@ -149,3 +149,8 @@ html body .pv-header-brand:focus-visible{
 @media(prefers-reduced-motion:reduce){
   html body #sidebar .brand-icon,html body #sidebar .nav-item{transition:none!important}
 }
+
+.pv-leaderboard-layout .shared-content{min-width:0;overflow-y:auto;max-height:100dvh}
+.pv-leaderboard-layout .pv-leaderboard-header{height:73px;min-height:73px;display:flex;align-items:center;padding:0 35px;gap:14px}
+.pv-leaderboard-layout .pv-leaderboard-header .pv-header-trail{margin-right:auto}
+@media(max-width:920px){.pv-leaderboard-layout .pv-leaderboard-header{padding:0 14px}}
