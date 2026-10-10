@@ -17,7 +17,7 @@ function cards(){const root=$('#academy-assessments');if(!root)return;
  if(!category){root.hidden=true;window.pvAcademyAssessments=[];return}
  const courseLists=playlists.filter(p=>playlistCategory(p)===category),courseVideos=videos.filter(v=>videoCategory(v)===category);
  const list=[];
- if(playlistId){const p=courseLists.find(p=>p.id===playlistId);if(p){const items=[...scopedVideos(p)].reverse();for(let i=0;i+10<=items.length;i+=10){list.push(assessment('block:'+p.id+':'+i,'Контрольная №'+(Math.floor(i/10)+1)+' · '+p.title,'Контрольная по этому плейлисту',items.slice(i,i+10)))}}}
+ if(playlistId){const p=courseLists.find(p=>p.id===playlistId);if(p){const items=[...scopedVideos(p)].sort((a,b)=>{const order=v=>{const m=String(v.title||'').match(/(?:урок|lekcja|lesson|выпуск)\s*№?\s*(\d+)/i);return m?Number(m[1]):null};const x=order(a),y=order(b);return x!==null&&y!==null?x-y:(x!==null?-1:y!==null?1:new Date(a.publishedAt||0)-new Date(b.publishedAt||0))});for(let i=0;i+10<=items.length;i+=10){list.push(assessment('block:'+p.id+':'+i,'Контрольная №'+(Math.floor(i/10)+1)+' · '+p.title,'Контрольная по этому плейлисту',items.slice(i,i+10)))}}}
  else {for(const p of courseLists){const items=scopedVideos(p);if(items.length)list.push(assessment('playlist:'+p.id,'Экзамен · '+p.title,'Экзамен по плейлисту этого курса',items))}
  if(/^(A[012]|B[12]|C[123])$/.test(category)&&courseVideos.length>=3)list.push(assessment('course:'+category,'Итоговый экзамен · '+category,'Экзамен по уровню '+category,courseVideos))}
  window.pvAcademyAssessments=list;root.hidden=false;
