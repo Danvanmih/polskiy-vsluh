@@ -83,6 +83,14 @@ if(select){
   select.addEventListener('change',updateVisibility);
   new MutationObserver(updateVisibility).observe(select,{childList:true});
 }
+const practiceSettings=$('practice-settings');
+if(practiceSettings){
+  const restart=document.createElement('button');
+  restart.type='button';restart.id='pv-settings-restart';restart.className='lab-secondary';
+  restart.textContent='↺ Начать тест заново';
+  restart.onclick=()=>{$('reset-round')?.click();practiceSettings.hidden=true;};
+  practiceSettings.append(restart);
+}
 setTextMode('full');
 updateVisibility();
 })();

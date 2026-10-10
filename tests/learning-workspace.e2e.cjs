@@ -77,6 +77,30 @@ function expect(condition,label){assert.ok(condition,label)}
     expect(await page.locator('#pv-library-results a').filter({hasText:'Открыть текст'}).count()===0,'No text action in tests');
     expect(dialogs.length===0,'No browser-native dialogs used by library and text flow');
 
-    process.stdout.write('PASS: import, auto-lesson lookup, one training block, text switch, filtered library, inline validation\n');
+    // Existing user presentations with mixed Russian/Polish on one slide are repaired automatically.
+    await page.evaluate(()=>{
+      const key='pv-presentation-docs-v1',store=JSON.parse(localStorage.getItem(key));
+      const id='aCUlYCga1LA';
+      store[id].text='Анна работает в маленьком магазине.Anna pracuje w małym sklepie.\n\nДрузья изучают польский каждый день.Przyjaciele uczą się polskiego każdego dnia.';
+      store[id].pairs=[];delete store[id].parseVersion;
+      localStorage.setItem(key,JSON.stringify(store));
+      const progress=JSON.parse(localStorage.getItem('pv-learning-v1')||'{}');
+      if(progress.pairs)delete progress.pairs[id];
+      localStorage.setItem('pv-learning-v1',JSON.stringify(progress));
+    });
+    await page.goto(base+'/learn.html?video=aCUlYCga1LA#texts',{waitUntil:'domcontentloaded'});
+    await page.locator('#pv-text-mode-phrases').waitFor();
+    await page.locator('#pv-text-mode-phrases').click();
+    await page.waitForFunction(()=>{
+      const docs=JSON.parse(localStorage.getItem('pv-presentation-docs-v1')||'{}');
+      return docs['aCUlYCga1LA']?.pairs?.length===2;
+    });
+    expect(await page.locator('#phrases .phrase').count()===2,'Existing presentation recovers exactly two bilingual phrase cards');
+    expect(await page.locator('#phrases').innerText().then(s=>s.includes('Anna pracuje w małym sklepie.')),'Polish sentence shown');
+    await page.goto(base+'/learn.html?video=aCUlYCga1LA#practice',{waitUntil:'domcontentloaded'});
+    await page.locator('#start-round').waitFor();
+    expect(await page.locator('#start-round').isEnabled(),'Recovered bilingual material enables original test');
+    expect(await page.locator('#pv-cloze').count()===0,'No extra practice panel after migration');
+    process.stdout.write('PASS: import, auto-lesson lookup, one training block, text switch, filtered library, inline validation, bilingual migration\n');
   }finally{await page.close();await browser.close();server.close()}
 })().catch(err=>{console.error(err);server.close();process.exit(1)});
