@@ -105,3 +105,8 @@ html .hero .eyebrow{color:#37694b!important}
 .pv-a11y-section .global-toggle{font-size:12px;padding:11px 0;gap:12px}
 .pv-a11y-section .global-toggle + .global-toggle{border-top:1px solid var(--ui-line,#d2dfd2)}
 .pv-a11y-section input{flex:0 0 auto}
+
+/* Video-library filters stay readable when the OS/browser uses dark mode. */
+:root[data-theme=dark] .shell .filter-chips .chip:not(.selected){background:#2b3d32!important;color:#e9f5eb!important;border-color:#607969!important}
+:root[data-theme=dark] .shell .filter-chips .chip.selected{background:var(--ui-accent,#a4e7b8)!important;color:var(--ui-accent-text,#142e1e)!important;border-color:var(--ui-accent,#a4e7b8)!important}
+@media(prefers-color-scheme:dark){:root[data-theme=system] .shell .filter-chips .chip:not(.selected){background:#2b3d32!important;color:#e9f5eb!important;border-color:#607969!important}:root[data-theme=system] .shell .filter-chips .chip.selected{background:var(--ui-accent,#a4e7b8)!important;color:var(--ui-accent-text,#142e1e)!important}}
