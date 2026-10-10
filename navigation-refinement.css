@@ -1,0 +1,47 @@
+/* Consistent site identity. Main page: animated logo/name depending on menu.
+   Internal sections: clickable site name + active section label. */
+body.pv-internal-page .pv-header-trail{display:flex;align-items:center;gap:11px;min-width:0;max-width:min(55vw,640px)}
+body.pv-internal-page .pv-header-brand{display:inline-flex;align-items:center;flex:0 1 auto;max-width:none!important;min-width:0}
+html body.pv-internal-page .pv-header-brand .pv-header-logo{display:none!important}
+html body.pv-internal-page .pv-header-brand .pv-header-name{
+ display:inline!important;max-width:250px!important;width:auto!important;
+ opacity:1!important;transform:none!important;white-space:nowrap;color:var(--ui-ink,#273b30);
+ font-weight:850;letter-spacing:-.02em;
+}
+body.pv-internal-page .pv-header-separator{color:var(--ui-muted,#83968b);font-size:22px;font-weight:400}
+body.pv-internal-page .pv-header-section{display:inline-block;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--ui-accent,#348458);font-weight:800;font-size:clamp(12px,1.15vw,15px)}
+body.pv-internal-page .pv-header-trail a:hover .pv-header-name{color:var(--ui-accent,#328052)!important}
+body.pv-internal-page .lab-top>a[href="./"],body.pv-internal-page .lab-top>span:not(.pv-header-section),body.pv-internal-page .academy-top-breadcrumb{display:none!important}
+body.pv-internal-page .pv-header-trail .pv-header-brand:focus-visible{outline:2px solid var(--ui-accent,#328052);outline-offset:5px;border-radius:5px}
+@media(max-width:700px){
+ body.pv-internal-page .pv-header-trail{gap:7px;max-width:min(72vw,380px)}
+ body.pv-internal-page .pv-header-brand .pv-header-name{font-size:13px!important}
+ body.pv-internal-page .pv-header-section{font-size:12px}
+}
+/* Theme-aware legibility for all library and practice controls. */
+html body :is(.pv-library-item,.pv-text-document,.reader-content,.pv-text-switch,.pv-library-card){
+ color:var(--ui-ink)!important;border-color:var(--ui-line)!important;
+}
+html body :is(.pv-library-card input,.pv-library-card select,#reader-search,.reader-controls select,#search,#sort){
+ background:var(--ui-panel)!important;color:var(--ui-ink)!important;
+ border:1px solid var(--ui-line)!important;-webkit-text-fill-color:var(--ui-ink)!important;
+}
+html body :is(.pv-library-card input,#search,#reader-search)::placeholder{-webkit-text-fill-color:var(--ui-secondary)!important;color:var(--ui-secondary)!important;opacity:1}
+html body .practice-panel .exercise :is(.option,.word-tile):disabled{opacity:1!important}
+html body .practice-panel .exercise .word-tile.chosen,
+html body .practice-panel .exercise .word-tile.chosen:disabled,
+html body .practice-panel .exercise .option.selected{
+ background:var(--ui-accent)!important;color:var(--pv-active-ink,var(--ui-accent-text))!important;
+ -webkit-text-fill-color:var(--pv-active-ink,var(--ui-accent-text))!important;
+}
+html body .practice-panel .exercise .option:not(.selected){color:var(--ui-ink)!important;background:var(--ui-panel)!important;-webkit-text-fill-color:var(--ui-ink)!important}
+html body .practice-panel .exercise .tile-target{
+ background:var(--ui-panel-soft)!important;border-color:var(--ui-line)!important;
+}
+html body :is(.pv-text-switch button.selected,.practice-controls .mode-button.selected,.lab-primary,.academy-next){
+ background:var(--ui-accent)!important;
+ color:var(--pv-active-ink,var(--ui-accent-text))!important;
+ -webkit-text-fill-color:var(--pv-active-ink,var(--ui-accent-text))!important;
+}
+html body :is(.pv-text-switch button:not(.selected),.practice-controls .mode-button:not(.selected)){color:var(--ui-ink)!important;-webkit-text-fill-color:var(--ui-ink)!important}
+@media(prefers-reduced-motion:reduce){body.pv-internal-page .pv-header-brand,body.pv-internal-page .pv-header-trail *{transition:none!important}}
