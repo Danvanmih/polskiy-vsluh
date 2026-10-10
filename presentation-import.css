@@ -15,3 +15,5 @@
 .pv-library-item-actions :is(a,button){font:inherit;font-size:12px;font-weight:700;padding:9px 11px;border:1px solid var(--ui-line,#cddbd1);border-radius:9px;background:var(--ui-panel,#fff);color:var(--ui-ink,#203d2b);text-decoration:none;cursor:pointer}
 .pv-library-delete{color:#b93a37!important}
 @media(max-width:720px){.pv-library-filters{grid-template-columns:1fr}.pv-library-item{align-items:stretch;flex-direction:column}.pv-library-card{padding:20px 14px}}
+
+.pv-decision-overlay{z-index:100002;background:rgba(26,43,32,.36)}.pv-decision-card{width:min(100%,510px);text-align:left}.pv-decision-card h2{font-size:21px}.pv-decision-card p{white-space:pre-line;overflow-wrap:anywhere}.pv-decision-card .pv-import-buttons{justify-content:flex-start;margin-top:22px}.pv-decision-card button{min-height:42px}.pv-decision-card button:last-child{background:var(--ui-panel-soft,#edf3ee);color:var(--ui-ink,#25442e)}
