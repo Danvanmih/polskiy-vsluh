@@ -28,3 +28,4 @@ body.pv-test-focused #practice>.practice-panel{margin-top:0}
 .pv-answer-compare .pv-answer-wrong{color:#ad403d;text-decoration:line-through}
 .pv-answer-compare .pv-answer-correct{color:#22623f;font-weight:750}
 @media(max-width:600px){.pv-text-document,.pv-text-toolbar{padding:17px}.pv-text-switch{width:100%}.pv-text-switch button{flex:1}}
+.pv-field-invalid{outline:2px solid #c75d50!important;border-color:#c75d50!important}
