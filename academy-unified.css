@@ -42,3 +42,11 @@ body:has(.academy-shell) .academy-sidebar{flex-shrink:0}
  body:has(.academy-shell).pv-sidebar-hidden .academy-menu{display:none!important}
  body:has(.academy-shell).pv-sidebar-hidden .pv-sidebar-reopen{display:grid!important}
 }
+
+/* Personal document reading in lesson modal */
+.academy-local-document{line-height:1.85;white-space:pre-wrap;overflow-wrap:anywhere;color:var(--ui-ink,#243b30)}
+.academy-local-document>p{padding:10px 2px;border-bottom:1px solid var(--ui-line,#d7e4d9);margin:0 0 12px}
+.academy-local-document-heading{display:flex;flex-direction:column;gap:4px;margin-bottom:18px;padding:13px;border-radius:12px;background:var(--ui-panel-soft,#f1f5ef)}
+.academy-local-document-heading small{color:var(--ui-muted,#718575)}
+.academy-document-footer{margin:28px 0 12px;display:flex;justify-content:center}
+.academy-document-footer .academy-next{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;padding:13px 19px;border-radius:11px}
