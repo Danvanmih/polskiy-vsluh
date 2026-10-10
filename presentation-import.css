@@ -21,7 +21,7 @@
 #pv-add-file{background:var(--ui-accent,#216b4b);color:#fff}#pv-add-file:disabled{opacity:.45;cursor:not-allowed}.pv-decision-overlay{backdrop-filter:blur(7px)}
 
 /* Preserve usable navigation while imported lesson content is blurred. */
-@media(min-width:801px){body:has(#pv-import-overlay) #pv-import-overlay{left:264px}body:has(#pv-import-overlay) .lab-layout>.shared-sidebar{position:relative;z-index:100001;filter:none;pointer-events:auto}}
+@media(min-width:801px){body:has(#pv-import-overlay) #pv-import-overlay{position:fixed;inset:0;left:0;right:0;display:grid;place-items:center;padding:24px 24px 24px 288px;box-sizing:border-box}body:has(#pv-import-overlay) .lab-layout>.shared-sidebar{position:sticky;top:0;z-index:100001;filter:none;pointer-events:auto;background:var(--ui-panel,#fff)}body:has(#pv-import-overlay) #pv-import-overlay>.pv-import-card{margin:0;min-width:0}}
 @media(max-width:800px){body:has(#pv-import-overlay) #pv-import-overlay{top:58px}body:has(#pv-import-overlay) .shared-menu-toggle{position:relative;z-index:100001}}
 #practice>.lab-panel:first-child{padding:24px 28px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
 #practice>.lab-panel:first-child .pv-trainer-header{display:none}
