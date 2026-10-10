@@ -30,3 +30,15 @@ body:has(.academy-shell) .academy-sidebar.open{display:flex!important}
 .path-grid .path-card:focus-visible,.academy-card:focus-visible{outline:3px solid var(--ui-accent,#26644a);outline-offset:4px}
 @media(max-width:920px){body:has(.academy-shell) .academy-menu{display:inline-grid!important;place-items:center}body:has(.academy-shell) .academy-sidebar{position:fixed;z-index:130;background:var(--surface)}body:has(.academy-shell) .academy-page{padding:24px}body:has(.academy-shell) .academy-hero{padding:28px;min-height:280px}body:has(.academy-shell) .academy-hero:after{font-size:220px;right:-25px;top:0}body:has(.academy-shell) .academy-hero:before{width:250px;height:250px;right:-45px;top:-20px}}
 @media(max-width:560px){body:has(.academy-shell) .academy-page{padding:16px 14px 70px}body:has(.academy-shell) .academy-hero{padding:25px 20px}body:has(.academy-shell) .academy-hero:after{opacity:.07}body:has(.academy-shell) .academy-hero h1{font-size:35px}body:has(.academy-shell) .academy-top{padding:0 14px;font-size:10px}}
+
+/* Only one visible sidebar restore control, shared across desktop/mobile. */
+body:has(.academy-shell) .academy-menu{display:none!important}
+body:has(.academy-shell) .pv-sidebar-reopen{display:none!important}
+body:has(.academy-shell).pv-sidebar-hidden .academy-menu{display:none!important}
+body:has(.academy-shell).pv-sidebar-hidden .pv-sidebar-reopen{display:grid!important;place-items:center}
+body:has(.academy-shell) .academy-sidebar{flex-shrink:0}
+@media(max-width:920px){
+ body:has(.academy-shell) .academy-menu{display:inline-grid!important;place-items:center}
+ body:has(.academy-shell).pv-sidebar-hidden .academy-menu{display:none!important}
+ body:has(.academy-shell).pv-sidebar-hidden .pv-sidebar-reopen{display:grid!important}
+}
