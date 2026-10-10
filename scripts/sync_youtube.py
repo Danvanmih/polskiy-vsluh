@@ -40,6 +40,21 @@ def cat(title):
     if any(x in t for x in ("диалог", "dialog", "rozmow")):
         return "dialogues"
     return "other"
+def content_category(title):
+    """Conservative deterministic taxonomy; never invent content."""
+    t = title.casefold().replace("ё", "е")
+    if re.search(r"маленький принц|корчак|литератур|книг|рассказ|bajki|байки", t):
+        return "literature"
+    if re.search(r"диалог|dialog|rozmow|разговор|вопросы и ответы", t):
+        return "dialogues"
+    if re.search(r"песн|piosenk|śpiew|музык|юмор|inspektor|kolombus|инстаграм|prezenty|фильм|кино", t):
+        return "art"
+    if re.search(r"тренаж|зубр|упражнен|практик|доскональн|длинные видео", t):
+        return "practice"
+    m = re.search(r"(?<![a-zа-я0-9])([aа][012]|[bв][12]|[cс][12])(?![a-zа-я0-9])", t)
+    return (m.group(1).upper().translate(str.maketrans("АВС", "ABC")) if m else "other")
+
+
 def existing():
     if OUT.exists():
         try:
@@ -141,8 +156,11 @@ def main():
         # RSS only exposes recent uploads; keep historical records from previous runs.
         combined = dict(old)
         combined.update({v["id"]: v for v in fresh})
+    for p in playlists:
+        p["category"] = content_category(p.get("title", ""))
     for vid, video in combined.items():
         video["playlistIds"] = members.get(vid, []) if KEY else old.get(vid, {}).get("playlistIds", video.get("playlistIds", []))
+        video["category"] = content_category(video.get("title", ""))
     videos = sorted(combined.values(), key=lambda v: v.get("publishedAt", ""), reverse=True)
     payload = {"channelId": CHANNEL_ID, "channelUrl": CHANNEL_URL, "updatedAt": dt.datetime.now(dt.timezone.utc).isoformat(), "source": mode, "playlists": playlists, "videos": videos}
     OUT.parent.mkdir(parents=True, exist_ok=True)
