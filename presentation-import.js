@@ -1,15 +1,15 @@
-(()=>{'use strict';const $=q=>document.querySelector(q),query=new URLSearchParams(location.search),savedKey='pv-presentation-docs-v1';let catalog=[],chosen=query.get('video')||'',docs={};try{docs=JSON.parse(localStorage.getItem(savedKey)||'{}')}catch{};const contextual=/^[\w-]{11}$/.test(query.get('video')||'');const safe=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));function norm(s){return String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^\p{L}\p{N}]+/gu,' ').trim()}async function extractPdf(file){if(!window.pdfjsLib)throw Error('Библиотека PDF не загрузилась. Проверьте подключение и повторите.');pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';const doc=await pdfjsLib.getDocument({data:await file.arrayBuffer()}).promise;const pages=[];for(let i=1;i<=doc.numPages;i++){const page=await doc.getPage(i),content=await page.getTextContent();pages.push(content.items.map(item=>item.str||'').join(' '))}const text=pages.join('\n\n').trim();if(text.length<20)throw Error('В PDF не найден текстовый слой. Для сканированных слайдов потребуется OCR.');return text}async function extract(file){const ext=file.name.split('.').pop().toLowerCase();if(file.size>16*1024*1024)throw Error('Файл больше 16 МБ. Уменьшите его или экспортируйте текст.');if(ext==='txt')return {text:await file.text(),slides:null};if(ext==='pdf')return {text:await extractPdf(file),slides:null};if(ext!=='pptx')throw Error('Поддерживаются PPTX, PDF и TXT. Старый PPT сохраните в PPTX.');if(!window.JSZip)throw Error('Не загрузилась библиотека чтения PPTX. Проверьте интернет и повторите.');let zip=await JSZip.loadAsync(file);let files=Object.keys(zip.files).filter(n=>/^ppt\/slides\/slide\d+\.xml$/.test(n)).sort((a,b)=>Number(a.match(/slide(\d+)/)[1])-Number(b.match(/slide(\d+)/)[1]));if(!files.length)throw Error('В презентации нет распознаваемых слайдов.');let parts=[];for(const path of files){const xml=new DOMParser().parseFromString(await zip.file(path).async('text'),'application/xml');let paras=[...xml.getElementsByTagNameNS('*','p')].map(p=>[...p.getElementsByTagNameNS('*','t')].map(n=>n.textContent).join('').trim()).filter(Boolean);parts.push(paras.join('\n'))}return {text:parts.join('\n\n'),slides:parts}}function lines(text){return text.split(/\n+/).map(s=>s.trim()).filter(s=>s.length>1).slice(0,3000)}function pairs(text,slides){return window.PVPresentationPhrases?.parse(slides||String(text||'').split(/\n\s*\n/))||[]}
+(()=>{'use strict';const $=q=>document.querySelector(q),query=new URLSearchParams(location.search),savedKey='pv-presentation-docs-v1';let catalog=[],chosen=query.get('video')||'',docs={};try{docs=JSON.parse(localStorage.getItem(savedKey)||'{}')}catch{};const contextual=/^[\w-]{11}$/.test(query.get('video')||'');const safe=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));function norm(s){return String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^\p{L}\p{N}]+/gu,' ').trim()}async function extractPdf(file){if(!window.pdfjsLib)throw Error('Библиотека PDF не загрузилась. Проверьте подключение и повторите.');pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';const doc=await pdfjsLib.getDocument({data:await file.arrayBuffer()}).promise;const pages=[];for(let i=1;i<=doc.numPages;i++){const page=await doc.getPage(i),content=await page.getTextContent();pages.push(content.items.map(item=>item.str||'').join(' '))}const text=pages.join('\n\n').trim();if(text.length<20)throw Error('В PDF не найден текстовый слой. Для сканированных слайдов потребуется OCR.');return text}async function extract(file){const ext=file.name.split('.').pop().toLowerCase();if(file.size>16*1024*1024)throw Error('Файл больше 16 МБ. Уменьшите его или экспортируйте текст.');if(ext==='txt')return {text:await file.text(),slides:null};if(ext==='pdf')return {text:await extractPdf(file),slides:null};if(ext!=='pptx')throw Error('Поддерживаются PPTX, PDF и TXT. Старый PPT сохраните в PPTX.');if(!window.JSZip)throw Error('Не загрузилась библиотека чтения PPTX. Проверьте интернет и повторите.');let zip=await JSZip.loadAsync(file);let files=Object.keys(zip.files).filter(n=>/^ppt\/slides\/slide\d+\.xml$/.test(n)).sort((a,b)=>Number(a.match(/slide(\d+)/)[1])-Number(b.match(/slide(\d+)/)[1]));if(!files.length)throw Error('В презентации нет распознаваемых слайдов.');let parts=[],slideGroups=[];for(const path of files){const xml=new DOMParser().parseFromString(await zip.file(path).async('text'),'application/xml');let paras=[...xml.getElementsByTagNameNS('*','p')].map(p=>[...p.getElementsByTagNameNS('*','t')].map(n=>n.textContent).join('').trim()).filter(Boolean);parts.push(paras.join('\n'));slideGroups.push(paras)}return {text:parts.join('\n\n'),slides:slideGroups}}function lines(text){return text.split(/\n+/).map(s=>s.trim()).filter(s=>s.length>1).slice(0,3000)}function pairs(text,slides){return window.PVPresentationPhrases?.parse(slides||String(text||'').split(/\n\s*\n/))||[]}
 function migrateDocs(){
   if(!window.PVPresentationPhrases)return;
   let changed=false;
   for(const [id,doc] of Object.entries(docs)){
-    if(!doc||typeof doc.text!=='string'||doc.parseVersion>=2)continue;
-    const detected=window.PVPresentationPhrases.fromText(doc.text);
+    if(!doc||typeof doc.text!=='string'||doc.parseVersion>=3)continue;
+    const detected=window.PVPresentationPhrases.parse(doc.slides||doc.text.split(/\n\s*\n/));
     if(detected.length){
       doc.pairs=detected;
       changed=true;
     }
-    doc.parseVersion=2;changed=true;
+    doc.parseVersion=3;changed=true;
   }
   if(changed){
     try{persist()}catch(e){console.warn('Не удалось обновить локальные пары:',e)}
@@ -17,7 +17,7 @@ function migrateDocs(){
       const storage=JSON.parse(localStorage.getItem('pv-learning-v1')||'{}');
       storage.pairs=storage.pairs||{};
       for(const [id,doc] of Object.entries(docs)){
-        if(doc?.parseVersion===2&&Array.isArray(doc.pairs)&&doc.pairs.length)storage.pairs[id]=doc.pairs;
+        if(doc?.parseVersion===3&&Array.isArray(doc.pairs)&&doc.pairs.length)storage.pairs[id]=doc.pairs;
       }
       localStorage.setItem('pv-learning-v1',JSON.stringify(storage));
     }catch(e){console.warn('Не удалось обновить кэш тренажёра:',e)}
@@ -71,7 +71,7 @@ function show(force=false){if($('#pv-import-overlay'))return;const contextId=con
       return;
     }
     const paired=pairs(text,extracted.slides);
-    const entry={title:video.title,fileName:file.name,text:text.slice(0,160000),pairs:paired,parseVersion:2,createdAt:new Date().toISOString()};
+    const entry={title:video.title,fileName:file.name,text:text.slice(0,160000),pairs:paired,parseVersion:3,createdAt:new Date().toISOString()};
     docs[video.id]=entry;
     try{persist()}catch(e){delete docs[video.id];throw e}
     // The document store is canonical. This is compatibility for existing trainers.
