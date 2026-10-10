@@ -77,3 +77,14 @@ test('completely unknown file does not silently attach to arbitrary lesson',()=>
   assert.equal(result.status,'missing');
   assert.equal(result.video,null);
 });
+
+test('the published importer calls the canonical resolver rather than a hidden starter selection',()=>{
+  const html=fs.readFileSync(path.join(base,'learn.html'),'utf8');
+  const code=fs.readFileSync(path.join(base,'presentation-import.js'),'utf8');
+  const resolverIndex=html.indexOf('lesson-resolver.js?v=67');
+  const importIndex=html.indexOf('presentation-import.js?v=67');
+  assert.ok(resolverIndex>=0&&importIndex>resolverIndex,'Resolver must load first');
+  assert.match(code,/PVLessonResolver\.resolve\(file\.name,catalog,contextId\)/);
+  assert.match(code,/result\.status!=='matched'/);
+  assert.doesNotMatch(code,/function findLessonMatches\(/);
+});
