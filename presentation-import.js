@@ -21,6 +21,7 @@ function migrateDocs(){
       }
       localStorage.setItem('pv-learning-v1',JSON.stringify(storage));
     }catch(e){console.warn('Не удалось обновить кэш тренажёра:',e)}
+    window.dispatchEvent(new Event('pv-presentation-migrated'));
   }
 }
 migrateDocs();
