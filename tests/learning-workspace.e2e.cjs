@@ -81,7 +81,7 @@ function expect(condition,label){assert.ok(condition,label)}
     await page.evaluate(()=>{
       const key='pv-presentation-docs-v1',store=JSON.parse(localStorage.getItem(key));
       const id='aCUlYCga1LA';
-      store[id].text='Анна работает в маленьком магазине.Anna pracuje w małym sklepie.\\n\\nДрузья изучают польский каждый день.Przyjaciele uczą się polskiego każdego dnia.';
+      store[id].text='Анна работает в маленьком магазине.Anna pracuje w małym sklepie.\n\nДрузья изучают польский каждый день.Przyjaciele uczą się polskiego każdego dnia.';
       store[id].pairs=[];delete store[id].parseVersion;
       localStorage.setItem(key,JSON.stringify(store));
       const progress=JSON.parse(localStorage.getItem('pv-learning-v1')||'{}');
