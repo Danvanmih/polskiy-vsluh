@@ -1,0 +1,26 @@
+name: Verify header and theme UI
+on:
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'academy.html'
+      - 'academy.js'
+      - 'learn.html'
+      - 'audio.html'
+      - 'header-brand.js'
+      - 'palette-brand-unified.css'
+      - 'tests/theme-header.e2e.cjs'
+      - '.github/workflows/test-header-theme.yml'
+jobs:
+  chromium:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-save --no-package-lock playwright@1.56.1
+      - run: npx playwright install --with-deps chromium
+      - run: node --check academy.js && node --check header-brand.js
+      - run: node tests/theme-header.e2e.cjs
