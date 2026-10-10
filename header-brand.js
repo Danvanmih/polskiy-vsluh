@@ -1,0 +1,10 @@
+(()=>{'use strict';
+const header=document.querySelector('.topbar,.academy-top,.lab-top,.aud-header');
+if(!header||header.querySelector('.pv-header-brand'))return;
+const a=document.createElement('a');a.href='./';a.className='pv-header-brand';a.setAttribute('aria-label','Польский вслух — на главную');
+const icon=document.createElement('span');icon.className='pv-header-logo';icon.setAttribute('aria-hidden','true');icon.textContent='P·';
+const name=document.createElement('span');name.className='pv-header-name';name.textContent='Польский вслух';
+a.append(icon,name);
+const trigger=header.querySelector('.mobile-menu,.academy-menu,.shared-menu-toggle');
+if(trigger)trigger.after(a);else header.prepend(a);
+})();
