@@ -1,0 +1,10 @@
+/* Centered, meaningful breadcrumb navigation in academy header. */
+body:has(.academy-shell) .academy-top{position:relative;justify-content:flex-end}
+body:has(.academy-shell) .academy-top-breadcrumb{position:absolute;left:50%;transform:translateX(-50%);display:flex;align-items:center;justify-content:center;gap:12px;white-space:nowrap;max-width:65%;letter-spacing:.2px;font-size:12px}
+body:has(.academy-shell) .academy-top-breadcrumb a{color:var(--ui-secondary,#58705e);text-decoration:none;font-weight:650}
+body:has(.academy-shell) .academy-top-breadcrumb a[aria-current=page]{color:var(--ui-accent,#245e42);font-weight:850}
+body:has(.academy-shell) .academy-top-breadcrumb a:hover{text-decoration:underline;text-underline-offset:4px}
+body:has(.academy-shell) .academy-top-breadcrumb span{color:var(--ui-muted,#95a799)}
+body:has(.academy-shell) .academy-top>.academy-menu{margin-right:auto}
+@media(max-width:650px){body:has(.academy-shell) .academy-top-breadcrumb{font-size:10px;gap:6px;max-width:58%}body:has(.academy-shell) .academy-top>a{font-size:10px}}
+@media(max-width:440px){body:has(.academy-shell) .academy-top-breadcrumb{position:static;transform:none;max-width:none;margin-right:auto}body:has(.academy-shell) .academy-top>a{display:none}}
