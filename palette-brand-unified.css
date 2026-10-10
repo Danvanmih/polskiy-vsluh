@@ -53,7 +53,7 @@ html body .tile-target .word-tile.chosen :is(span,small,em){color:inherit!import
 html body .practice-controls .input-modes{background:var(--pv-control-bg)!important;color:var(--pv-control-ink)!important;border-color:var(--pv-control-border)!important}
 html body .practice-controls .input-modes .mode-button{background:transparent!important;color:var(--pv-control-ink)!important;border-color:transparent!important;opacity:1}
 html body .practice-controls .input-modes .mode-button.selected{
- background:var(--pv-active-bg)!important;color:var(--pv-active-ink)!important;border-color:var(--pv-active-bg)!important;-webkit-text-fill-color:var(--pv-active-ink)!important
+ background:var(--pv-active-bg)!important;color:var(--pv-active-ink)!important;border-color:var(--pv-active-bg)!important;-webkit-text-fill-color:var(--pv-active-ink)!important;transition:none!important
 }
 html body .practice-panel .exercise .option:hover:not(:disabled),
 html body .practice-panel .exercise .word-tile:hover:not(:disabled){
