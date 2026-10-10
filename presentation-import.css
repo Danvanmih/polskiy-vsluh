@@ -28,3 +28,5 @@
 #practice>.lab-panel:first-child #pv-practice-import,#practice>.lab-panel:first-child #pv-library-launch{margin:0!important;border-radius:12px;padding:14px 19px;font-weight:750}
 #practice>.lab-panel:first-child .pv-legacy-selector{display:none!important}
 #practice>.lab-panel:first-child #video-details[hidden]{display:none!important}
+
+#pv-lesson-find,#pv-lesson-results{display:block;width:100%;box-sizing:border-box;margin:12px 0;padding:12px;border:1px solid var(--ui-line,#d1dfd2);border-radius:10px;background:var(--ui-panel,#fff);color:var(--ui-ink,#24402d)}#pv-lesson-results{height:210px;overflow-y:auto}#pv-lesson-results option{padding:9px 7px;white-space:normal}.pv-decision-card .pv-import-buttons{flex-wrap:wrap}
