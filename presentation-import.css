@@ -30,3 +30,10 @@
 #practice>.lab-panel:first-child #video-details[hidden]{display:none!important}
 
 #pv-lesson-find,#pv-lesson-results{display:block;width:100%;box-sizing:border-box;margin:12px 0;padding:12px;border:1px solid var(--ui-line,#d1dfd2);border-radius:10px;background:var(--ui-panel,#fff);color:var(--ui-ink,#24402d)}#pv-lesson-results{height:210px;overflow-y:auto}#pv-lesson-results option{padding:9px 7px;white-space:normal}.pv-decision-card .pv-import-buttons{flex-wrap:wrap}
+
+.pv-library-group{font-size:13px;font-weight:800;color:var(--ui-secondary,#617a67);padding:13px 5px 3px;margin:10px 0 0}
+.pv-library-thumb{display:block;width:104px;min-width:104px;aspect-ratio:16/9;object-fit:cover;border-radius:9px;background:var(--ui-panel-soft,#edf4ef)}
+.pv-library-item-actions>a{display:inline-flex;align-items:center;justify-content:center;background:var(--ui-accent,#24603f);color:#fff;font-weight:800;min-height:36px}
+.pv-library-item-actions>a:hover{filter:brightness(1.07)}
+#pv-library-results{scrollbar-width:thin}
+@media(max-width:720px){.pv-library-thumb{width:100%;height:auto;max-height:150px;object-fit:cover}}
