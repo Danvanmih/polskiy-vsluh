@@ -1,0 +1,32 @@
+/* Shared visual language for the home dashboard and the academy. */
+body:has(.academy-shell) .academy-shell{background:var(--bg,#f6f5f1)}
+body:has(.academy-shell) .academy-sidebar{background:var(--surface,#fff);border-right:1px solid var(--line,#e3e8df);box-shadow:4px 0 26px #172b1b09;z-index:30}
+body:has(.academy-shell) .academy-sidebar .brand{padding:0 8px 28px;margin-bottom:15px;font-size:18px}
+body:has(.academy-shell) .academy-sidebar .nav-item{font-size:13px;font-weight:750;min-height:46px;color:var(--ink,#213829)}
+body:has(.academy-shell) .academy-sidebar .nav-item.active{background:#e1ecf8;color:#245e92}
+body:has(.academy-shell) .academy-sidebar .sidebar-tools{margin-top:18px;padding-top:12px;border-top:1px solid var(--line);display:grid;gap:5px}
+body:has(.academy-shell) .academy-main{position:relative;background:radial-gradient(ellipse 48% 28% at 95% 9%,color-mix(in srgb,var(--ui-accent,#286244) 7%,transparent),transparent),radial-gradient(ellipse 48% 35% at 4% 58%,color-mix(in srgb,var(--ui-accent,#286244) 4%,transparent),transparent),var(--bg,#f6f5f1)}
+body:has(.academy-shell) .academy-top{height:72px;min-height:72px;background:var(--surface,#fff);border-color:var(--line);color:var(--muted,#809085);padding:0 38px}
+body:has(.academy-shell) .academy-page{max-width:1480px;padding:34px 40px 90px}
+body:has(.academy-shell) .academy-hero{position:relative;min-height:310px;overflow:hidden;background:linear-gradient(112deg,#edf3ec 0%,#f4f8f2 63%,#e7f0e8 100%);border:1px solid #dce8dc;padding:44px 53px;border-radius:24px;box-shadow:none}
+body:has(.academy-shell) .academy-hero:after{content:'Ł';position:absolute;right:8%;top:-66px;font-family:Georgia,serif;font-size:330px;line-height:1;transform:rotate(-12deg);font-weight:900;color:#245e42;opacity:.14;pointer-events:none}
+body:has(.academy-shell) .academy-hero:before{content:'';position:absolute;width:360px;height:360px;border:1px solid #95b39b;border-radius:50%;right:2%;top:-56px;opacity:.44;pointer-events:none}
+body:has(.academy-shell) .academy-hero>*{position:relative;z-index:1}
+body:has(.academy-shell) .academy-hero h1{color:#183b29;font-size:clamp(34px,4vw,58px);letter-spacing:-2px}
+body:has(.academy-shell) .academy-hero em{color:#2a7651}
+body:has(.academy-shell) .academy-hero p{max-width:650px;color:#6b8070}
+body:has(.academy-shell) .academy-overview strong{color:#245e42}
+body:has(.academy-shell) .academy-card{border-color:#d7e4d6;border-radius:17px;box-shadow:0 7px 18px #1834230b;min-height:205px}
+body:has(.academy-shell) .academy-card:hover{transform:translateY(-4px)}
+body:has(.academy-shell) .academy-breadcrumb{padding:7px 0}
+body:has(.academy-shell) .academy-menu{display:none}
+body:has(.academy-shell).pv-sidebar-hidden .academy-sidebar{display:none!important}
+body:has(.academy-shell).pv-sidebar-hidden .academy-menu{display:inline-grid;place-items:center}
+body:has(.academy-shell).pv-sidebar-hidden .academy-main{width:100%;max-width:100%}
+body:has(.academy-shell) .academy-top .academy-menu{flex:0 0 42px;height:42px;border:1px solid var(--line);border-radius:12px;cursor:pointer;background:var(--surface)}
+body:has(.academy-shell) .academy-sidebar.open{display:flex!important}
+.path-grid .path-card{color:inherit;text-decoration:none}
+.path-grid .path-card .path-bottom strong{color:inherit}
+.path-grid .path-card:focus-visible,.academy-card:focus-visible{outline:3px solid var(--ui-accent,#26644a);outline-offset:4px}
+@media(max-width:920px){body:has(.academy-shell) .academy-menu{display:inline-grid!important;place-items:center}body:has(.academy-shell) .academy-sidebar{position:fixed;z-index:130;background:var(--surface)}body:has(.academy-shell) .academy-page{padding:24px}body:has(.academy-shell) .academy-hero{padding:28px;min-height:280px}body:has(.academy-shell) .academy-hero:after{font-size:220px;right:-25px;top:0}body:has(.academy-shell) .academy-hero:before{width:250px;height:250px;right:-45px;top:-20px}}
+@media(max-width:560px){body:has(.academy-shell) .academy-page{padding:16px 14px 70px}body:has(.academy-shell) .academy-hero{padding:25px 20px}body:has(.academy-shell) .academy-hero:after{opacity:.07}body:has(.academy-shell) .academy-hero h1{font-size:35px}body:has(.academy-shell) .academy-top{padding:0 14px;font-size:10px}}
