@@ -112,3 +112,15 @@ html .hero .eyebrow{color:#37694b!important}
 @media(prefers-color-scheme:dark){:root[data-theme=system] .shell .filter-chips .chip:not(.selected){background:#2b3d32!important;color:#e9f5eb!important;border-color:#607969!important}:root[data-theme=system] .shell .filter-chips .chip.selected{background:var(--ui-accent,#a4e7b8)!important;color:var(--ui-accent-text,#142e1e)!important}}
 
 .rank-profile-link{display:inline-flex;align-items:center;justify-content:center;min-height:44px;margin-top:14px;border-radius:11px;border:1px solid var(--ui-line,#bbd0bf);background:var(--ui-panel-soft,#ebf3eb);color:var(--ui-ink,#23422d);padding:10px 15px;font-size:12px;font-weight:800;text-decoration:none}.rank-profile-link:hover{border-color:var(--ui-accent,#347453)}
+
+/* System-following dark theme has the same contrast guarantees as manual dark. */
+@media(prefers-color-scheme:dark){
+ :root[data-theme=system] .hero h1 em{color:#b6f0ca!important;-webkit-text-fill-color:#b6f0ca!important}
+ :root[data-theme=system] .hero p{color:#ddece0!important}
+ :root[data-theme=system] .hero .eyebrow{color:#b9dfc6!important}
+ :root[data-theme=system] .hero .ghost-button{color:#d3eddb!important}
+ :root[data-theme=system] body:has(.academy-shell) .academy-hero{background:var(--ui-panel-soft)!important;border-color:var(--ui-line)!important}
+ :root[data-theme=system] body:has(.academy-shell) .academy-hero :is(h1,p,.academy-eyebrow){color:var(--ui-ink)!important}
+ :root[data-theme=system] body:has(.academy-shell) .academy-hero em{color:#b6f0ca!important}
+ @media(max-width:650px){:root[data-theme=system] .shell .hero{background:#263b2f!important}:root[data-theme=system] .shell .hero h1{color:#f0f8f1!important}:root[data-theme=system] .shell .hero h1 em{color:#b6f0ca!important}:root[data-theme=system] .shell .hero p{color:#d5e4db!important}:root[data-theme=system] .shell .hero .primary-button{background:#d0f3da!important;color:#153a26!important}:root[data-theme=system] .shell .hero .primary-button *{color:#153a26!important}}
+}
