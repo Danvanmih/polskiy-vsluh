@@ -97,3 +97,11 @@ html .hero .eyebrow{color:#37694b!important}
 :root[data-a11y-contrast=on] :is(.video-card,.lab-panel,.aud-item,.academy-card,.global-modal,.pv-leader-dialog){border:2px solid var(--ui-line)!important}
 :root[data-a11y-contrast=on] :is(.card-title,.academy-card strong,.nav-item,.global-field){font-weight:850!important}
 :root[data-a11y-text=on] :is(.card-title,.path-bottom strong,.video-date,.path-bottom span,.academy-card p,.academy-video h3,.lab-muted,.global-hint,.global-field,.practice-panel .exercise){font-size:calc(1em + 2px)!important;line-height:1.65!important}
+
+/* Accessibility controls appear as a separate, clearly labelled settings group. */
+.pv-a11y-section{margin:22px 0 16px;padding:17px 15px;background:var(--ui-panel-soft,#eff5ee);border:1px solid var(--ui-line,#d2dfd2);border-radius:15px}
+.pv-a11y-section h3{margin:0 0 5px;color:var(--ui-ink,#243d2a);font-size:14px;font-weight:850}
+.pv-a11y-section .global-hint{margin:0 0 13px;line-height:1.5}
+.pv-a11y-section .global-toggle{font-size:12px;padding:11px 0;gap:12px}
+.pv-a11y-section .global-toggle + .global-toggle{border-top:1px solid var(--ui-line,#d2dfd2)}
+.pv-a11y-section input{flex:0 0 auto}
