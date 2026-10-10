@@ -1,0 +1,30 @@
+/* Same structure and controls in Tests and Texts. */
+.pv-text-toolbar .pv-text-toolbar-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.pv-text-toolbar{padding:24px 28px}
+.pv-text-toolbar-actions button{margin:0!important;padding:13px 19px;border-radius:12px;font-weight:750}
+.pv-text-switch{display:inline-flex;gap:5px;padding:5px;margin:8px 0 24px;border:1px solid var(--ui-line,#d5e4d8);background:var(--ui-panel-soft,#f1f6ef);border-radius:13px}
+.pv-text-switch button{border:0;cursor:pointer;padding:11px 19px;background:transparent;color:var(--ui-ink,#304a3c);border-radius:10px;font-weight:750}
+.pv-text-switch button.selected{background:var(--ui-accent,#24603f);color:#fff;box-shadow:0 2px 7px #0002}
+.pv-text-document{padding:26px 28px}
+.pv-phrase-actions{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}
+#pv-text-full-panel[hidden],#pv-text-phrases-panel[hidden],#pv-text-document[hidden],#practice .practice-panel[hidden]{display:none!important}
+body.pv-text-empty .lab-intro,body.pv-test-library .lab-intro,body.pv-test-focused .lab-intro{display:none}
+body.pv-test-library #practice>.practice-panel{display:none!important}
+body.pv-test-focused #practice>.lab-panel:first-child{display:none!important}
+body.pv-text-open .lab-intro{display:none}
+body.pv-text-open .lab-body{gap:20px}
+body.pv-test-focused #practice>.practice-panel{margin-top:0}
+.pv-feedback-toast{position:fixed;right:22px;bottom:24px;z-index:100050;width:min(420px,calc(100vw - 32px));border-radius:14px;padding:16px 20px;box-shadow:0 12px 45px #0002;background:var(--ui-panel,#fff);border:1px solid var(--ui-line,#cfe0d2);color:var(--ui-ink,#243f2e);font-size:13px;line-height:1.6}
+.pv-feedback-toast[data-kind="error"]{border-left:4px solid #c34f48}
+.pv-feedback-toast[data-kind="success"]{border-left:4px solid #369269}
+.pv-feedback-toast[hidden]{display:none}
+.pv-workspace-overlay{position:fixed;inset:0;z-index:100051;display:grid;place-items:center;background:#1b2d2573;backdrop-filter:blur(5px);padding:16px}
+.pv-workspace-dialog{width:min(440px,100%);background:var(--ui-panel,#fff);color:var(--ui-ink,#284634);border:1px solid var(--ui-line,#d1e1d4);border-radius:20px;padding:27px;box-shadow:0 20px 50px #0002}
+.pv-workspace-dialog h2{font-size:21px;margin:0 0 12px}
+.pv-workspace-dialog p{font-size:14px;line-height:1.7}
+.pv-workspace-dialog-actions{display:flex;justify-content:flex-end;gap:12px;margin-top:22px}
+#pv-inline-answer-error{font-size:13px;line-height:1.6;font-weight:650;color:#aa4038;border-left:3px solid #bd5549;background:#fff2ef;padding:10px 13px;margin:14px 0;border-radius:6px}
+.pv-answer-compare{margin:15px 0;padding:14px;background:var(--ui-panel-soft,#f1f6ef);border-radius:12px}
+.pv-answer-compare .pv-answer-wrong{color:#ad403d;text-decoration:line-through}
+.pv-answer-compare .pv-answer-correct{color:#22623f;font-weight:750}
+@media(max-width:600px){.pv-text-document,.pv-text-toolbar{padding:17px}.pv-text-switch{width:100%}.pv-text-switch button{flex:1}}
