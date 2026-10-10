@@ -1,0 +1,33 @@
+name: Verify presentation-to-video matching
+on:
+  push:
+    paths:
+      - 'presentation-matcher.js'
+      - 'presentation-import.js'
+      - 'learn.html'
+      - 'data/videos.json'
+      - 'tests/presentation-matcher.test.cjs'
+      - '.github/workflows/test-presentation-matcher.yml'
+  pull_request:
+    paths:
+      - 'presentation-matcher.js'
+      - 'presentation-import.js'
+      - 'learn.html'
+      - 'data/videos.json'
+      - 'tests/presentation-matcher.test.cjs'
+      - '.github/workflows/test-presentation-matcher.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check matching against complete catalog
+        run: node tests/presentation-matcher.test.cjs
+      - name: Check importer JavaScript syntax
+        run: node --check presentation-import.js
