@@ -101,6 +101,44 @@ function expect(condition,label){assert.ok(condition,label)}
     await page.locator('#start-round').waitFor();
     expect(await page.locator('#start-round').isEnabled(),'Recovered bilingual material enables original test');
     expect(await page.locator('#pv-cloze').count()===0,'No extra practice panel after migration');
+    // Hash destinations stay at top; the cabinet menu must retain its selected item.
+    await page.goto(base+'/learn.html#analytics',{waitUntil:'domcontentloaded'});
+    await page.locator('#stat-answers').waitFor();
+    await page.waitForTimeout(150);
+    expect(await page.locator('#analytics').isVisible(),'Analytics opens in cabinet');
+    expect(await page.locator('a.nav-item[href="learn.html#analytics"]').getAttribute('aria-current')==='page','Analytics is selected');
+    let offset=await page.evaluate(()=>({window:window.scrollY,main:document.querySelector('.lab-main')?.scrollTop||0}));
+    expect(offset.window<20&&offset.main<20,'Analytics opens at the top: '+JSON.stringify(offset));
+    expect(await page.locator('.pv-cabinet-tools #export').count()===1,'Export moved inside analytics');
+    expect(await page.locator('.lab-top #export').count()===0,'No export controls in global header');
+
+    await page.locator('a.nav-item[href="learn.html#plan"]').first().click();
+    await page.waitForTimeout(120);
+    expect(await page.locator('#plan').isVisible(),'Plan visible after cabinet navigation');
+    offset=await page.evaluate(()=>({window:window.scrollY,main:document.querySelector('.lab-main')?.scrollTop||0}));
+    expect(offset.window<20&&offset.main<20,'Plan opens at top: '+JSON.stringify(offset));
+
+    await page.evaluate(()=>localStorage.setItem('pv-saved',JSON.stringify(['aCUlYCga1LA'])));
+    await page.locator('a.nav-item[href="learn.html#saved"]').first().click();
+    await page.locator('.pv-favorite-card').first().waitFor();
+    expect(new URL(page.url()).pathname.endsWith('/learn.html'),'Favorites stays inside cabinet');
+    expect(await page.locator('a.nav-item[href="learn.html#saved"]').first().getAttribute('aria-current')==='page','Favorites remains active in menu');
+    expect(await page.locator('.pv-favorite-card').count()===1,'Stored favorite appears in cabinet');
+    offset=await page.evaluate(()=>({window:window.scrollY,main:document.querySelector('.lab-main')?.scrollTop||0}));
+    expect(offset.window<20&&offset.main<20,'Favorites opens at top: '+JSON.stringify(offset));
+    const brand=page.locator('.lab-top .pv-header-brand');
+    expect(await brand.count()===1,'Header contains one brand link');
+    expect(await brand.isHidden(),'Brand is not repeated while sidebar is visible');
+    await page.evaluate(()=>document.body.classList.add('pv-sidebar-hidden'));
+    expect(await brand.isVisible(),'Header shows site name when sidebar is collapsed');
+    await page.locator('.pv-favorite-remove').first().click();
+    expect(await page.locator('.pv-favorite-card').count()===0,'Favorite can be removed locally');
+    await page.goto(base+'/',{waitUntil:'domcontentloaded'});
+    const homeBrand=page.locator('.topbar .pv-header-brand');
+    await homeBrand.waitFor({state:'attached'});
+    expect(await homeBrand.isHidden(),'Home header does not duplicate sidebar logo when expanded');
+    await page.evaluate(()=>document.body.classList.add('pv-sidebar-hidden'));
+    expect(await homeBrand.isVisible(),'Site name is shown when home sidebar closes');
     process.stdout.write('PASS: import, auto-lesson lookup, one training block, text switch, filtered library, inline validation, bilingual migration\n');
   }finally{await page.close();await browser.close();server.close()}
 })().catch(err=>{console.error(err);server.close();process.exit(1)});

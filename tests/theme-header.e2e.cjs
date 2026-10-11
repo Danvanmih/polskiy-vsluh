@@ -51,9 +51,11 @@ function contrast(a,b){const x=luminosity(a),y=luminosity(b);return (Math.max(x,
   assert.equal(hidden,'1','Collapsed desktop menu shows site name');
   await page.evaluate(()=>document.body.classList.remove('pv-sidebar-hidden'));
   await page.waitForTimeout(500);
-  const opened=await page.locator('.pv-header-logo').evaluate(el=>getComputedStyle(el).opacity);
-  assert.equal(opened,'1','Expanded desktop menu shows logo');
-  assert.equal(await page.locator('.pv-header-name').evaluate(el=>getComputedStyle(el).opacity),'0');
+  const opened=await page.locator('.topbar .pv-header-brand').evaluate(el=>getComputedStyle(el).display);
+  assert.equal(opened,'none','Expanded desktop menu does not duplicate sidebar branding');
+  assert.equal(await page.locator('#sidebar .brand').isVisible(),true,'Sidebar retains the only visible logo');
+  await page.evaluate(()=>document.body.classList.add('pv-sidebar-hidden'));
+  assert.equal(await page.locator('.topbar .pv-header-brand').isVisible(),true,'Collapsed menu restores brand name in topbar');
   const search=page.locator('#search');
   if(await search.count()){const style=await colors(page,'#search');assert.ok(contrast(style.background,style.foreground)>=4.5,'Home search contrast '+JSON.stringify(style))}
   await page.goto(base+'/academy.html?video=aCUlYCga1LA',{waitUntil:'domcontentloaded'});

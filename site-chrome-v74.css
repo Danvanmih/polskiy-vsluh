@@ -1,0 +1,78 @@
+/* v74: one brand, one current location; route-independent navigation and controls */
+@media(min-width:921px){
+  /* Sidebar open: brand is already visible in the sidebar. Show only section title in header. */
+  html body.pv-chrome-74:not(.pv-sidebar-hidden) :is(.lab-top,.academy-top,.aud-header,.topbar,.pv-leaderboard-header) .pv-header-brand,
+  html body.pv-chrome-74:not(.pv-sidebar-hidden) .academy-top>.pv-header-trail .pv-header-brand{display:none!important}
+  html body.pv-chrome-74:not(.pv-sidebar-hidden) :is(.lab-top,.academy-top,.aud-header,.pv-leaderboard-header) .pv-header-separator{display:none!important}
+  html body.pv-chrome-74:not(.pv-sidebar-hidden) .academy-top>.pv-header-trail{margin-left:0!important}
+  /* Sidebar collapsed: restore the clickable text brand, never an orphaned P tile. */
+  html body.pv-chrome-74.pv-sidebar-hidden :is(.lab-top,.academy-top,.aud-header,.topbar,.pv-leaderboard-header) .pv-header-brand{display:inline-flex!important}
+}
+html body.pv-chrome-74 :is(.lab-top,.academy-top,.aud-header,.topbar,.pv-leaderboard-header) .pv-header-logo{display:none!important}
+html body.pv-chrome-74 :is(.lab-top,.academy-top,.aud-header,.topbar,.pv-leaderboard-header) .pv-header-name{
+ color:var(--ui-ink,var(--ink,#233c2c))!important;font-weight:850!important;
+ opacity:1!important;visibility:visible!important;max-width:none!important;
+ letter-spacing:-.02em;white-space:nowrap
+}
+html body.pv-chrome-74 .pv-header-brand{text-decoration:none;transition:color .2s ease,opacity .2s ease}
+html body.pv-chrome-74 .pv-header-brand:hover{color:var(--ui-accent,#358656)!important}
+html body.pv-chrome-74 .pv-header-trail{display:flex;align-items:center;min-width:0;gap:11px}
+html body.pv-chrome-74 .pv-header-section{font-weight:800;color:var(--ui-accent,#2d744f)!important;text-overflow:ellipsis;overflow:hidden;white-space:nowrap}
+html body.pv-chrome-74 .lab-top{gap:16px}
+html body.pv-chrome-74 .lab-top>.pv-header-trail{margin-right:auto}
+html body.pv-chrome-74 .pv-sidebar-close,html body.pv-chrome-74 .pv-sidebar-reopen{transition:transform .2s ease,opacity .2s ease,background .2s ease}
+html body.pv-chrome-74 .pv-sidebar-close:hover,html body.pv-chrome-74 .pv-sidebar-reopen:hover{transform:scale(1.05)}
+/* Home: label the area while sidebar logo is displayed. */
+html body.pv-chrome-home:not(.pv-sidebar-hidden) .topbar>.pv-header-brand{display:none!important}
+html body.pv-chrome-home .topbar .breadcrumb{display:flex;align-items:center}
+html body.pv-chrome-home .topbar>.pv-header-brand{align-items:center;white-space:nowrap;gap:8px;margin-right:8px}
+html body.pv-chrome-home .topbar>.pv-header-brand .pv-header-name{font-size:clamp(14px,1.4vw,19px)}
+/* Export and import are cabinet utilities, not global topbar navigation. */
+html body .pv-cabinet-tools{
+ margin-top:30px;padding:21px 23px;border:1px solid var(--ui-line,#cfe0d2);
+ border-radius:15px;background:var(--ui-panel-soft,#edf3ee);color:var(--ui-ink,#254332)
+}
+html body .pv-cabinet-tools h3{font-size:17px;margin:0 0 8px}
+html body .pv-cabinet-tools p{font-size:13px;line-height:1.6;color:var(--ui-secondary,#617c68);margin:0 0 16px}
+html body .pv-cabinet-tool-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+html body .pv-cabinet-tool-actions :is(.lab-quiet,.lab-upload){
+ display:inline-flex;align-items:center;justify-content:center;min-height:42px;
+ padding:10px 16px;border:1px solid var(--ui-line,#cfe0d2);border-radius:11px;
+ background:var(--ui-panel,#fff)!important;color:var(--ui-ink,#23412d)!important;
+ -webkit-text-fill-color:var(--ui-ink,#23412d)!important;font-size:13px;cursor:pointer;font-weight:750
+}
+html body .pv-cabinet-tool-actions .lab-quiet:hover,html body .pv-cabinet-tool-actions .lab-upload:hover{
+ background:var(--ui-hover,var(--ui-panel-soft,#e6f1e7))!important
+}
+html body .pv-favorites-panel{padding:27px}
+html body .pv-favorite-searchbar{margin:18px 0 24px}
+html body #pv-favorite-search{
+ display:block;width:min(520px,100%);padding:12px 15px;border:1px solid var(--ui-line,#cfe0d2);
+ background:var(--ui-panel,#fff);color:var(--ui-ink,#254332);border-radius:11px;outline-offset:3px
+}
+html body #pv-favorite-search::placeholder{color:var(--ui-secondary,#6c8574)}
+html body .pv-favorite-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:17px}
+html body .pv-favorite-card{overflow:hidden;min-width:0;border:1px solid var(--ui-line,#cfe0d2);border-radius:15px;background:var(--ui-panel-soft,#edf4ee)}
+html body .pv-favorite-card>img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
+html body .pv-favorite-body{display:flex;flex-direction:column;gap:15px;padding:15px}
+html body .pv-favorite-body h3{font-size:14px;line-height:1.5;margin:0;font-weight:800;color:var(--ui-ink,#26432f)}
+html body .pv-favorite-actions{display:flex;gap:8px;flex-wrap:wrap}
+html body .pv-favorite-actions :is(a,button){display:inline-flex;justify-content:center;align-items:center;text-decoration:none;font:inherit;font-size:12px;font-weight:750;cursor:pointer;min-height:39px;border-radius:9px;padding:9px 13px}
+html body .pv-favorite-actions a{background:var(--ui-accent,#306f4c);color:var(--pv-active-ink,#fff)}
+html body .pv-favorite-actions button{background:var(--ui-panel,#fff);color:var(--ui-ink,#24432f);border:1px solid var(--ui-line,#cfe0d2)}
+html body .pv-favorite-empty{padding:25px 10px;color:var(--ui-secondary,#688173);font-size:14px;grid-column:1/-1}
+@media(max-width:920px){
+ html body.pv-chrome-74 .pv-header-trail .pv-header-brand{display:inline-flex!important}
+ html body.pv-chrome-74 .pv-header-trail .pv-header-separator{display:inline!important}
+ html body.pv-chrome-74 :is(.topbar,.lab-top,.aud-header,.academy-top) .pv-header-name{font-size:13px!important}
+ html body.pv-chrome-74:has(#sidebar.shared-open) .pv-header-brand,
+ html body.pv-chrome-74:has(#sidebar.open) .pv-header-brand{opacity:.5}
+}
+@media(max-width:500px){
+ html body.pv-chrome-74 .pv-header-trail{gap:6px!important}
+ html body.pv-chrome-74 .pv-header-trail .pv-header-section{max-width:140px;font-size:11px}
+ html body .pv-favorites-panel{padding:17px}
+}
+@media(prefers-reduced-motion:reduce){
+ html body.pv-chrome-74 :is(.pv-sidebar-close,.pv-sidebar-reopen,.pv-header-brand){transition:none!important}
+}

@@ -5,7 +5,7 @@
   if(file==='academy.html')selected='academy.html';
   else if(file==='audio.html')selected='audio.html';
   else if(file==='leaderboard.html')selected='leaderboard.html';
-  else if(file==='learn.html')selected=hash==='#texts'?'learn.html#texts':hash==='#analytics'?'learn.html#analytics':hash==='#plan'?'learn.html#plan':'learn.html';
+  else if(file==='learn.html')selected=hash==='#texts'?'learn.html#texts':hash==='#analytics'?'learn.html#analytics':hash==='#plan'?'learn.html#plan':hash==='#saved'?'learn.html#saved':'learn.html';
   else selected=hash==='#library'?'./#library':'./';
   menu.querySelectorAll('a.nav-item').forEach(link=>{
     const href=link.getAttribute('href');
@@ -14,7 +14,7 @@
     if(on)link.setAttribute('aria-current','page');
     else link.removeAttribute('aria-current');
   });
-  const expandable=selected==='learn.html#analytics'||selected==='learn.html#plan';
+  const expandable=['learn.html#analytics','learn.html#plan','learn.html#saved'].includes(selected);
   if(expandable){
     const panel=menu.querySelector('[data-menu-panel="more"]');
     const toggle=menu.querySelector('[data-menu-toggle="more"]');
