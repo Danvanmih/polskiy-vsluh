@@ -26,6 +26,8 @@ html body.pv-chrome-74 .pv-sidebar-close:hover,html body.pv-chrome-74 .pv-sideba
 html body.pv-chrome-home:not(.pv-sidebar-hidden) .topbar>.pv-header-brand{display:none!important}
 html body.pv-chrome-home .topbar .breadcrumb{display:flex;align-items:center}
 html body.pv-chrome-home .topbar>.pv-header-brand{align-items:center;white-space:nowrap;gap:8px;margin-right:8px}
+/* Keep the collapsed home header label aligned with internal-page headers. */
+@media(min-width:921px){html body.pv-chrome-home.pv-sidebar-hidden .topbar>.pv-header-brand{margin-left:14px!important}}
 html body.pv-chrome-home .topbar>.pv-header-brand .pv-header-name{font-size:clamp(14px,1.4vw,19px)}
 /* Export and import are cabinet utilities, not global topbar navigation. */
 html body .pv-cabinet-tools{
