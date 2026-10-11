@@ -120,6 +120,8 @@ function expect(condition,label){assert.ok(condition,label)}
 
     await page.evaluate(()=>localStorage.setItem('pv-saved',JSON.stringify(['aCUlYCga1LA'])));
     await page.locator('a.nav-item[href="learn.html#saved"]').first().click();
+    await page.waitForTimeout(600);
+    console.log('FAVORITES DEBUG',await page.evaluate(()=>({url:location.href,sectionHidden:document.querySelector('#saved')?.hidden,sections:[...document.querySelectorAll('.lab-tab')].map(x=>[x.id,x.hidden]),grid:document.querySelector('#pv-favorite-results')?.innerHTML?.slice(0,450),storage:localStorage.getItem('pv-saved'),active:document.querySelector('a.nav-item[href="learn.html#saved"]')?.getAttribute('aria-current')})));
     await page.locator('.pv-favorite-card').first().waitFor();
     expect(new URL(page.url()).pathname.endsWith('/learn.html'),'Favorites stays inside cabinet');
     expect(await page.locator('a.nav-item[href="learn.html#saved"]').first().getAttribute('aria-current')==='page','Favorites remains active in menu');
