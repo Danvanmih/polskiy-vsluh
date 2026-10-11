@@ -24,7 +24,7 @@
    const touch=e.changedTouches[0];if(!touch)return;
    const dx=touch.clientX-gesture.x,dy=touch.clientY-gesture.y;
    if(Math.abs(dx)<70||Math.abs(dx)<Math.abs(dy)*1.4)return;
-   if(!gesture.open&&dx>0){aside.classList.add('shared-open');sync()}
+   if(!gesture.open&&dx>0){aside.classList.add(document.body.querySelector('.shell')?'open':'shared-open');sync()}
    else if(gesture.open&&dx<0)close();
  },{passive:true});
  document.addEventListener('touchcancel',()=>{start=null},{passive:true});
