@@ -35,13 +35,7 @@ if(!home){
   if(trigger)trigger.after(trail);else header.prepend(trail);
 }else{
   const trigger=header.querySelector('.mobile-menu,.academy-menu,.shared-menu-toggle');
-  const trail=document.createElement('nav');trail.className='pv-header-trail';trail.setAttribute('aria-label','Путь к текущему разделу');
-const separator=document.createElement('span');separator.className='pv-header-separator';separator.textContent='›';separator.setAttribute('aria-hidden','true');
-const current=document.createElement('span');current.className='pv-header-section';current.setAttribute('aria-current','page');
-function updateHomeLabel(){const view=new URLSearchParams(location.search).get('view');current.textContent=view==='latest'?'Новые видео':'Обзор видео'}
-updateHomeLabel();window.addEventListener('popstate',updateHomeLabel);
-trail.append(a,separator,current);
-if(trigger)trigger.after(trail);else header.prepend(trail);
+  if(trigger)trigger.after(a);else header.prepend(a);
 }
 
 function updateContrast(){
