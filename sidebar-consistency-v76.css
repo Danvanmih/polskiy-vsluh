@@ -43,3 +43,5 @@ html body.pv-chrome-home.pv-sidebar-hidden .topbar>.pv-header-brand{margin-left:
 html body.pv-chrome-home.pv-sidebar-hidden .topbar .breadcrumb{display:none!important}
 html body.pv-chrome-home.pv-sidebar-hidden .topbar .pv-header-trail{display:flex;align-items:center;gap:11px!important}
 html body.pv-chrome-home.pv-sidebar-hidden .topbar .pv-header-separator{display:inline!important}
+
+html body.pv-chrome-home:not(.pv-sidebar-hidden) .topbar .pv-header-trail{display:none!important}
