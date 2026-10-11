@@ -24,13 +24,14 @@ const server=http.createServer((req,res)=>{
   for(const target of pages){
     await page.goto(origin+'/'+target,{waitUntil:'domcontentloaded'});
     await page.locator('#sidebar .brand').waitFor();
-    await page.locator('.pv-header-trail .pv-header-name').waitFor();
+    await page.locator('.pv-header-trail .pv-header-name').waitFor({state:'attached'});
     const links=await page.locator('#sidebar a.nav-item').evaluateAll(nodes=>nodes.map(a=>a.getAttribute('href')));
     if(reference)assert.deepEqual(links,reference,'Sidebar link order changed: '+target);else reference=links;
     assert.ok(links.includes('./#library'),'Video catalog must remain accessible');
     assert.ok(links.includes('academy.html'),'Academy must remain accessible');
     assert.ok(links.includes('learn.html#texts'),'Texts must remain accessible');
-    assert.equal(await page.locator('.pv-header-trail .pv-header-name').innerText(),'Польский вслух');
+    assert.equal(await page.locator('.pv-header-trail .pv-header-name').textContent(),'Польский вслух');
+    assert.equal(await page.locator('.pv-header-trail .pv-header-brand').isVisible(),false,'Expanded sidebar carries the brand, not a duplicate header logo');
     assert.equal(await page.locator('#shared-playlists').count(),1);
     assert.equal(await page.locator('.pv-header-trail .pv-header-section').count(),1);
     const selected=await page.locator('#sidebar a.nav-item.active').count();
