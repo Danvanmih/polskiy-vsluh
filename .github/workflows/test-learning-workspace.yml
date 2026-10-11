@@ -11,6 +11,12 @@ on:
       - 'learning-workspace.js'
       - 'learning-workspace.css'
       - 'presentation-import.css'
+      - 'site-chrome-v74.js'
+      - 'site-chrome-v74.css'
+      - 'cabinet-favorites.js'
+      - 'header-brand.js'
+      - 'shared-nav.js'
+      - 'learning-router.js'
       - 'tests/learning-workspace.e2e.cjs'
       - '.github/workflows/test-learning-workspace.yml'
   workflow_dispatch:
