@@ -18,7 +18,7 @@ if(!home){
   const currentSection=()=>{
     const path=location.pathname;
     if(path.endsWith('learn.html')){
-      const names={texts:'Мои тексты',analytics:'Моя аналитика',plan:'Учебный план'};
+      const names={texts:'Мои тексты',analytics:'Моя аналитика',plan:'Учебный план',saved:'Избранное'};
       return names[location.hash.replace('#','')]||'Мои тренажёры';
     }
     if(path.endsWith('academy.html'))return 'Учебная программа';
