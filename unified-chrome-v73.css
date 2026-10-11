@@ -1,0 +1,90 @@
+/* Last stylesheet: one sidebar and header grammar throughout Polski Wsluch. */
+:root{
+ --pv-chrome-ink:var(--ui-ink,var(--ink,#213b2d));
+ --pv-chrome-panel:var(--ui-panel,var(--surface,#fff));
+ --pv-chrome-line:var(--ui-line,var(--line,#d3e1d6));
+ --pv-chrome-accent:var(--ui-accent,#27714c);
+}
+html body .academy-shell .academy-sidebar{
+ width:264px!important;min-width:264px!important;flex:0 0 264px!important;
+ height:100dvh!important;padding:29px 18px 22px!important;
+ background:var(--pv-chrome-panel)!important;
+ border-right:1px solid var(--pv-chrome-line)!important;
+ overflow-x:hidden;overflow-y:auto;box-shadow:none!important;
+}
+html body .academy-shell .academy-sidebar .brand{
+ padding:0!important;margin:0 0 25px!important;
+ font-size:18px!important;min-height:47px!important;
+}
+html body .academy-shell .academy-sidebar .nav,
+html body .lab-layout .shared-sidebar .nav,
+html body .shared-layout .shared-sidebar .nav{gap:5px!important;margin-top:0!important;margin-bottom:0!important}
+html body .academy-shell .academy-sidebar .nav-item{
+ min-height:42px!important;padding:11px 14px!important;
+ font-size:13px!important;font-weight:750!important;
+ border-radius:11px!important;color:var(--pv-chrome-ink)!important;
+}
+html body .academy-shell .academy-sidebar .nav-item.active{
+ border-left:3px solid var(--pv-chrome-accent)!important;
+ background:color-mix(in srgb,var(--pv-chrome-accent) 20%,var(--pv-chrome-panel))!important;
+}
+html body .academy-shell .academy-sidebar .side-caption{margin-top:15px!important}
+html body .academy-shell .academy-sidebar .sidebar-tools{margin-top:auto!important}
+html body .academy-top{
+ display:flex!important;align-items:center!important;justify-content:flex-start!important;
+ gap:14px!important;position:relative!important;min-height:72px!important;height:72px!important;
+ padding:0 32px!important;background:var(--pv-chrome-panel)!important;
+ border-bottom:1px solid var(--pv-chrome-line)!important;
+ color:var(--pv-chrome-ink)!important;
+}
+html body .academy-top>.academy-top-breadcrumb{display:none!important}
+html body .academy-top>.pv-header-trail{
+ position:static!important;transform:none!important;
+ display:flex!important;align-items:center!important;gap:11px!important;
+ margin:0 auto 0 0!important;max-width:min(65vw,640px)!important;
+ color:var(--pv-chrome-ink)!important;overflow:hidden;
+}
+html body .academy-top>.pv-header-trail .pv-header-brand{
+ display:inline-flex!important;align-items:center!important;visibility:visible!important;
+ opacity:1!important;width:auto!important;min-width:0!important;
+}
+html body .academy-top>.pv-header-trail .pv-header-name{
+ display:inline!important;visibility:visible!important;opacity:1!important;
+ width:auto!important;max-width:none!important;font-weight:850!important;
+ color:var(--pv-chrome-ink)!important;
+}
+html body .academy-top>.pv-header-trail .pv-header-logo{display:none!important}
+html body .academy-top>.pv-header-trail .pv-header-section{
+ display:inline!important;visibility:visible!important;opacity:1!important;
+ color:var(--pv-chrome-accent)!important;
+}
+html body .academy-top>a:last-child{
+ position:static!important;transform:none!important;align-self:center!important;
+ margin-left:auto!important;
+}
+@media(min-width:921px){
+ html body .academy-top>.academy-menu{display:none!important}
+ html body.pv-sidebar-hidden .academy-shell .academy-sidebar{display:none!important}
+ html body.pv-sidebar-hidden .academy-shell .academy-top{padding-left:80px!important}
+ html body.pv-sidebar-hidden .pv-sidebar-reopen{display:flex!important;z-index:10010!important}
+}
+@media(max-width:920px){
+ html body .academy-shell .academy-sidebar{
+  width:min(83vw,300px)!important;min-width:0!important;
+  max-width:min(83vw,300px)!important;height:100dvh!important;
+  flex:0 0 auto!important;padding:21px 15px!important;
+ }
+ html body .academy-top{padding:0 14px!important}
+ html body .academy-top>.academy-menu{display:inline-flex!important;flex:0 0 42px!important}
+ html body .academy-top>.pv-header-trail{max-width:calc(100% - 64px)!important}
+ html body .academy-top>a:last-child{display:none!important}
+}
+@media(max-width:520px){
+ html body .academy-top>.pv-header-trail{gap:6px!important}
+ html body .academy-top>.pv-header-trail .pv-header-name{font-size:12px!important}
+ html body .academy-top>.pv-header-trail .pv-header-section{font-size:11px!important}
+}
+@media(prefers-reduced-motion:no-preference){
+ html body .academy-shell .academy-sidebar .nav-item,
+ html body .academy-top .pv-header-trail{transition:background .22s ease,color .22s ease,opacity .22s ease}
+}
