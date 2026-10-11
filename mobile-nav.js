@@ -9,25 +9,6 @@
  function close(){aside.classList.remove('open','shared-open');sync()}
  button.addEventListener('click',()=>requestAnimationFrame(sync));
  scrim.addEventListener('click',close);
- // Touch gestures: edge swipe right opens, swipe left from drawer closes.
- let start=null;
- document.addEventListener('touchstart',e=>{
-   if(!mobile.matches||e.touches.length!==1)return;
-   const touch=e.touches[0],open=isOpen();
-   if(!open&&touch.clientX>35)return;
-   if(open&&!e.target.closest('#sidebar,.pv-mobile-backdrop'))return;
-   start={x:touch.clientX,y:touch.clientY,open};
- },{passive:true});
- document.addEventListener('touchend',e=>{
-   if(!start||!mobile.matches){start=null;return}
-   const gesture=start;start=null;
-   const touch=e.changedTouches[0];if(!touch)return;
-   const dx=touch.clientX-gesture.x,dy=touch.clientY-gesture.y;
-   if(Math.abs(dx)<70||Math.abs(dx)<Math.abs(dy)*1.4)return;
-   if(!gesture.open&&dx>0){aside.classList.add(document.body.querySelector('.shell')?'open':'shared-open');sync()}
-   else if(gesture.open&&dx<0)close();
- },{passive:true});
- document.addEventListener('touchcancel',()=>{start=null},{passive:true});
  aside.addEventListener('click',e=>{if(e.target.closest('a:not([data-menu-toggle]),button[data-view],button[data-open-global-settings],button[data-open-login]'))requestAnimationFrame(close)});
  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&mobile.matches&&isOpen())close()});
  document.addEventListener('click',e=>{if(mobile.matches&&isOpen()&&!e.target.closest('#sidebar,#mobile-menu,.shared-menu-toggle,#academy-menu,.pv-mobile-backdrop'))close()});
