@@ -68,7 +68,18 @@ function pdfFixture(){
     assert.match(imported,/Polski tekst do nauki/,'PDF text extraction was lost');
     const pdfViolations=await page.evaluate(()=>window.__pvCspViolations||[]);
     assert.deepEqual(pdfViolations.filter(v=>/script-src|worker-src/.test(v.directive)),[],'CSP blocked new PDF.js module or worker');
-    console.log('PASS: main pages run with CSP, JSZip self-hosting and patched PDF.js text import works');
+    // Verify legacy Scratch content cannot read the learning site's localStorage.
+    await page.goto(origin+'/onas-isolated.html',{waitUntil:'domcontentloaded'});
+    const sandbox=page.locator('iframe[sandbox]');
+    assert.equal(await sandbox.count(),1,'Isolated game frame missing');
+    const perms=await sandbox.getAttribute('sandbox');
+    assert.match(perms,/allow-scripts/);
+    assert.doesNotMatch(perms,/allow-same-origin/);
+    await page.frameLocator('iframe').locator('canvas').first().waitFor({timeout:30000});
+    const storageAccess=await sandbox.evaluate(el=>{try{return el.contentWindow.localStorage.length}catch(e){return e.name}});
+    assert.equal(storageAccess,'SecurityError','Legacy game must not access first-party storage');
+    console.log('PASS: primary CSP, patched PDF import and isolated game sandbox');
+
   }finally{
     await page.close();await browser.close();server.close();
   }
