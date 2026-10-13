@@ -12,6 +12,7 @@ on:
       - 'leaderboard.html'
       - 'global-ui.js'
       - 'shared-nav.js'
+      - 'mobile-nav.js'
       - 'site-nav-consistency.css'
       - 'tests/site-navigation.e2e.cjs'
       - '.github/workflows/test-site-navigation.yml'
