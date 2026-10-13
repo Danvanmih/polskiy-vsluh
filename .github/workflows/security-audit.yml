@@ -1,0 +1,27 @@
+name: Static security regression checks
+on:
+  pull_request:
+    paths:
+      - 'presentation-import.js'
+      - 'audio-youtube-catalog.js'
+      - '*.html'
+      - 'tests/security-audit.test.cjs'
+      - '.github/workflows/security-audit.yml'
+  push:
+    branches: [master]
+    paths:
+      - 'presentation-import.js'
+      - 'audio-youtube-catalog.js'
+      - '*.html'
+      - 'tests/security-audit.test.cjs'
+      - '.github/workflows/security-audit.yml'
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check presentation-import.js && node --check audio-youtube-catalog.js
+      - run: node --test tests/security-audit.test.cjs

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="description" content="Как работает «Польский вслух»: локальные материалы, профиль, YouTube и внешние библиотеки.">
+<title>Безопасность и данные — Польский вслух</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<style>
+:root{color-scheme:light dark}*{box-sizing:border-box}
+body{margin:0;font:16px/1.75 system-ui,-apple-system,"Segoe UI",sans-serif;background:#13221c;color:#edf7ef}
+main{max-width:780px;margin:5vh auto;padding:36px 30px;border:1px solid #4a6958;border-radius:24px;background:#20362a;box-shadow:0 18px 70px #0002}
+a{color:#a9e2b8}h1{font-size:clamp(26px,4vw,40px);line-height:1.2;margin:15px 0 10px}h2{font-size:20px;margin-top:30px;color:#c1edcb}
+p,li{color:#e0efe3}small{color:#b4cabc}ul{padding-left:22px}li{margin:8px 0}
+.back{display:inline-block;padding:7px 0;text-decoration:none;font-weight:700}
+.note{background:#304b3a;border-left:4px solid #99ddae;padding:17px 20px;border-radius:10px}
+@media(max-width:800px){main{margin:0;border-radius:0;min-height:100vh;padding:24px 20px}}
+</style></head><body><main>
+<a class="back" href="./">← Польский вслух — на главную</a>
+<h1>Безопасность и ваши данные</h1>
+<p>Этот раздел описывает текущую работу учебного сайта, размещённого на GitHub Pages. Он не является независимым сертификатом безопасности.</p>
+<h2>Нужен ли пароль от социальной сети?</h2>
+<p><strong>Нет.</strong> Локальный профиль сайта использует никнейм, а не пароль VK, Google или YouTube. Учебный сайт не должен запрашивать коды подтверждения или пароли этих сервисов. Если такая просьба появится, не вводите данные и сообщите владельцу репозитория.</p>
+<h2>Что происходит с презентациями и прогрессом?</h2>
+<p>Загруженные PPTX, PDF и TXT обрабатываются JavaScript в браузере пользователя. Извлечённый текст, упражнения и прогресс сохраняются в локальном хранилище этого браузера (localStorage), а не в учётной записи на нашем сервере. Очистка данных браузера может удалить их.</p>
+<h2>Какие внешние сервисы используются?</h2>
+<ul>
+<li><strong>YouTube:</strong> встроенное видео, обложки и переходы на видеохостинг. Сервис может получать стандартные данные сетевого запроса.</li>
+<li><strong>CDN:</strong> на странице импорта подключаются JSZip и PDF.js для чтения файлов, а на некоторых страницах — шрифты Google. При загрузке ресурсов соответствующие провайдеры получают данные сетевого обращения.</li>
+<li><strong>GitHub Pages:</strong> размещение публичных файлов сайта по HTTPS.</li>
+</ul>
+<p>Не загружайте презентации из непроверенных источников. Сайт предназначен для учебных материалов.</p>
+<h2>Если VK пометил ссылку опасной</h2>
+<div class="note">Не вводите пароль или коды VK на сторонних страницах. Если предупреждение возникло при переходе на сайт, сохраните точный адрес и скриншот уведомления, затем обратитесь в официальную поддержку VK для проверки возможной ошибочной блокировки.</div>
+<p>Исходный код доступен в <a href="https://github.com/Danvanmih/polskiy-vsluh" rel="noopener noreferrer">публичном репозитории GitHub</a>. О найденных проблемах безопасности можно сообщить владельцу через репозиторий, не публикуя секреты и персональные данные.</p>
+<small>Информация актуальна на 13 октября 2026 г. Полный независимый пентест сайта не проводился.</small>
+</main></body></html>
