@@ -19,7 +19,7 @@ function render(){
   if(!items.length){const empty=document.createElement('p');empty.className='pv-favorite-empty';empty.textContent=total?'Не нашли видео по запросу. Попробуй изменить поиск.':'Пока нет избранных видео. Чтобы добавить урок, нажми ♡ на карточке в видеобиблиотеке.';mount.append(empty);return}
   for(const v of items){
     const card=document.createElement('article');card.className='pv-favorite-card';
-    const img=document.createElement('img');img.loading='lazy';img.alt='';img.src=v.thumbnail||'https://i.ytimg.com/vi/'+encodeURIComponent(v.id)+'/mqdefault.jpg';
+    const img=document.createElement('img');img.loading='lazy';img.alt='';img.src='https://i.ytimg.com/vi/'+encodeURIComponent(v.id)+'/mqdefault.jpg';
     const body=document.createElement('div');body.className='pv-favorite-body';
     const title=document.createElement('h3');title.textContent=v.title;
     const buttons=document.createElement('div');buttons.className='pv-favorite-actions';
