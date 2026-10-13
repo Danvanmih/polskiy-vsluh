@@ -89,3 +89,12 @@ test('workflow token permissions and action references are pinned',()=>{
     assert.doesNotMatch(yml,/uses: actions\/(?:checkout|setup-node|setup-python)@v\d/);
   }
 });
+
+test('legacy ONAS is opened through an opaque-origin iframe with noopener',()=>{
+  const launcher=read('onas-easter-egg.js');
+  const sandbox=read('onas-isolated.html');
+  assert.match(launcher,/new URL\('onas-isolated\.html'/);
+  assert.match(launcher,/link\.rel='noopener noreferrer'/);
+  assert.match(sandbox,/sandbox="allow-scripts/);
+  assert.doesNotMatch(sandbox,/allow-same-origin/);
+});
