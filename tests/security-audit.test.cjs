@@ -40,3 +40,52 @@ test('GitHub workflow does not embed a hardcoded YouTube API credential',()=>{
   assert.match(yml,/secrets\.YOUTUBE_API_KEY/);
   assert.doesNotMatch(read('scripts/sync_youtube.py'),/AIza[0-9A-Za-z_-]{35}/);
 });
+
+const cspPages=['index.html','academy.html','learn.html','audio.html','leaderboard.html'];
+test('every main page has a restrictive CSP without inline scripts or eval',()=>{
+  for(const page of cspPages){
+    const html=read(page);
+    const match=html.match(/<meta http-equiv="Content-Security-Policy" content="([^"]+)"/);
+    assert.ok(match,'Missing CSP: '+page);
+    assert.match(match[1],/object-src 'none'/);
+    assert.match(match[1],/base-uri 'self'/);
+    assert.match(match[1],/script-src 'self'/);
+    assert.doesNotMatch(match[1],/script-src[^;]*'unsafe-inline'/);
+    assert.doesNotMatch(match[1],/script-src[^;]*'unsafe-eval'/);
+  }
+});
+test('ZIP dependency is bundled; PDF dependency is patched and matched to worker',()=>{
+  const html=read('learn.html');
+  assert.match(html,/src="vendor\/jszip-3\.10\.1\.min\.js"/);
+  assert.doesNotMatch(html,/src="https:\/\/cdn\.jsdelivr\.net\/npm\/jszip/);
+  assert.doesNotMatch(html,/pdf\.js\/3\.11\.174/);
+  const pdf=read('presentation-import.js');
+  assert.match(pdf,/pdf\.js\/4\.2\.67\/pdf\.min\.mjs/);
+  assert.match(pdf,/pdf\.js\/4\.2\.67\/pdf\.worker\.min\.mjs/);
+  assert.doesNotMatch(pdf,/pdf\.js\/3\.11\.174/);
+  assert.ok(read('vendor/jszip-3.10.1.min.js').length>90000);
+});
+test('donation hosts are matched as full domains, not a substring',()=>{
+  const code=read('academy.js');
+  assert.match(code,/const host=u\.hostname\.toLowerCase\(\)/);
+  assert.match(code,/trusted\.some\(d=>host===d\|\|host\.endsWith\('\.'\+d\)\)/);
+  assert.doesNotMatch(code,/filter\(u=>\/boosty/);
+});
+test('catalog thumbnails are derived from canonical YouTube video IDs',()=>{
+  assert.doesNotMatch(read('site.js'),/const img=x\.thumbnail\|\|/);
+  assert.doesNotMatch(read('academy.js'),/v\.thumbnail\|\|/);
+  assert.doesNotMatch(read('cabinet-favorites.js'),/img\.src=v\.thumbnail\|\|/);
+});
+test('workflow token permissions and action references are pinned',()=>{
+  for(const path of ['test-lesson-resolver','test-learning-workspace','test-header-theme','test-site-navigation','security-audit']){
+    const yml=read('.github/workflows/'+path+'.yml');
+    assert.match(yml,/permissions:\s*\n\s*contents: read/);
+    assert.doesNotMatch(yml,/uses: actions\/(?:checkout|setup-node|setup-python)@v\d/);
+  }
+  for(const path of ['sync-youtube','sync-phrases']){
+    const yml=read('.github/workflows/'+path+'.yml');
+    assert.match(yml,/permissions:\s*\n\s*contents: read/);
+    assert.match(yml,/\n\s*permissions:\s*\n\s*contents: write/);
+    assert.doesNotMatch(yml,/uses: actions\/(?:checkout|setup-node|setup-python)@v\d/);
+  }
+});
