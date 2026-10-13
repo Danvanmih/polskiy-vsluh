@@ -6,6 +6,11 @@ on:
     paths:
       - 'presentation-import.js'
       - 'audio-youtube-catalog.js'
+      - 'academy.js'
+      - 'site.js'
+      - 'cabinet-favorites.js'
+      - 'vendor/**'
+      - 'tests/security-runtime.e2e.cjs'
       - '*.html'
       - 'tests/security-audit.test.cjs'
       - '.github/workflows/security-audit.yml'
@@ -20,6 +25,7 @@ on:
 jobs:
   verify:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
@@ -27,3 +33,6 @@ jobs:
           node-version: '22'
       - run: node --check presentation-import.js && node --check audio-youtube-catalog.js
       - run: node --test tests/security-audit.test.cjs
+      - run: npm install --no-save --no-package-lock playwright@1.56.1
+      - run: npx playwright install --with-deps chromium
+      - run: node tests/security-runtime.e2e.cjs
