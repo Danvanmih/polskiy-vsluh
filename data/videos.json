@@ -1,7 +1,7 @@
 {
   "channelId": "UCVyi18vZGibg4Uu4zlBHTIA",
   "channelUrl": "https://www.youtube.com/@polskij-wsluh",
-  "updatedAt": "2026-10-23T01:35:41.995129+00:00",
+  "updatedAt": "2026-10-23T07:38:12.872715+00:00",
   "source": "youtube-data-api",
   "playlists": [
     {
@@ -138,6 +138,18 @@
     }
   ],
   "videos": [
+    {
+      "id": "G8Nrjii5wlY",
+      "title": "Новый Курс В1. Урок 5 (облегченный)",
+      "description": "Практикуем перевод с польского на русский. Визуализированные и озвученные носителями языка польские тексты, диалоги с переводом по фразам.\n\nПаузы между фразами даны специально для того, чтобы успеть повторить польскую фразу вслух.\n\nТеорию, грамматические пояснения и задания к тексту урока, а также упражнения для закрепления материала найдёте на БЕСПЛАТНОМ образовательном портале: http://www.polskijazyk.pl.\n\nВсе тексты этого видео (и всех остальных) на Boosty: https://boosty.to/polskijwsluh",
+      "publishedAt": "2026-10-23T07:30:02Z",
+      "thumbnail": "https://i.ytimg.com/vi/G8Nrjii5wlY/hqdefault.jpg",
+      "category": "B1",
+      "duration": "PT12M20S",
+      "playlistIds": [
+        "PLEtjvrezBaNc"
+      ]
+    },
     {
       "id": "fjIkLY4U8tU",
       "title": "Новый Курс В1. Урок 4.  Доскональная Отработка",
