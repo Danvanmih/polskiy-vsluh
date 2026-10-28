@@ -1,107 +1,522 @@
 {
-  "updatedAt": "2026-10-09T18:50:52.939804+00:00",
+  "updatedAt": "2026-10-28T06:17:50.400262+00:00",
   "source": "public-youtube-caption-tracks",
-  "byVideo": {},
-  "diagnostics": {
-    "ZAmY6Jk0Etg": {
-      "status": "error",
-      "detail": "DownloadError"
-    },
-    "K9zSSLPSiWo": {
-      "status": "error",
-      "detail": "DownloadError"
-    },
-    "dqTTYzCUkjE": {
-      "status": "error",
-      "detail": "DownloadError"
-    },
-    "HnmxiG8GDpc": {
-      "status": "error",
-      "detail": "DownloadError"
-    },
-    "B-XpSVHUjwE": {
-      "status": "error",
-      "detail": "DownloadError"
-    },
-    "vf57a4T8lLs": {
-      "status": "error",
-      "detail": "DownloadError"
-    },
-    "mtDaoTKUE9M": {
-      "status": "error",
-      "detail": "DownloadError"
-    },
-    "v9yG6H_ppEU": {
-      "status": "error",
-      "detail": "DownloadError"
-    },
-    "aCUlYCga1LA": {
-      "status": "error",
-      "detail": "DownloadError"
-    },
+  "byVideo": {
     "cmcowQhXyB4": {
-      "status": "error",
-      "detail": "DownloadError"
+      "source": "youtube-captions",
+      "captionType": "auto-yt-dlp",
+      "phrases": [
+        {
+          "pl": "Ania i Maciek są młodym małżeństwem",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Ania i Maciekł",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "od trzech lat mieszkają to tu tam",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "żywó to tut to tam",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "ciągle zmieniają mieszkania i dzielnice",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "teraz wynajmują dwupokojowe mieszkanie",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Niedawno założyli własną firmę, która",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "zajmuje się wzornictwem artystycznym",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Firma świetnie prosperuje, dlatego",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "że już czas kupić własne mieszkanie",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Mam już dość ciągłych przeprowadzek",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "chciałabym w końcu zamieszkać na swoim",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "marzę o przytulnym mieszkaniu z widokiem",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Ja ojnej widłowicie",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "się z tobą zgadzam",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Myślę, że możemy pozwolić sobie na",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Jak chcesz, możemy zacząć szukać już",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Tak. Przejrzyjmy ogłoszenia",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Zobacz, tu jest ciekawa oferta",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Apartament niedaleko parku. Apartamenty",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "niedaleko od parka",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "czteropokojowe mieszkanie w zabytkowej",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Taka niska cena za tak duży metraż",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Osiedle strzeżone. Dwupoziomowe",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "mieszkanie z ogrodem",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Sama nie wiem. To gdzieś na",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Ja nie znanach",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Wolisz mieszkanie w centrum czy w innych",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Aniu, chyba nie potrzebujemy tak dużego",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Niedawno byliśmy tacy szczęśliwi w",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Powinniśmy zgłosić się do agencji",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Oni wybiorą dla nas najlepsze oferty i",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "nie trzeba będzie przeglądać ogłoszeń",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Ale agencja pobiera prowizję",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": ">> Nie szkodzi",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": ">> Zaraz zadzwonię i dowiem się o wysokość",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Myślę, że na początek kupimy dwupokojowe",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "mieszkanie w spokojnej okolicy, ale z",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "dobrym dojazdem do centrum",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "I oczywiście może być do remontu",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        }
+      ]
     },
     "HasWG4BKUo8": {
-      "status": "error",
-      "detail": "DownloadError"
+      "source": "youtube-captions",
+      "captionType": "auto-yt-dlp",
+      "phrases": [
+        {
+          "pl": "Bartek nie lubi stać w korkach",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "szczególnie kiedy wraca z pracy",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "uważa, że najlepszym rozwiązaniem, żeby",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "zmniejszyć korki, jest używanie jednego",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "samochodu przez kilka osób, co",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "spowodowałoby mniej samochodów na",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "zmniejszyć korki jest używanie jednego",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Podwożenie się Carpoling zaczęło robić",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "się popularne kilka dekad temu. Jednak",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "ludzie nie byli do tego zbyt przekonani",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "gdyż lubili mieć prywatność podczas",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Niektórzy ludzie obawiali się również o",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "bezpieczeństwo podczas dzielenia",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "samochodu z nieznajomymi",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "W niektórych miastach na drogach są",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "wyznaczone specjalne pasy dla",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Mogą ich używać tylko samochody, w",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "których jest dwie, trzy lub więcej osób",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Podwożenie się ułatwia dojazd do pracy",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "jednak wymaga zmiany niektórych nawyków",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Przez ostatnie kilka lat podwożenie się",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "staje się coraz bardziej popularne",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "ponieważ korki robią się coraz gorsze",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Podwożenie się może zaoszczędzić ludziom",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "czas i pieniądze, ale co najważniejsze",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "jest korzystne dla środowiska",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "to jest ta sama historia opowiedzi przez",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Nigdy nie lubiłem stać w korkach",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "szczególnie kiedy jechałem lub wracałem",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Uważałem, że najlepszym rozwiązaniem",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "żeby zmniejszyć korki jest używanie",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "jednego samochodu przez kilka osób, co",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "żeby zmniejszyć korki, jest używanie",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Obawiałem się również o bezpieczeństwo",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "podczas dzielenia samochodu z",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Obawiałem również o bezpieczeństwo",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "mogą ich używać tylko samochody w",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Odwożenie się może zaoszczędzić ludziom",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Kiedy Bartek szczególnie nie lubi stać w",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "samochodu przez kilka osób",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        }
+      ]
+    }
+  },
+  "diagnostics": {
+    "gnbVGJ3839c": {
+      "status": "missing",
+      "detail": "unavailable"
+    },
+    "G8Nrjii5wlY": {
+      "status": "missing",
+      "detail": "unavailable"
+    },
+    "fjIkLY4U8tU": {
+      "status": "missing",
+      "detail": "unavailable"
+    },
+    "dIoB7a94iII": {
+      "status": "missing",
+      "detail": "unavailable"
+    },
+    "V1Wq9JUT-7g": {
+      "status": "missing",
+      "detail": "unavailable"
+    },
+    "ZAmY6Jk0Etg": {
+      "status": "missing",
+      "detail": "unavailable"
+    },
+    "K9zSSLPSiWo": {
+      "status": "missing",
+      "detail": "unavailable"
+    },
+    "dqTTYzCUkjE": {
+      "status": "missing",
+      "detail": "unavailable"
+    },
+    "HnmxiG8GDpc": {
+      "status": "missing",
+      "detail": "unavailable"
+    },
+    "B-XpSVHUjwE": {
+      "status": "missing",
+      "detail": "unavailable"
+    },
+    "vf57a4T8lLs": {
+      "status": "missing",
+      "detail": "unavailable"
+    },
+    "mtDaoTKUE9M": {
+      "status": "missing",
+      "detail": "unavailable"
+    },
+    "v9yG6H_ppEU": {
+      "status": "missing",
+      "detail": "unavailable"
+    },
+    "aCUlYCga1LA": {
+      "status": "missing",
+      "detail": "unavailable"
+    },
+    "cmcowQhXyB4": {
+      "status": "ok",
+      "count": 40,
+      "kind": "auto-yt-dlp"
+    },
+    "HasWG4BKUo8": {
+      "status": "ok",
+      "count": 40,
+      "kind": "auto-yt-dlp"
     },
     "iJBqWJijWyE": {
-      "status": "error",
-      "detail": "DownloadError"
+      "status": "missing",
+      "detail": "unavailable"
     },
     "Ral8rIIrFqs": {
-      "status": "error",
-      "detail": "DownloadError"
+      "status": "missing",
+      "detail": "unavailable"
     },
     "tERNe_96l8Y": {
-      "status": "error",
-      "detail": "DownloadError"
+      "status": "missing",
+      "detail": "unavailable"
     },
     "8NSV3v44ETw": {
-      "status": "error",
-      "detail": "DownloadError"
+      "status": "missing",
+      "detail": "unavailable"
     },
-    "F0a3fls2nM0": {
-      "status": "error",
-      "detail": "DownloadError"
+    "PkThOjmYxbc": {
+      "status": "missing",
+      "detail": "unavailable"
     },
-    "-AlenmKOcRA": {
-      "status": "error",
-      "detail": "DownloadError"
+    "vnSPsMUZAjs": {
+      "status": "missing",
+      "detail": "unavailable"
     },
-    "Z7E76F6JAJg": {
-      "status": "error",
-      "detail": "DownloadError"
+    "7zOHJHDgUWY": {
+      "status": "missing",
+      "detail": "unavailable"
     },
-    "4iB5IF_eDYQ": {
-      "status": "error",
-      "detail": "DownloadError"
+    "EJtbUpljzWU": {
+      "status": "missing",
+      "detail": "unavailable"
     },
-    "lUm-O8CwXTQ": {
-      "status": "error",
-      "detail": "DownloadError"
-    },
-    "216mhpTce2o": {
-      "status": "error",
-      "detail": "DownloadError"
-    },
-    "YuEKJGE0piM": {
-      "status": "error",
-      "detail": "DownloadError"
-    },
-    "TA7gBpk8F0M": {
-      "status": "error",
-      "detail": "DownloadError"
-    },
-    "Fqfom2yMabg": {
-      "status": "error",
-      "detail": "DownloadError"
-    },
-    "ppQpakB9ZeY": {
-      "status": "error",
-      "detail": "DownloadError"
+    "Rj6xu_IudUo": {
+      "status": "missing",
+      "detail": "unavailable"
     }
   }
 }
