@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-28T06:17:50.400262+00:00",
+  "updatedAt": "2026-10-28T13:32:41.759587+00:00",
   "source": "public-youtube-caption-tracks",
   "byVideo": {
     "cmcowQhXyB4": {
@@ -413,6 +413,212 @@
           "captionType": "auto-yt-dlp"
         }
       ]
+    },
+    "iJBqWJijWyE": {
+      "source": "youtube-captions",
+      "captionType": "auto-yt-dlp",
+      "phrases": [
+        {
+          "pl": "Małgorzata jest menadżerem od spraw",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "marketingu w firmie produkcyjnej",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "jest przekonana, że jest to odpowiedni",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "czas, by rozbudować firmę i otworzyć",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "oddziały za granicą, gdyż",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "zapotrzebowanie na produkt firmy wzrasta",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "w zagranicznych krajach",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Nie tylko wzrasta eksport, ale również",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "poszczególne kraje zagraniczne mają",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "znakomitych dostawców części",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Dlatego też otworzenie oddziałów za",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "granicą spowoduje wzrost sprzedaży i",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "zredukowanie kosztów w tym samym czasie",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Każde działanie za granicą wymagać",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "będzie dokładnego zaplanowania",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Każdy kraj ma inne przepisy. Dlatego też",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Małgorzata będzie musiała znaleźć",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "pracowników z lokalnym doświadczeniem",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "którzy będą jej w stanie pomóc",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Małgorzata odwiedziła większość ważnych",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Nie chcę popełnić żadnego błędu. Dlatego",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "też decyduję się zapytać zagranicznych",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "klientów o radę",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "też decyduje się zapytać zagranicznych",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Zajmie jej to dużo czasu, by zbadać",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "zagraniczny rynek, by miała pewność, że",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "plan rozbudowy firmy na pewno się",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "sama historia opowiedziana w inny",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "menadżerem od spraw marketingu w firmie",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Byłam menadżerem od spraw marketingu w",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Byłam przekonana, że był to odpowiedni",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "zapotrzebowanie na produkt firmy",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "wzrastał w zagranicznych krajach",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Nie tylko wzrastał eksport, ale również",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "poszczególne zagraniczne kraje miały",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "granicą spowodowałoby wzrost sprzedaży i",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Każde działanie za granicą wymagałoby",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Każdy kraj miał inne przepisy. Dlatego",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "musiałam znaleźć pracowników z lokalnym",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "doświadczeniem, którzy byliby mi w",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        }
+      ]
     }
   },
   "diagnostics": {
@@ -473,18 +679,17 @@
       "detail": "unavailable"
     },
     "cmcowQhXyB4": {
-      "status": "ok",
-      "count": 40,
-      "kind": "auto-yt-dlp"
-    },
-    "HasWG4BKUo8": {
-      "status": "ok",
-      "count": 40,
-      "kind": "auto-yt-dlp"
-    },
-    "iJBqWJijWyE": {
       "status": "missing",
       "detail": "unavailable"
+    },
+    "HasWG4BKUo8": {
+      "status": "missing",
+      "detail": "unavailable"
+    },
+    "iJBqWJijWyE": {
+      "status": "ok",
+      "count": 40,
+      "kind": "auto-yt-dlp"
     },
     "Ral8rIIrFqs": {
       "status": "missing",
