@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-28T22:51:54.050811+00:00",
+  "updatedAt": "2026-10-29T06:28:27.198247+00:00",
   "source": "public-youtube-caption-tracks",
   "byVideo": {
     "cmcowQhXyB4": {
@@ -837,9 +837,8 @@
       "detail": "unavailable"
     },
     "fjIkLY4U8tU": {
-      "status": "ok",
-      "count": 40,
-      "kind": "auto"
+      "status": "missing",
+      "detail": "unavailable"
     },
     "dIoB7a94iII": {
       "status": "missing",
