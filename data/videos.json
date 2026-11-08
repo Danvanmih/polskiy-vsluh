@@ -1,7 +1,7 @@
 {
   "channelId": "UCVyi18vZGibg4Uu4zlBHTIA",
   "channelUrl": "https://www.youtube.com/@polskij-wsluh",
-  "updatedAt": "2026-11-08T06:12:59.863690+00:00",
+  "updatedAt": "2026-11-08T13:36:23.397118+00:00",
   "source": "youtube-data-api",
   "playlists": [
     {
@@ -138,6 +138,18 @@
     }
   ],
   "videos": [
+    {
+      "id": "YNRJcQRbcW8",
+      "title": "Новый Курс В1. Урок 6",
+      "description": "Практикуем перевод с русского на польский. Визуализированные и озвученные носителями языка польские тексты, диалоги с переводом по фразам.\n\nПаузы между фразами даны специально для того, чтобы успеть повторить польскую фразу вслух.\n\nТеорию, грамматические пояснения и задания к тексту урока, а также упражнения для закрепления материала найдёте на БЕСПЛАТНОМ образовательном портале: http://www.polskijazyk.pl.\n\nВсе тексты этого видео (и всех остальных) на Boosty: https://boosty.to/polskijwsluh",
+      "publishedAt": "2026-11-08T07:30:12Z",
+      "thumbnail": "https://i.ytimg.com/vi/YNRJcQRbcW8/hqdefault.jpg",
+      "category": "B1",
+      "duration": "PT10M35S",
+      "playlistIds": [
+        "PLEtjvrezBaNc"
+      ]
+    },
     {
       "id": "k1G6aUYJvrk",
       "title": "Новый Курс В1. Урок 6 (облегченный)",
