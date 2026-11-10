@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T07:45:12.056868+00:00",
+  "updatedAt": "2026-11-10T20:01:07.785568+00:00",
   "source": "public-youtube-caption-tracks",
   "byVideo": {
     "cmcowQhXyB4": {
@@ -825,12 +825,1300 @@
           "captionType": "auto"
         }
       ]
+    },
+    "YNRJcQRbcW8": {
+      "source": "youtube-captions",
+      "captionType": "auto-yt-dlp",
+      "phrases": [
+        {
+          "pl": "Igor od niedawna pracuje w eleganckiej",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Teraz bardzo lubi swoją pracę, ale na",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "początku bardzo go stresowała",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Igor myślał, że praca kelnera jest",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "prosta. Szczególnie, że był wcześniej",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "kelnerem w pizzerii",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Ale w nowej pracy nie było tak łatwo",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Igor przekonał się, że żeby dobrze",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "obsługiwać gości restauracji, musi się",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Po pierwsze musi perfekcyjnie znać kartę",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "dań i win, wiedzieć co jak smakuje oraz",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "z czego i w jaki sposób zostało",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Młody kelner musiał zdać egzamin z karty",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "dań przed szefem kuchni oraz",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Kiedy go zdał, nastąpiło próbowanie",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "potraw z menu restauracji",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Właścicielka restauracji uważa, że nie",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "można podawać jedzenia, jeśli się nie",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "wie, jak ono smakuje",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Igor myślał, że serwowanie potraw polega",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "tylko na tym, że odbiera się talerz z",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "kuchni i zanosi do stolika",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "A tymczasem musiał uczyć się ponad",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "miesiąc jak nakrywać stół, układać",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "sztućce, podawać wino",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "pomagać gościom w wyborze dań i pytać",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "ich, czy wszystko jest w porządku",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Na początku był tak zestresowany",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "źle poukładał sztućce",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Teraz już wie, że łyżka i nóż powinny",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "być po prawej stronie talerza, widelec",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "po lewej, a łyżeczka i widelczyk do",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "ciasta na wprost",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Wie też gdzie postawić kieliszek i który",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "służy do jakiego wina",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "zna wszystkie rodzaje sztućców, które są",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "w restauracji i wie, która łyżeczka jest",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "do herbaty, do kawy, a która do deseru",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Nawet w domu ma nóż do ryb",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": ">> Obsługuje gości perfekcyjnie",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        }
+      ]
+    },
+    "dIoB7a94iII": {
+      "source": "youtube-captions",
+      "captionType": "auto-yt-dlp",
+      "phrases": [
+        {
+          "pl": "W centr jedzie dwentrum",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Marek skończył wczoraj 30",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Moja córka dostała szóstkę z biologi",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Ma pan rozmienić setkę",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Mieszkam w nowym bloku pod siódemką",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "kiedy dokładnie będziecie się",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "przeprowadzać do Polski?",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "do jakiego miasta chcesz się",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "na tyjedziesz mnie",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "na jak długo przeprowadzisz się do mnie",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "chcę studiować za granicą prawdopodobnie",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "przeprowadzę się do Brukseli",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Nie chcę przeprowadzić się z bloku do",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Warszawie przeprowadzałam się już cztery",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "razy. Ostatnio z woli na Pragę",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "przadam się do koleżanki na wieś",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "skąd wyprowadziłem się z akademika",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "od kogo? Nareszcie wyprowadzili się od",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Już niedługo wprowadzam się do nowego",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": ">> Wprowadziłam się do mojego chłopaka",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Anna i Marek przeprowadzili się z miasta",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Do centrum jeździ dwunastka",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Marek skończył wczoraj 30estkę",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Moja córka dostała szóstkę z biologii",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Ma pan rozmienić setkę?",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Na jak długo przeprowadzisz się do mnie?",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Chcę studiować za granicą",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Prawdopodobnie przeprowadzę się do",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": ">> W Warszawie przeprowadzałam się już",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "cztery razy. Ostatnio z woli na Pragę",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": ">> Za miesiąc przeprowadzam się do",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "koleżanki na wieś",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Wyprowadziłem się z akademika",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Nareszcie wyprowadzili się od rodziców",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        }
+      ]
+    },
+    "V1Wq9JUT-7g": {
+      "source": "youtube-captions",
+      "captionType": "auto-yt-dlp",
+      "phrases": [
+        {
+          "pl": "Do centrum jeździ 12",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Marek skończył wczoraj 30",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Marku wča stuknatka",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Moja córka dostała szóstkę z biologii",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Ma pan rozmienić setkę",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Mieszkam w nowym bloku pod siódemką",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Kiedy dokładnie będziecie się",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "przeprowadzać do Polski?",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "chcę studiować za granicą prawdopodobnie",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "przeprowadzę się do Brukseli",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Nie chcę przeprowadzić się z bloku do",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "W Warszawie przeprowadzałam się już",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "cztery razy. Ostatnio z woli na Pragę",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Za miesiąc przeprowadzam się do",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "koleżanki na wieś",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "skąd wyprowadziłem się z akademika",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "od kogo? Nareszcie wyprowadzili się od",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Już niedługo wprowadzam się do nowego",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": ">> Wprowadziłam się do mojego chłopaka",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": ">> Anna i Marek przeprowadzili się z miasta",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Marek skończył wczoraj 30estkę",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Ma pan rozmienić setkę?",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Do jakiego miasta chcesz się",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Na jak długo przeprowadzisz się do mnie?",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Chcę studiować za granicą",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Prawdopodobnie przeprowadzę się do",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": ">> W Warszawie przeprowadzałam się już",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Wyprowadziłem się z akademika",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Nareszcie wyprowadzili się od rodziców",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        }
+      ]
+    },
+    "B-XpSVHUjwE": {
+      "source": "youtube-captions",
+      "captionType": "auto-yt-dlp",
+      "phrases": [
+        {
+          "pl": "Przeprowadzamy się do małego parterowego",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "domu za miastem",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Wależny dom za",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "szukamy wygodnego trzypokojowego",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "mieszkania w niedrogiej dzielnicy",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Mamy mieszkanie w bloku z balkonem i",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "widokiem na miasto",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Mieszkanie, które składa się z dwóch",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "pokoi, to dwupokojowe mieszkanie",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Kamienica ma 100 lat to stuletnia",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Mieszkanie, które ma 50 m kwadratow",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Mieszkanie, które ma 50 met kwadratow",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "50 metrowe mieszkanie",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "czy za wynajęcie małego mieszkania w",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "czyż za wynajęcie małego mieszkania w",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Ile wynosi czynsz wynajęcie małego",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "mieszkania w stolicy?",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Czy wymagana jest kaucja? I kiedy należy",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Czy wymagana jest kaucja i kiedy należy",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "jakie są dodatkowe opłaty za wynajem",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "jakie są dodatkowe opłaty wynajem tego",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "będziemy płacić ratę kredytu za",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "mieszkanie, czynż oraz opłaty za prąd i",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Nie mogę wynająć tego mieszkania, bo",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "właściciel wymaga dwumiesięcznej kaucji",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Czyż płatny za dwa miesiące z góry?",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        }
+      ]
+    },
+    "tERNe_96l8Y": {
+      "source": "youtube-captions",
+      "captionType": "auto-yt-dlp",
+      "phrases": [
+        {
+          "pl": "Marysia nie może wydostać się z parku",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "nie wybrać parka",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "przyszła tu na festiwal muzyczny. Jednak",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "skończył się on później niż",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "O tej porze nie chodzą już żadne",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "autobusy i setki ludzi próbuje wydostać",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "się z parku w tym samym czasie",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Marysia zamówiła Ubera ze swojego",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Nigdy wcześnie nie używała Ubera. Ma",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "nadzieję, że jest to bezpieczne",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Marysia widzi w aplikacji nadchodzący",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Wygląda, że porusza się on bardzo",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Następnym razem wyjdzie z festiwalu",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "zanim autobusy przestaną chodzić",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "To jest ta sama historia opowiedziana w",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "inny sposób. Dołącza kolega Marysi",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Marysia i Paweł nie mogą wydostać się z",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "przyszli tu na festiwal muzyczny. Jednak",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Przyszli tu na festiwal muzyczny, jednak",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Marysia i Paweł zamówili Ubera ze",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Nigdy wcześnie nie używali Ubera. Mają",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Marysia i Paweł widzą w aplikacji",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Następnym razem wyjdą z festiwalu, zanim",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "autobusy przestaną chodzić",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Skąd nie może wydostać się Marysia?",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Marys nie wybrać parka",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "przyszła tam na festiwal muzyczny",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": ">> Dlaczego ona tam była?",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "na muzykalny festival",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Nie, o tej porze nie chodzą już żadne",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Setki ludzi próbuje wydostać się z parku",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "w tym samym czasie",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "ludzi próbuje wydostać się z parku w tym",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Set ludzi próbuje wydostać się z parku w",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "tym samym czasie",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": ">> Co zamówili Marysia i Paweł?",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Nigdy wcześniej nie używali Ubera. Mają",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Czy oni używali już wcześniej Ubera?",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Nie, nigdy wcześniej nie używali oni",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "gdzie widzą nadchodzący samochód",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        }
+      ]
+    },
+    "8NSV3v44ETw": {
+      "source": "youtube-captions",
+      "captionType": "auto-yt-dlp",
+      "phrases": [
+        {
+          "pl": "Kasia jest w drużynie zapaśniczej od 15",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Jej trener poinformował ją dziś o",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "zawodach, które odbędą się wkrótce",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Chcę, aby Kasia startowała w niższej",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Chcę aby Kasia startowała w niższej",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "W związku z tym Kasia będzie musiała",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "będzie musiała również chodzić częściej",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "także cieć sporza",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "od zawsze przekochała zapasy",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Kasia od zawsze kochała zapasy",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "od zawsze kochała zapasy",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Jednak jest jej ciężej, im jest starsza",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "nie ma już tak dużo czasu jak kiedyś",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Tak, jak rze",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Ciężej jest jej stracić na wadze",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Coraz ciężej jest jej stracić na wadze",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "oraz ciężej jest jej stracić na wadze",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Mimo to Kasia zrobi wszystko co w jej",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "mocy, by uczestniczyć w zawodach",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "To jest ta sama historia opowiedziana w",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "inny sposób. Dołącza koleżanka Kasi",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": ">> Kasia i jej koleżanka są w drużynie",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "zapaśniczej od 15 lat",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Kasia i jej koleżanka są w drużynie",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Ich trener poinformował je dziś o",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Ich trer poinformował je dziś o",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Chcę, aby startowały w niższej klasie",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "chc aby startowały w niższej klasie",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "W związku z tym Kasia i jej koleżanka",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "będą musiały zmienić dietę",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "będą musiały również chodzić częściej na",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "będą musiały również",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Dziewczyny od zawsze kochały zapasy",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Jednak jest im ciężej, im są starsze",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "jest im ciężej im są starsze",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Nie mają już tak dużo czasu jak kiedyś",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Coraz ciężej jest im stracić na wadzę",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Mimo to Kasia i jej koleżanka zrobią",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "wszystko co w ich mocy, by uczestniczyć",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Mimo to Kasia i koleżanka zrobią",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        }
+      ]
+    },
+    "vnSPsMUZAjs": {
+      "source": "youtube-captions",
+      "captionType": "auto-yt-dlp",
+      "phrases": [
+        {
+          "pl": "Kacper rozglądał się za nowym",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Kacper rozglądał się zawarzaczem",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Odwiedził wiele sklepów w swojej",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "okolicy, jednak nie znalazł nic w",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Dlatego też Kacper zdecydował się",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "przejrzeć sklepy internetowe",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Mimo że Kacper nie ma zaufania do",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "zakupów online, miał on nadzieję, że",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "odtwarzacze MP3 będą tam tańsze",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Po kilku godzinach przeglądania różnych",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "stron, Kacper znalazł odtwarzacz MP3",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "który mu odpowiadał",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "który mu odpowiadał:",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Był on tańszy o połowę od reszty",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "odtwarzaczy, więc zdecydował się go",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Ma nadzieję, że długo będzie mu służyć",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "To jest ta sama historia opowiedziana w",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Moje dzieci rozglądały się za nowym",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Odwiedziły wiele sklepów w swojej",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "okolicy, jednak nie znalazły nic w",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Dlatego też zdecydowały się przejrzeć",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Mimo że nie mam zaufania do zakupów",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "online, miałam nadzieję, że odtwarzacze",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "MP3 będą tam tańsze",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "stron, dzieci znalazły odtwarzacz MP3",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "który im odpowiadał",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "który im odpowiadał:",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "odtwarzaczy, więc zdecydowały się go",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Mam nadzieję, że długo będzie im służyć",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "za czym rozglądał się Kacper?",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Kacper odwiedził wiele sklepów w swojej",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Gdzie były sklepy, które odwiedził",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": ">> Kacper odwiedził wiele sklepów w swojej",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Jednak nie znalazł nic w przystępnej",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Czy udało mu się znaleźć odtwarzacz w",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Kacper zdecydował się przejrzeć sklepy",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Jakie sklepy zdecydował się przejrzeć",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "mimo że nie mają zaufania do zakupów",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "online, mają nadzieję, że odtwarzacze",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Czy oni mają zaufanie do zakupów online?",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        }
+      ]
     }
   },
   "diagnostics": {
     "YNRJcQRbcW8": {
-      "status": "missing",
-      "detail": "unavailable"
+      "status": "ok",
+      "count": 40,
+      "kind": "auto-yt-dlp"
     },
     "k1G6aUYJvrk": {
       "status": "missing",
@@ -853,12 +2141,14 @@
       "detail": "unavailable"
     },
     "dIoB7a94iII": {
-      "status": "missing",
-      "detail": "unavailable"
+      "status": "ok",
+      "count": 34,
+      "kind": "auto-yt-dlp"
     },
     "V1Wq9JUT-7g": {
-      "status": "missing",
-      "detail": "unavailable"
+      "status": "ok",
+      "count": 29,
+      "kind": "auto-yt-dlp"
     },
     "ZAmY6Jk0Etg": {
       "status": "missing",
@@ -877,8 +2167,9 @@
       "detail": "unavailable"
     },
     "B-XpSVHUjwE": {
-      "status": "missing",
-      "detail": "unavailable"
+      "status": "ok",
+      "count": 26,
+      "kind": "auto-yt-dlp"
     },
     "vf57a4T8lLs": {
       "status": "missing",
@@ -905,29 +2196,31 @@
       "detail": "unavailable"
     },
     "iJBqWJijWyE": {
-      "status": "ok",
-      "count": 40,
-      "kind": "auto-yt-dlp"
+      "status": "missing",
+      "detail": "unavailable"
     },
     "Ral8rIIrFqs": {
       "status": "missing",
       "detail": "unavailable"
     },
     "tERNe_96l8Y": {
-      "status": "missing",
-      "detail": "unavailable"
+      "status": "ok",
+      "count": 40,
+      "kind": "auto-yt-dlp"
     },
     "8NSV3v44ETw": {
-      "status": "missing",
-      "detail": "unavailable"
+      "status": "ok",
+      "count": 40,
+      "kind": "auto-yt-dlp"
     },
     "PkThOjmYxbc": {
       "status": "missing",
       "detail": "unavailable"
     },
     "vnSPsMUZAjs": {
-      "status": "missing",
-      "detail": "unavailable"
+      "status": "ok",
+      "count": 40,
+      "kind": "auto-yt-dlp"
     }
   }
 }
