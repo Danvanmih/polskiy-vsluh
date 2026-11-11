@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T07:08:19.637697+00:00",
+  "updatedAt": "2026-11-11T19:52:25.079248+00:00",
   "source": "public-youtube-caption-tracks",
   "byVideo": {
     "cmcowQhXyB4": {
@@ -2112,9 +2112,837 @@
           "captionType": "auto-yt-dlp"
         }
       ]
+    },
+    "N1fl11CryPs": {
+      "source": "youtube-captions",
+      "captionType": "auto-yt-dlp",
+      "phrases": [
+        {
+          "pl": "ja izl warza",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "za miesiąc przeprowadzam się z Berlina",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Berlina w Warszawu",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Berlina w Warszaw",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "się ze Śródmieścia na Mokotów",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Moi znajomi przeprowadzą się ze",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "śródmieścia na Mokotów",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Ja zacząłem szukać mieszkania już na",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Wy zaczęliście szukać za późno i teraz",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Marta i Natasza wynajęły trzypokojowe",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "mieszkanie w pobliżu metra. My",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Renata zajęła się projektowaniem",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "mieszkania ja zająłem się realizacją jej",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "mieszkania. Ja zająłem się realizacją",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "na ręku dziecko, mężczyzna niósł bagaże",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Kobieta niosła na ręku dziecko",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Mężczyzna niósł bagaże",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Darek i Piotrek nieśli książki, a",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Ludmiła i Iwona niosły doniczki",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Darek Piotrek nieśli książki, a Ludmiła",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "i Iwona niosły doniczki",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Ja tylka w dziecki",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "widziałem cię jak wiozłaś dziecko do",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "A ja ciebie jak wiozłeś ze sklepu drzewa",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "i krzewy na działkę",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": ">> a ja ciebie jak wiozłeś ze sklepu drzewa",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Ja wiozłem super grill a drzewa wizół",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Ja wiozłem super grill a drzewa wózł mój",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "czy wieźliście kiedyś Stół na dachu",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "dlaczego nie wiozłyście dzieci w",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Przywieźliśmy już do nowego mieszkania",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Musimy przywieźć jeszcze książki",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "regał. Musimy przywieźć jeszcze książki",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "nie trzeba. My już je przywiozłyśmy",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": ">> Nie trzeba. Już je przywiozłyśmy",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Ktoś wyniósł na śmietnik piękne",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "zdążyliśmy je zabrać, zanim samochód",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "wywiózł je na wysypisko",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Winda nie działa i przez pół dnia",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "wnosiliśmy meble na piąte piętro",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        }
+      ]
+    },
+    "G8Nrjii5wlY": {
+      "source": "youtube-captions",
+      "captionType": "auto-yt-dlp",
+      "phrases": [
+        {
+          "pl": "Za miesiąc przeprowadzam się z Berlina",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Berlina w Warszaw",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Moi znajomi przeprowadzą się ze",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Śródmieścia na Mokotów",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "szukać mieszkania już na początku",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Wy zaczęliście szukać za późno i teraz",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Marta i Natasza wynajęły trzypokojowe",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "mieszkanie w pobliżu metra. My",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "zajęła się projektowaniem mieszkania. Ja",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "zająłem się realizacją jej pomysłów",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Kobieta niosła na ręku dziecko",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "mężczyzna niósł bagaże",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Darek i Piotrek nieśli książki, a",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Ludmiła i Iwona niosły doniczki",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Widziałem jak wiozłaś dziecko do",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "A ja ciebie jak wiozłeś ze sklepu drzewa",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "i krzewy na działkę",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Czy wieźliście kiedyś stół na dachu",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "na kryszy automobila",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Dlaczego nie wiozłyście dzieci w",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Przywieźliśmy już do nowego mieszkania",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Musimy przywie jeszcze książki",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Nie trzeba. My już je przywiozłyśmy",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Ktoś wyniósł na śmietnik piękne",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "zdążyliśmy je zabrać zanim samochód",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "wywiózł je na wysypisko",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Winda nie działa i przez pół dnia",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "wnosiliśmy meble na piąte piętro",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Jak mamy przewieść tę ogromną szafę ze",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "starego mieszkania do nowego?",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "nie możemy w do polski tej starej ikony",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "po babci bo jest zabytkiem",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Mecz zakończył się remisem 1 do1",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Mamy na razie jedno dziecko",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Proszę cię tylko o jedno. Przeprowadźmy",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "się za miasto",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "W tej grupie nie ma ani jednej",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Jedni studenci wyjechali na wakacje",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Nie widzę ani jednych, ani drugich",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Ja zacząłem szukać mieszkania już na",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        }
+      ]
+    },
+    "aCUlYCga1LA": {
+      "source": "youtube-captions",
+      "captionType": "auto-yt-dlp",
+      "phrases": [
+        {
+          "pl": "Ania i Maciek są młodym małżeństwem. Od",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "trzech lat mieszkają to tu, to tam",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "ciągle zmieniają mieszkania i dzielnice",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "teraz wynajmują dwupokojowe mieszkanie",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Niedawno założyli własną firmę, która",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "zajmuje się wzornictwem artystycznym",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Firma świetnie prosperuje, dlatego",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "że już czas kupić własne mieszkanie",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Mam już dość ciągłych przeprowadzek",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Chciałabym w końcu zamieszkać na swoim",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "marę o przytulnym mieszkaniu z widokiem",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Całkowicie się z tobą zgadzam. Myślę, że",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "możemy pozwolić sobie na własne",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Jak chcesz, możemy zacząć szukać już",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Tak, przejrzyjmy ogłoszenia. Zobacz, tu",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "jest ciekawa oferta",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Apartament niedaleko parku",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "czteropokojowe mieszkanie w zabytkowej",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Taka niska cena za tak duży metraż",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Osiedle strzeżone. Dwupoziomowe",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "mieszkanie z ogrodem",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Sama nie wiem. To gdzieś na",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "mieszkanie w centrum czy w innych",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Aniu, chyba nie potrzebujemy tak dużego",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Niedawno byliśmy tacy szczęśliwi w",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Powinniśmy zgłosić się do agencji",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Ale agencja pobiera prowizję",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": ">> Nie szkodzi. Zaraz zadzwonię i dowiem",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "się o wysokość prowizji",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Myślę, że na początek kupimy dwupokojowe",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "mieszkanie w spokojnej okolicy, ale z",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "dobrym dojazdem do centrum",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": ">> Tak. i urządzimy je po swojemu",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": ">> Mam już dość ciągłych przeprowadzek",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Marzę o przytulnym mieszkaniu z widokiem",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": ">> Całkowicie się z tobą zgadzam. Myślę",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "że możemy pozwolić",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "sobie na własne mieszkanie. Jak chcesz",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "możemy zacząć szukać już dzisiaj",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": ">> Tak, przejrzyjmy ogłoszenia. Zobacz, tu",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        }
+      ]
+    },
+    "Ral8rIIrFqs": {
+      "source": "youtube-captions",
+      "captionType": "auto-yt-dlp",
+      "phrases": [
+        {
+          "pl": "Sylwia i Grzegorz chcieliby kupić nowy",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "dom, ponieważ ich dzieci są już prawie",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Niestety nie jest to łatwe, gdyż ceny",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "domów wzrosły szybciej niż zarobki",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "gdyż ceny domów wzrosły szybciej niż",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Oszczędzali pieniądze przez wiele lat",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "aby móc kupić nowy dom",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Jeśli chcą kupić dom jednorodzinny",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "musieliby mieszkać daleko od miasta",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "o długie dojazdy do ich pracy",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Co oznacza długie dojazdy do ich pracy?",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "przejrzeli listę mieszkań, ale były one",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "zbyt małe lub w dzielnicy, która im się",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Uświadomili sobie, że mimo iż oboje",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "ciężko pracują i nie wydają zbyt dużo",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "pieniędzy, wciąż nie mogą pozwolić sobie",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "na kupno wymarzonego domu",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "na kupno wymarzonego domu. No",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Wpadli na pomysł, że mogliby wynająć",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "dom. Jednak po dłuższym zastanowieniu",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "zdecydowali, że chcą mieć swój własny",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "w końcu zadecydowali, że przeprowadzą",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "się do mniejszego miasta",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Będą wiedli tam proste życie i cieszyć",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "się lepszym życiem rodzinnym",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "sama historia opowiedzi w inny sposób",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Chcieliśmy kupić nowy dom, ponieważ",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "dwójka naszych dzieci była już dorosła",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Niestety nie było to łatwe, gdyż ceny",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Oszczędzaliśmy pieniądze przez wiele",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "lat, aby móc kupić nowy dom",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "oszaliśmy pieniądze przez wiele lat, aby",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "móc kupić nowy dom",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Jeśli chcielibyśmy kupić dom",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "jednorodzinny, musielibyśmy mieszkać",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "daleko od miasta",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "dom jednorodzinny, musielibyśmy mieszkać",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "ołoby długie dojazdy do naszej pracy",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Co oznaczałoby długie dojazdy do naszej",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        },
+        {
+          "pl": "Przejrzeliśmy listę mieszkań, ale były",
+          "source": "youtube-captions",
+          "captionType": "auto-yt-dlp"
+        }
+      ]
     }
   },
   "diagnostics": {
+    "aSMljLMSqSM": {
+      "status": "missing",
+      "detail": "unavailable"
+    },
     "YNRJcQRbcW8": {
       "status": "missing",
       "detail": "unavailable"
@@ -2124,16 +2952,18 @@
       "detail": "unavailable"
     },
     "N1fl11CryPs": {
-      "status": "missing",
-      "detail": "unavailable"
+      "status": "ok",
+      "count": 40,
+      "kind": "auto-yt-dlp"
     },
     "gnbVGJ3839c": {
       "status": "missing",
       "detail": "unavailable"
     },
     "G8Nrjii5wlY": {
-      "status": "missing",
-      "detail": "unavailable"
+      "status": "ok",
+      "count": 40,
+      "kind": "auto-yt-dlp"
     },
     "fjIkLY4U8tU": {
       "status": "missing",
@@ -2180,8 +3010,9 @@
       "detail": "unavailable"
     },
     "aCUlYCga1LA": {
-      "status": "missing",
-      "detail": "unavailable"
+      "status": "ok",
+      "count": 40,
+      "kind": "auto-yt-dlp"
     },
     "cmcowQhXyB4": {
       "status": "missing",
@@ -2196,22 +3027,21 @@
       "detail": "unavailable"
     },
     "Ral8rIIrFqs": {
-      "status": "missing",
-      "detail": "unavailable"
+      "status": "ok",
+      "count": 40,
+      "kind": "auto-yt-dlp"
     },
     "tERNe_96l8Y": {
-      "status": "missing",
-      "detail": "unavailable"
+      "status": "ok",
+      "count": 40,
+      "kind": "auto-yt-dlp"
     },
     "8NSV3v44ETw": {
-      "status": "missing",
-      "detail": "unavailable"
+      "status": "ok",
+      "count": 40,
+      "kind": "auto-yt-dlp"
     },
     "PkThOjmYxbc": {
-      "status": "missing",
-      "detail": "unavailable"
-    },
-    "vnSPsMUZAjs": {
       "status": "missing",
       "detail": "unavailable"
     }
