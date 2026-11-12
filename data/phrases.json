@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T19:52:25.079248+00:00",
+  "updatedAt": "2026-11-12T07:44:09.364435+00:00",
   "source": "public-youtube-caption-tracks",
   "byVideo": {
     "cmcowQhXyB4": {
@@ -2952,18 +2952,16 @@
       "detail": "unavailable"
     },
     "N1fl11CryPs": {
-      "status": "ok",
-      "count": 40,
-      "kind": "auto-yt-dlp"
+      "status": "missing",
+      "detail": "unavailable"
     },
     "gnbVGJ3839c": {
       "status": "missing",
       "detail": "unavailable"
     },
     "G8Nrjii5wlY": {
-      "status": "ok",
-      "count": 40,
-      "kind": "auto-yt-dlp"
+      "status": "missing",
+      "detail": "unavailable"
     },
     "fjIkLY4U8tU": {
       "status": "missing",
@@ -3010,9 +3008,8 @@
       "detail": "unavailable"
     },
     "aCUlYCga1LA": {
-      "status": "ok",
-      "count": 40,
-      "kind": "auto-yt-dlp"
+      "status": "missing",
+      "detail": "unavailable"
     },
     "cmcowQhXyB4": {
       "status": "missing",
@@ -3027,19 +3024,16 @@
       "detail": "unavailable"
     },
     "Ral8rIIrFqs": {
-      "status": "ok",
-      "count": 40,
-      "kind": "auto-yt-dlp"
+      "status": "missing",
+      "detail": "unavailable"
     },
     "tERNe_96l8Y": {
-      "status": "ok",
-      "count": 40,
-      "kind": "auto-yt-dlp"
+      "status": "missing",
+      "detail": "unavailable"
     },
     "8NSV3v44ETw": {
-      "status": "ok",
-      "count": 40,
-      "kind": "auto-yt-dlp"
+      "status": "missing",
+      "detail": "unavailable"
     },
     "PkThOjmYxbc": {
       "status": "missing",
