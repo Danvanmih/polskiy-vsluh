@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T07:12:28.574261+00:00",
+  "updatedAt": "2026-11-15T19:07:12.841999+00:00",
   "source": "public-youtube-caption-tracks",
   "byVideo": {
     "cmcowQhXyB4": {
@@ -2939,6 +2939,10 @@
     }
   },
   "diagnostics": {
+    "KnbQyNDvg60": {
+      "status": "missing",
+      "detail": "unavailable"
+    },
     "aSMljLMSqSM": {
       "status": "missing",
       "detail": "unavailable"
@@ -3032,10 +3036,6 @@
       "detail": "unavailable"
     },
     "8NSV3v44ETw": {
-      "status": "missing",
-      "detail": "unavailable"
-    },
-    "PkThOjmYxbc": {
       "status": "missing",
       "detail": "unavailable"
     }
