@@ -1,7 +1,7 @@
 {
   "channelId": "UCVyi18vZGibg4Uu4zlBHTIA",
   "channelUrl": "https://www.youtube.com/@polskij-wsluh",
-  "updatedAt": "2026-11-18T04:29:28.337342+00:00",
+  "updatedAt": "2026-11-18T14:10:13.022088+00:00",
   "source": "youtube-data-api",
   "playlists": [
     {
@@ -138,6 +138,18 @@
     }
   ],
   "videos": [
+    {
+      "id": "_wQqN7gZXqg",
+      "title": "Новый Курс В1. Урок 7",
+      "description": "Практикуем перевод с русского на польский. Визуализированные и озвученные носителями языка польские тексты, диалоги с переводом по фразам.\n\nПаузы между фразами даны специально для того, чтобы успеть повторить польскую фразу вслух.\n\nТеорию, грамматические пояснения и задания к тексту урока, а также упражнения для закрепления материала найдёте на БЕСПЛАТНОМ образовательном портале: http://www.polskijazyk.pl.\n\nВсе тексты этого видео (и всех остальных) на Boosty: https://boosty.to/polskijwsluh",
+      "publishedAt": "2026-11-18T07:00:12Z",
+      "thumbnail": "https://i.ytimg.com/vi/_wQqN7gZXqg/hqdefault.jpg",
+      "category": "B1",
+      "duration": "PT4M59S",
+      "playlistIds": [
+        "PLEtjvrezBaNc"
+      ]
+    },
     {
       "id": "KnbQyNDvg60",
       "title": "Новый Курс В1. Урок 7 (облегченный)",
